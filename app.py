@@ -594,8 +594,13 @@ def google_calendar_url(event):
     if is_all_day or hour is None or minute is None:
         # All-day: use YYYYMMDD format
         dt = datetime.strptime(date_str, "%Y-%m-%d")
-        next_day = dt + timedelta(days=1)
-        dates_param = f"{dt.strftime('%Y%m%d')}/{next_day.strftime('%Y%m%d')}"
+        # Support consolidated multi-day events
+        end_date_str = event.get("_end_date")
+        if end_date_str:
+            end_dt = datetime.strptime(end_date_str, "%Y-%m-%d") + timedelta(days=1)
+        else:
+            end_dt = dt + timedelta(days=1)
+        dates_param = f"{dt.strftime('%Y%m%d')}/{end_dt.strftime('%Y%m%d')}"
     else:
         dt = datetime.strptime(date_str, "%Y-%m-%d").replace(hour=hour, minute=minute)
         end = dt + timedelta(hours=duration_hrs)
@@ -727,6 +732,79 @@ def event_time_of_day(event):
         return "morning"
     # Default school-hours events to afternoon
     return "afternoon"
+
+
+def _normalize_event_name(name):
+    """Normalize event name for comparison — strips parenthetical suffixes and lowercases."""
+    import re
+    n = (name or "").lower().strip()
+    n = re.sub(r"\s*\(.*?\)\s*$", "", n)  # strip trailing "(No School)" etc.
+    return n
+
+
+def consolidate_consecutive_events(events):
+    """Merge similar-name events spanning nearby dates into a single date-range event.
+
+    Groups events by normalized name (fuzzy match), checks if their dates span
+    a continuous range (within 7 days start-to-end), and replaces the group
+    with one consolidated event. Other events in between are preserved.
+    """
+    if not events:
+        return events
+
+    from difflib import SequenceMatcher
+
+    # Build groups of events with similar names
+    used = set()
+    groups = []  # list of (normalized_name, [indices])
+    for i, ev in enumerate(events):
+        if i in used:
+            continue
+        name = _normalize_event_name(ev.get("name"))
+        group_indices = [i]
+        for j in range(i + 1, len(events)):
+            if j in used:
+                continue
+            other_name = _normalize_event_name(events[j].get("name"))
+            if SequenceMatcher(None, name, other_name).ratio() > 0.8:
+                group_indices.append(j)
+        if len(group_indices) > 1:
+            # Check that dates form a tight range (within 7 days)
+            dates = []
+            for idx in group_indices:
+                d = events[idx].get("date")
+                if d:
+                    dates.append(d)
+            if len(dates) > 1:
+                dates.sort()
+                start = datetime.strptime(dates[0], "%Y-%m-%d").date()
+                end = datetime.strptime(dates[-1], "%Y-%m-%d").date()
+                if (end - start).days <= 7:
+                    groups.append((group_indices, dates[0], dates[-1]))
+                    used.update(group_indices)
+
+    # Build the consolidated list
+    # For each group, insert one merged event at the position of the first occurrence
+    merge_map = {}  # first_index -> (start_date, end_date)
+    skip = set()
+    for indices, start_date, end_date in groups:
+        first = min(indices)
+        merge_map[first] = (start_date, end_date)
+        skip.update(set(indices) - {first})
+
+    consolidated = []
+    for i, ev in enumerate(events):
+        if i in skip:
+            continue
+        ev = dict(ev)  # copy
+        if i in merge_map:
+            start_date, end_date = merge_map[i]
+            ev["_start_date"] = start_date
+            ev["_end_date"] = end_date
+            ev["date"] = start_date
+        consolidated.append(ev)
+
+    return consolidated
 
 
 def classify_event_period(event_date, today):
@@ -960,7 +1038,8 @@ def main():
     upcoming_events = sorted(
         [e for e in events if e.get("type") in ["event", "deadline"] and e.get("date", "") >= today_str],
         key=lambda x: x.get("date", ""),
-    )[:12]
+    )
+    upcoming_events = consolidate_consecutive_events(upcoming_events)[:12]
 
     if upcoming_events:
         current_group = None
@@ -973,7 +1052,13 @@ def main():
                     _html(f'<div class="timeline-group">{group}</div>')
 
             priority = ev.get("priority", "medium")
-            date_str = ev_date.strftime("%a, %b %d") if ev_date else "TBD"
+            # Show date range for consolidated events
+            if ev.get("_end_date"):
+                start = datetime.strptime(ev["_start_date"], "%Y-%m-%d").date()
+                end = datetime.strptime(ev["_end_date"], "%Y-%m-%d").date()
+                date_str = f"{start.strftime('%a, %b %d')} – {end.strftime('%a, %b %d')}"
+            else:
+                date_str = ev_date.strftime("%a, %b %d") if ev_date else "TBD"
             days_away = (ev_date - today).days if ev_date else 0
 
             icon = event_icon(ev.get("name", ""))
