@@ -403,7 +403,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-@st.cache_data
+@st.cache_data(ttl=300)
 def load_events():
     if not Path(EVENTS_FILE).exists():
         return []
@@ -411,7 +411,7 @@ def load_events():
         return json.load(f)
 
 
-@st.cache_data
+@st.cache_data(ttl=300)
 def load_raw_emails():
     if not Path(RAW_EMAILS_FILE).exists():
         return []
