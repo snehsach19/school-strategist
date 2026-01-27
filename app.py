@@ -591,7 +591,7 @@ def google_calendar_url(event):
 
     _, hour, minute, duration_hrs, is_all_day = time_info
 
-    if is_all_day:
+    if is_all_day or hour is None or minute is None:
         # All-day: use YYYYMMDD format
         dt = datetime.strptime(date_str, "%Y-%m-%d")
         next_day = dt + timedelta(days=1)

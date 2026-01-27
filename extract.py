@@ -240,6 +240,10 @@ def parse_student_calendar_dates():
         is_no_school = any(kw in desc_lower for kw in ["recess", "no school", "holiday"])
         is_early_release = "hours early" in desc_lower or "early" in desc_lower
 
+        # Skip secondary-only early release days
+        if "secondary" in desc_lower and "all" not in desc_lower:
+            continue
+
         if is_no_school:
             event_name = description.rstrip(".")
             if "no school" not in event_name.lower():
@@ -334,7 +338,7 @@ def extract_events_from_district(district_text):
 
     now = datetime.now()
 
-    prompt = f"""Extract ALL upcoming events from this SJUSD district calendar.
+    prompt = f"""Extract upcoming events from this SJUSD district calendar that are relevant to ELEMENTARY SCHOOL students and parents.
 
 TODAY'S DATE: {now.strftime('%Y-%m-%d')}
 
@@ -343,31 +347,29 @@ Return a JSON array with these fields:
 - "date": Date in YYYY-MM-DD format (null if unclear)
 - "time": Time of event if mentioned (e.g., "6:00 PM - 8:00 PM"), null if not stated
 - "type": "event" or "deadline"
-- "priority": "high" for school holidays/no-school days, "medium" for board meetings/info nights, "low" for minor items
+- "priority": "high" for school holidays/no-school days, "medium" for other events, "low" for minor items
 - "description": Brief description including location if available
 - "url": Related URL if mentioned (null if none)
 - "source": "district_calendar"
 
-EXTRACT EVERYTHING INCLUDING:
-- School holidays and recesses (Winter Recess, Spring Break, etc.)
-- No-school days (MLK Day, Presidents' Day, etc.)
+ONLY EXTRACT events that affect ELEMENTARY schools:
+- School holidays and recesses that affect ALL schools (Winter Recess, Spring Break, MLK Day, etc.)
+- Early dismissal or minimum days for elementary or all schools
+- District-wide events that affect elementary students
+
+DO NOT EXTRACT:
+- Middle school information nights
+- High school information nights
 - Board of Education meetings
-- Information nights and open houses
-- District-wide events and programs
-- Early dismissal or minimum days
-- Any other district events or dates
+- District committee meetings (PTOC, Schools of Tomorrow, CSH, VIP, etc.)
+- Advisory committees
+- Secondary-school-only early dismissals
+- Any event specific to a named middle or high school
+- Webinars or seminars for district staff
 
-CRITICAL RULE FOR MULTI-DAY EVENTS:
-- When you see a date range like "16-20 February" or "6-10 April", you MUST create a SEPARATE event for EACH day in the range.
-- Example: "16-20 February Winter recess" means create 5 events: Feb 16, Feb 17, Feb 18, Feb 19, Feb 20 — each named "Winter Recess (No School)".
-- Example: "26-28 November Thanksgiving recess" means create 3 events: Nov 26, Nov 27, Nov 28.
-- This applies to ALL recesses, holidays, and multi-day events.
-
-OTHER RULES:
+RULES:
 - Current school year: Fall 2025, Spring 2026
 - Only extract events dated {now.strftime('%Y-%m-%d')} or later
-- If a date is ambiguous, use the next upcoming occurrence
-- Include as much detail as available (times, locations)
 - For recesses and no-school days, set priority to "high"
 
 ## DISTRICT CALENDAR CONTENT:
