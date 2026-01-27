@@ -16,10 +16,45 @@ STUDENT_NUTRITION_URL = os.getenv("STUDENT_NUTRITION_URL")
 DATA_DIR = Path("data")
 
 
+MONTH_NAMES = [
+    "january", "february", "march", "april", "may", "june",
+    "july", "august", "september", "october", "november", "december",
+]
+
+
 def get_month_suffix():
     """Get current month suffix (e.g., JAN_2026)."""
     now = datetime.now()
     return f"{now.strftime('%b').upper()}_{now.year}"
+
+
+def detect_month_from_text(text):
+    """Detect which month a menu PDF covers based on its content.
+
+    Returns (month_abbr, year) like ('FEB', 2026) or None.
+    """
+    text_lower = text.lower()
+    now = datetime.now()
+
+    # Check for month names in the text — take the one that appears most
+    best_month = None
+    best_count = 0
+    for i, name in enumerate(MONTH_NAMES):
+        count = text_lower.count(name)
+        if count > best_count:
+            best_count = count
+            best_month = i + 1  # 1-based month number
+
+    if best_month and best_count >= 2:
+        # Determine year: if month is earlier than August and we're past August,
+        # it's next calendar year (spring semester)
+        year = now.year
+        if best_month < 8 and now.month >= 8:
+            year = now.year + 1
+        abbr = datetime(year, best_month, 1).strftime("%b").upper()
+        return (abbr, year)
+
+    return None
 
 
 def find_pdf_links(url):
@@ -89,7 +124,16 @@ def save_menu(text, source_url, filename, level, meal_type):
     """Save menu to JSON file. Avoids overwriting by adding suffix if needed."""
     DATA_DIR.mkdir(exist_ok=True)
 
-    month_suffix = get_month_suffix()
+    # Try to detect the actual month from the PDF content
+    detected = detect_month_from_text(text)
+    if detected:
+        month_abbr, menu_year = detected
+        month_suffix = f"{month_abbr}_{menu_year}"
+        month_num = [n[:3] for n in MONTH_NAMES].index(month_abbr.lower()) + 1
+        month_label = datetime(menu_year, month_num, 1).strftime("%B %Y")
+    else:
+        month_suffix = get_month_suffix()
+        month_label = datetime.now().strftime("%B %Y")
     base_filename = f"menu_{level}_{meal_type}_{month_suffix}"
     output_filename = f"{base_filename}.json"
     filepath = DATA_DIR / output_filename
@@ -105,7 +149,7 @@ def save_menu(text, source_url, filename, level, meal_type):
         "source_url": source_url,
         "original_filename": filename,
         "scraped_at": datetime.now().isoformat(),
-        "month": datetime.now().strftime("%B %Y"),
+        "month": month_label,
         "level": level,
         "meal_type": meal_type,
         "text": text,

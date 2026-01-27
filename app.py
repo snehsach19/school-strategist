@@ -886,15 +886,18 @@ def main():
 
     selected_day = st.session_state.selected_day
 
-    # Week strip: All + Mon-Fri as 6 columns
-    cols = st.columns(6, gap="small")
+    # Week strip: All + Mon-Fri + Next Week as 7 columns
+    next_week_start = start_of_week + timedelta(days=7)
+    next_week_dates = [next_week_start + timedelta(days=i) for i in range(5)]
+
+    cols = st.columns(7, gap="small")
     with cols[0]:
         btn_type = "primary" if selected_day == "all" else "secondary"
         if st.button("All", key="day_all", use_container_width=True, type=btn_type):
             st.session_state.selected_day = "all"
             st.rerun()
 
-    for i, (col, date) in enumerate(zip(cols[1:], week_dates)):
+    for i, (col, date) in enumerate(zip(cols[1:6], week_dates)):
         with col:
             day_events = get_events_for_date(events, date)
             other_events = [e for e in day_events if e.get("type") in ["event", "deadline"]]
@@ -907,30 +910,57 @@ def main():
                 st.session_state.selected_day = date
                 st.rerun()
 
+    with cols[6]:
+        btn_type = "primary" if selected_day == "next_week" else "secondary"
+        if st.button("Next", key="day_next_week", use_container_width=True, type=btn_type):
+            st.session_state.selected_day = "next_week"
+            st.rerun()
+
     # Day detail panel
     selected_day = st.session_state.selected_day
 
-    if selected_day == "all":
-        # Show all weekdays' meals
-        _html(f'<div class="day-detail-header">This Week\'s Meals</div>')
-        for date, day_name in zip(week_dates, day_names):
-            day_events = get_events_for_date(events, date)
-            breakfast = [e for e in day_events if e.get("type") == "breakfast_menu"]
-            lunch = [e for e in day_events if e.get("type") == "lunch_menu"]
-            b_text = breakfast[0].get("description", "—") if breakfast else "—"
-            l_text = lunch[0].get("description", "—") if lunch else "—"
-            is_today = date == today
-            today_marker = ' style="border-left:3px solid #6366f1"' if is_today else ""
+    if selected_day in ("all", "next_week"):
+        # Show week meals at a glance
+        if selected_day == "next_week":
+            view_dates = next_week_dates
+            header = "Next Week's Meals"
+        else:
+            view_dates = week_dates
+            header = "This Week's Meals"
+
+        _html(f'<div class="day-detail-header">{header}</div>')
+        # Check if any menu data exists for this week
+        has_any_menus = any(
+            e.get("type") in ("breakfast_menu", "lunch_menu")
+            for date in view_dates
+            for e in get_events_for_date(events, date)
+        )
+        if not has_any_menus:
+            month_name = view_dates[0].strftime("%B")
             _html(f"""\
-                <div class="card"{today_marker}>
-                    <div class="card-header">{day_name} {date.day}{"  ·  Today" if is_today else ""}</div>
-                    <div class="menu-item breakfast"><div class="card-value">{b_text}</div></div>
-                    <div class="menu-item lunch"><div class="card-value">{l_text}</div></div>
+                <div class="card" style="text-align:center; color:#6b7280; padding:1.5rem">
+                    <div class="card-value">{month_name} menus not yet available. Menus are published at the beginning of each month.</div>
                 </div>
             """)
-        # Show all week's events
+        else:
+            for date, day_name in zip(view_dates, day_names):
+                day_events = get_events_for_date(events, date)
+                breakfast = [e for e in day_events if e.get("type") == "breakfast_menu"]
+                lunch = [e for e in day_events if e.get("type") == "lunch_menu"]
+                b_text = breakfast[0].get("description", "—") if breakfast else "—"
+                l_text = lunch[0].get("description", "—") if lunch else "—"
+                is_today = date == today
+                today_marker = ' style="border-left:3px solid #6366f1"' if is_today else ""
+                _html(f"""\
+                    <div class="card"{today_marker}>
+                        <div class="card-header">{day_name} {date.day}{"  ·  Today" if is_today else ""}</div>
+                        <div class="menu-item breakfast"><div class="card-value">{b_text}</div></div>
+                        <div class="menu-item lunch"><div class="card-value">{l_text}</div></div>
+                    </div>
+                """)
+        # Show week's events
         all_week_events = []
-        for date in week_dates:
+        for date in view_dates:
             for e in get_events_for_date(events, date):
                 if e.get("type") in ["event", "deadline"]:
                     all_week_events.append((date, e))

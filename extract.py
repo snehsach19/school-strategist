@@ -28,19 +28,27 @@ def load_raw_emails():
 
 
 def load_current_menus():
-    """Load all current month's menu files (breakfast and lunch)."""
+    """Load current and next month's menu files (breakfast and lunch)."""
     now = datetime.now()
-    month_suffix = f"{now.strftime('%b').upper()}_{now.year}"
+    current_suffix = f"{now.strftime('%b').upper()}_{now.year}"
+
+    # Next month
+    if now.month == 12:
+        next_month = datetime(now.year + 1, 1, 1)
+    else:
+        next_month = datetime(now.year, now.month + 1, 1)
+    next_suffix = f"{next_month.strftime('%b').upper()}_{next_month.year}"
 
     menus = []
 
     for menu_type in ["breakfast", "lunch"]:
-        pattern = f"menu_elementary_{menu_type}_{month_suffix}*.json"
-        for filepath in DATA_DIR.glob(pattern):
-            with open(filepath) as f:
-                data = json.load(f)
-                data["_filename"] = filepath.name
-                menus.append(data)
+        for suffix in [current_suffix, next_suffix]:
+            pattern = f"menu_elementary_{menu_type}_{suffix}*.json"
+            for filepath in DATA_DIR.glob(pattern):
+                with open(filepath) as f:
+                    data = json.load(f)
+                    data["_filename"] = filepath.name
+                    menus.append(data)
 
     if not menus:
         print(f"WARNING: No menu files found in {DATA_DIR}. Run scrape_web.py first.")
