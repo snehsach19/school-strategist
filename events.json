@@ -1,27 +1,33 @@
 [
   {
-    "name": "PTA General Meeting",
+    "name": "PTA Meeting",
     "date": "2026-01-26",
+    "time": "8:15 AM",
     "type": "event",
     "priority": "medium",
-    "description": "PTA General Meeting",
-    "url": null
+    "description": "Come to the PTA meeting to hear what the PTA is up to and have a say!",
+    "url": null,
+    "source": "pta_website"
   },
   {
-    "name": "PTA Spelling Bee",
+    "name": "Spelling Bee Finals",
     "date": "2026-01-26",
+    "time": "6:00 PM",
     "type": "event",
     "priority": "medium",
-    "description": "PTA Spelling Bee",
-    "url": null
+    "description": "Congratulations to our finalists for earning a spot in the next round! Please come out and cheer them on at the Los Alamitos Spelling Bee.",
+    "url": null,
+    "source": "pta_website"
   },
   {
-    "name": "PTA Author Assembly: Shawn Harris",
+    "name": "Shawn Harris Author Assembly",
     "date": "2026-01-27",
+    "time": null,
     "type": "event",
     "priority": "medium",
-    "description": "Author Shawn Harris will be our guest for the release of: Let's Be Bees",
-    "url": "https://email.membershiptoolkit.com/ls/click?upn=u001.aIuRBLgc-2FlX1gZ2S1m5zRGqgjil94XU1p-2BpUVzXYbMk6qBFoMiG1FAXoXjoeTdMinzVTIYW6UelDFs9As6phpQ-3D-3DjKXv_rGGoVk50CQtIB1fPtO9IFzNIsMB8Uql-2BoBBy6JaKnaqCgtDVtYsILCg6JxRTZgAAHF484OtFhK35wA0Yo35pLToB1k9oJmRexxSzokC9ndZ-2FQYUC7DprK0NF38ftGc4SXxO3t5uom-2FNPqeN-2BRYluBrEPGtND0kHw3Ivs-2FeTl0Lo7Jf82apqAxlYfrRn8yMTfgMX-2FdJ8tAAaKd-2FiguBPfQgK9NnwvzlyWV-2F4RzosGdf9oyVwM7-2BgxgrC4-2BmxnMiO2yfOdb2cqyPneMYheO9k5qhqjnUBNDL32IsjHwAP-2FraXmhNFoXPd3bGjmbsEQ7c8syx4-2BjXU8xi24xC1W3CjgHKtzVBypsFLypPhH3cGJ0m8-2Fmp3k4tdMGbKEM-2FTEZZNO"
+    "description": "The PTA is hosting author Shawn Harris for an assembly for our students on January 27th for the release of: Let's Be Bees",
+    "url": null,
+    "source": "pta_website"
   },
   {
     "name": "SPIRIT DAY: Wear a Sports Shirt",
@@ -32,12 +38,14 @@
     "url": null
   },
   {
-    "name": "PTA Bubblefest",
+    "name": "Bubblefest",
     "date": "2026-01-30",
+    "time": "9:00 AM",
     "type": "event",
-    "priority": "medium",
-    "description": "PTA Bubblefest",
-    "url": "https://urldefense.com/v3/__https://signup.com/go/AHeWeDU__;!!GBgIFwM!ZrPl50lk9t9My0wCKAzZHTqcIL_NoMuDweuG09BeT36J_BixLATWj-bQ2fvxk1YOvSAJS6qR6060l_ubMPU$"
+    "priority": "high",
+    "description": "Bubblefest takes place in the cafeteria. Volunteers are needed for set up, event, and clean up.",
+    "url": "https://signup.com/go/AHeWeDU",
+    "source": "pta_website"
   },
   {
     "name": "School Site Council Meeting",
@@ -60,7 +68,15 @@
     "date": "2026-01-26",
     "type": "event",
     "priority": "low",
-    "description": "Spring Pictures (Free Dress)",
+    "description": "Spring Pictures",
+    "url": null
+  },
+  {
+    "name": "SPIRIT DAY: Dress as your favorite book character",
+    "date": "2026-01-27",
+    "type": "event",
+    "priority": "low",
+    "description": "SPIRIT DAY: Dress as your favorite book character",
     "url": null
   },
   {
@@ -75,25 +91,29 @@
     "name": "TK Tour",
     "date": "2026-02-05",
     "type": "event",
-    "priority": "low",
+    "priority": "medium",
     "description": "TK Tour",
     "url": "https://forms.gle/zoio4ufN4ieSyif2A"
   },
   {
-    "name": "PTA Father/Daughter Dance",
+    "name": "Father Daughter Dance",
     "date": "2026-02-06",
+    "time": "6:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "PTA Father/Daughter Dance",
-    "url": "https://losalamitospta.membershiptoolkit.com/home"
+    "description": null,
+    "url": null,
+    "source": "pta_website"
   },
   {
-    "name": "PTA Mother/Son Dance",
+    "name": "Mother Son Dance",
     "date": "2026-02-07",
+    "time": "6:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "PTA Mother/Son Dance",
-    "url": "https://losalamitospta.membershiptoolkit.com/home"
+    "description": null,
+    "url": null,
+    "source": "pta_website"
   },
   {
     "name": "PTA Math Kangaroo",
@@ -104,7 +124,7 @@
     "url": null
   },
   {
-    "name": "Winter Recess",
+    "name": "Winter Recess (No School)",
     "date": "2026-02-16",
     "type": "event",
     "priority": "low",
@@ -112,7 +132,35 @@
     "url": null
   },
   {
-    "name": "Elementary Minimum Days",
+    "name": "Variety Show",
+    "date": "2026-03-20",
+    "time": "4:00 PM",
+    "type": "event",
+    "priority": "high",
+    "description": "Volunteers are needed for MCs, stage hands, AV support, and concession organizer. Audition videos are due by March 6th, dress rehearsal is on March 19th.",
+    "url": null,
+    "source": "pta_website"
+  },
+  {
+    "name": "PTA Hicklebee's Book Fair",
+    "date": "2026-02-23",
+    "type": "event",
+    "priority": "medium",
+    "description": "PTA Hicklebee's Book Fair",
+    "url": null
+  },
+  {
+    "name": "Yearbook Cover Contest",
+    "date": "2026-02-23",
+    "time": null,
+    "type": "deadline",
+    "priority": "low",
+    "description": "Entries due by February 23, 2026. Los Alamitos PTA is inviting all Los Alamitos 5th graders to enter their drawings in our Yearbook cover contest. 2 winners will be selected to be displayed on the front and back cover, by the Yearbook committee panel.",
+    "url": null,
+    "source": "pta_website"
+  },
+  {
+    "name": "Elementary Minimum Days (Dismissed at 12:06pm)",
     "date": "2026-03-12",
     "type": "event",
     "priority": "low",
@@ -136,52 +184,162 @@
     "url": null
   },
   {
-    "name": "PTA Variety Show",
-    "date": "2026-03-20",
+    "name": "Martin Luther King Jr. Day",
+    "date": "2026-01-19",
+    "time": null,
     "type": "event",
-    "priority": "medium",
-    "description": "PTA Variety Show",
-    "url": "https://urldefense.com/v3/__https://docs.google.com/forms/d/e/1FAIpQLSeOQ8B05xg32DG1jTB2gJX0F8zgtexAvtH1Py6YQxvkBjLgsg/viewform__;!!GBgIFwM!Zv8d41rk4JwfsdY2NB-jjszZupd-spGLoK8aNFyykvaHJi6_WEdqdWlL-V0KuyVF51mYQ-XCE5j8XhWWBj8$"
-  },
-  {
-    "name": "PTA Hicklebee's Book Fair",
-    "date": "2026-03-23",
-    "type": "event",
-    "priority": "medium",
-    "description": "PTA Hicklebee's Book Fair",
-    "url": null
-  },
-  {
-    "name": "Deadline: Middle School Selection",
-    "date": "2026-02-13",
-    "type": "deadline",
     "priority": "high",
-    "description": "Deadline to submit middle school selection",
+    "description": "No school",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "100th Day of School",
+    "date": "2026-01-22",
+    "type": "event",
+    "priority": "low",
+    "description": "100th Day of School",
     "url": null
   },
   {
-    "name": "Deadline: 5th Grade Yearbook Cover Contest",
-    "date": "2026-02-23",
-    "type": "deadline",
+    "name": "Four Seasons Fundraising Concert",
+    "date": "2026-01-30",
+    "time": "7:30 PM",
+    "type": "event",
+    "priority": "high",
+    "description": "The concert will feature the Castillero Middle School Orchestras, showcasing a high-quality program of classical and contemporary music. Guest performers will include two-time Grammy-winning jazz violinist Mads Tolling.",
+    "url": null,
+    "source": "pta_website"
+  },
+  {
+    "name": "Galentine's Night Out",
+    "date": "2026-02-12",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "45 minutes of strength training work out followed by bubbles at F45 Branham Park. This is a free event with a maximum of 30 people.",
+    "url": "text \"LAMOMS\" to 408.549.7760",
+    "source": "pta_website"
+  },
+  {
+    "name": "Math Kangaroo Competition",
+    "date": "2026-03-19",
+    "time": "2:30 PM - 3:45 PM",
+    "type": "event",
     "priority": "medium",
-    "description": "Deadline for 5th Grade Yearbook Cover Contest entries",
-    "url": null
+    "description": "The Math Kangaroo competition is coming to Los Alamitos. Use the invitation code CASAN_J0017001@2026math to register.",
+    "url": null,
+    "source": "pta_website"
   },
   {
-    "name": "Deadline: Future Chefs Recipe Submission",
-    "date": "2026-01-16",
-    "type": "deadline",
+    "name": "Reading Lab Volunteers",
+    "date": null,
+    "time": "12:45 PM - 2:00 PM",
+    "type": "opportunity",
     "priority": "medium",
-    "description": "Deadline to submit recipes for Future Chefs Competition",
-    "url": null
+    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. Volunteers are needed once a week on Tuesdays, Wednesdays, or Thursdays.",
+    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
+    "source": "pta_website"
   },
   {
-    "name": "Deadline: Yearbook Order",
+    "name": "Yearbook Orders",
     "date": "2026-04-20",
+    "time": null,
     "type": "deadline",
+    "priority": "low",
+    "description": "Order your 2025-26 Yearbook today. 5th grade parents need to submit baby photos by March 1st.",
+    "url": "https://www.betteryearbook.com/",
+    "source": "pta_website"
+  },
+  {
+    "name": "New Year Recess",
+    "date": "2026-01-01",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "New Year Recess",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Middle School Information Night",
+    "date": "2026-01-12",
+    "time": "6:00 PM - 7:00 PM",
+    "type": "event",
     "priority": "medium",
-    "description": "Last day to order 2025-26 Yearbook",
-    "url": "https://www.betteryearbook.com/product/los-alamitos-yearbooks/"
+    "description": "Middle School Information Night",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Parcel Tax Oversight Committee (PTOC)",
+    "date": "2026-01-12",
+    "time": "6:00 PM - 8:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "855 Lenzen Ave, San Jose, CA 95126, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Schools of Tomorrow Implementation Committee",
+    "date": "2026-01-13",
+    "time": "6:00 PM - 8:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "855 Lenzen Ave, San Jose, CA 95126, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Board Meeting",
+    "date": "2026-01-15",
+    "time": "6:00 PM - 8:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "855 Lenzen Ave, San Jose, CA 95126, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Coordinated School Health Collaborative Meetings (CSH)",
+    "date": "2026-01-22",
+    "time": "3:00 PM - 4:30 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "855 Lenzen Ave, San Jose, CA 95126, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Advisory Committee on Use of SJPD Officers",
+    "date": "2026-01-22",
+    "time": "6:00 PM - 8:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "855 Lenzen Ave, San Jose, CA 95126, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Voluntary Integration Plan (VIP)",
+    "date": "2026-01-26",
+    "time": "6:00 PM - 8:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "855 Lenzen Ave, San Jose, CA 95126, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Seminario web sobre la evaluaci\u00f3n de los estudiantes aprendiendo ingl\u00e9s",
+    "date": "2026-01-28",
+    "time": "6:00 PM - 7:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": null,
+    "url": null,
+    "source": "district_calendar"
   },
   {
     "name": "Croissant with Cheese",
@@ -338,112 +496,112 @@
     "description": "Glazed Chicken Drumstick with Rice, Italian Cheese & Garlic Pull-Apart"
   },
   {
-    "name": "Chicken Tenders",
+    "name": "Chicken Tenders, Spicy Chicken Tenders, Veggie Nuggets with a Roll",
     "date": "2026-01-08",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Chicken Tenders, Spicy Chicken Tenders, Veggie Nuggets with a Roll"
   },
   {
-    "name": "Hot Dog - Turkey",
+    "name": "Hot Dog - Turkey, Cheese Quesadilla",
     "date": "2026-01-09",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Hot Dog - Turkey, Cheese Quesadilla"
   },
   {
-    "name": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link",
+    "name": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich",
     "date": "2026-01-12",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich"
   },
   {
-    "name": "Chicken Burger",
+    "name": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart",
     "date": "2026-01-13",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart"
   },
   {
-    "name": "Beef Rib B Que Sandwich",
+    "name": "Beef Rib B Que Sandwich, Veggie Burger, Yogurt, Cinnamon Goldfish & String Cheese",
     "date": "2026-01-14",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Beef Rib B Que Sandwich, Veggie Burger, Yogurt, Cinnamon Goldfish & String Cheese"
   },
   {
-    "name": "Turkey & Gravy with Mashed Potatoes",
+    "name": "Turkey & Gravy with Mashed Potatoes, Italian Dunkers",
     "date": "2026-01-15",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Turkey & Gravy with Mashed Potatoes, Italian Dunkers"
   },
   {
-    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos",
+    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap",
     "date": "2026-01-16",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
   },
   {
-    "name": "Pepperoni Pizza",
+    "name": "Pepperoni Pizza, Bean & Cheese Burrito",
     "date": "2026-01-20",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Pepperoni Pizza, Bean & Cheese Burrito"
   },
   {
-    "name": "Breaded Chicken Drumstick with Rice",
+    "name": "Breaded Chicken Drumstick with Rice, Italian Cheese & Garlic Pull-Apart",
     "date": "2026-01-21",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Breaded Chicken Drumstick with Rice, Italian Cheese & Garlic Pull-Apart"
   },
   {
-    "name": "Turkey Soft Taco",
+    "name": "Turkey Soft Taco, Three Cheese Quesadilla",
     "date": "2026-01-22",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Turkey Soft Taco, Three Cheese Quesadilla"
   },
   {
-    "name": "Chicken Popcorn Bowl with Mashed Potatoes",
+    "name": "Chicken Popcorn Bowl with Mashed Potatoes, Grilled Cheese Sandwich",
     "date": "2026-01-23",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Chicken Popcorn Bowl with Mashed Potatoes, Grilled Cheese Sandwich"
   },
   {
-    "name": "Chicken Corndog",
+    "name": "Chicken Corndog, Pasta Alfredo",
     "date": "2026-01-26",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Chicken Corndog, Pasta Alfredo"
   },
   {
-    "name": "Chicken Burger",
+    "name": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart",
     "date": "2026-01-27",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart"
   },
   {
-    "name": "Butter Chicken with Rice",
+    "name": "Butter Chicken with Rice, Italian Dunkers",
     "date": "2026-01-28",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Butter Chicken with Rice, Italian Dunkers"
   },
   {
-    "name": "Beef Burger",
+    "name": "Beef Burger, Veggie Burger, Yogurt-Cinnamon Goldfish and String Cheese",
     "date": "2026-01-29",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Beef Burger, Veggie Burger, Yogurt-Cinnamon Goldfish and String Cheese"
   },
   {
-    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos",
+    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap",
     "date": "2026-01-30",
     "type": "lunch_menu",
     "priority": "low",
