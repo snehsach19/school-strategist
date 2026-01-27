@@ -1,0 +1,56 @@
+name: Refresh school events data
+
+on:
+  schedule:
+    - cron: '0 14 * * *'  # 6 AM PT (2 PM UTC)
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch emails
+        env:
+          GMAIL_EMAIL: ${{ secrets.GMAIL_EMAIL }}
+          GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
+        run: python ingest.py
+
+      - name: Scrape lunch menus
+        env:
+          STUDENT_NUTRITION_URL: ${{ secrets.STUDENT_NUTRITION_URL }}
+        run: python scrape_web.py
+        continue-on-error: true
+
+      - name: Scrape PTA website
+        run: python scrape_pta.py
+        continue-on-error: true
+
+      - name: Scrape district calendar
+        run: python scrape_district.py
+        continue-on-error: true
+
+      - name: Extract events
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python extract.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet events.json && exit 0
+          git add events.json
+          git commit -m "Update events.json (automated refresh)"
+          git push
