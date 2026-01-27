@@ -6,34 +6,35 @@
     "type": "event",
     "priority": "medium",
     "description": "Come to the PTA meeting to hear what the PTA is up to and have a say!",
-    "url": "https://www.losalamitoselementary.org/calendar",
-    "source": "pta_website"
-  },
-  {
-    "name": "Los Alamitos Spelling Bee",
-    "date": "2026-01-26",
-    "time": "6:00 PM",
-    "type": "event",
-    "priority": "medium",
-    "description": "Cheer on the finalists of the Los Alamitos Spelling Bee.",
     "url": null,
     "source": "pta_website"
   },
   {
-    "name": "PTA Author Assembly: Shawn Harris",
+    "name": "Spelling Bee Finals",
+    "date": "2026-01-26",
+    "time": "6:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "Congratulations to our finalists for earning a spot in the next round! Come out and cheer them on at the Los Alamitos Spelling Bee.",
+    "url": null,
+    "source": "pta_website"
+  },
+  {
+    "name": "Shawn Harris Author Assembly",
     "date": "2026-01-27",
+    "time": null,
     "type": "event",
     "priority": "high",
-    "description": "Author Shawn Harris will be our guest for the release of: Let's Be Bees",
-    "url": "https://email.membershiptoolkit.com/ls/click?upn=u001.aIuRBLgc-2FlX1gZ2S1m5zRGqgjil94XU1p-2BpUVzXYbMk6qBFoMiG1FAXoXjoeTdMinzVTIYW6UelDFs9As6phpQ-3D-3DjKXv_rGGoVk50CQtIB1fPtO9IFzNIsMB8Uql-2BoBBy6JaKnaqCgtDVtYsILCg6JxRTZgAAHF484OtFhK35wA0Yo35pLToB1k9oJmRexxSzokC9ndZ-2FQYUC7DprK0NF38ftGc4SXxO3t5uom-2FNPqeN-2BRYluBrEPGtND0kHw3Ivs-2FeTl0Lo7Jf82apqAxlYfrRn8yMTfgMX-2FdJ8tAAaKd-2FiguBPfQgK9NnwvzlyWV-2F4RzosGdf9oyVwM7-2BgxgrC4-2BmxnMiO2yfOdb2cqyPneMYheO9k5qhqjnUBNDL32IsjHwAP-2FraXmhNFoXPd3bGjmbsEQ7c8syx4-2BjXU8xi24xC1W3CjgHKtzVBypsFLypPhH3cGJ0m8-2Fmp3k4tdMGbKEM-2FTEZZNO"
+    "description": "The PTA is hosting author Shawn Harris for an assembly for our students on January 27th for the release of his book Let's Be Bees.",
+    "url": null,
+    "source": "pta_website"
   },
   {
     "name": "SPIRIT DAY: Wear a Sports Shirt",
     "date": "2026-01-30",
     "type": "event",
     "priority": "low",
-    "description": "SPIRIT DAY: Wear a Sports Shirt",
-    "url": null
+    "description": "School spirit day"
   },
   {
     "name": "Bubblefest",
@@ -41,7 +42,7 @@
     "time": "9:00 AM",
     "type": "event",
     "priority": "high",
-    "description": "Bubblefest event in the cafeteria. Volunteers needed for setup, event, and cleanup.",
+    "description": "Bubblefest takes place in the cafeteria. Volunteers are still needed for setup, cleanup, and the event itself.",
     "url": "https://signup.com/go/AHeWeDU",
     "source": "pta_website"
   },
@@ -50,8 +51,14 @@
     "date": "2026-01-09",
     "type": "event",
     "priority": "medium",
-    "description": "School Site Council Meeting",
-    "url": null
+    "description": "School Site Council meeting at 2:30pm"
+  },
+  {
+    "name": "TK Tour",
+    "date": "2026-02-05",
+    "type": "event",
+    "priority": "medium",
+    "description": "Tour for new TK families, 8:30am-10am"
   },
   {
     "name": "Father Daughter Dance",
@@ -59,7 +66,7 @@
     "time": "6:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "Father Daughter Dance event.",
+    "description": "Father Daughter Dance on February 6th at 6:00 PM.",
     "url": null,
     "source": "pta_website"
   },
@@ -69,77 +76,9 @@
     "time": "6:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "Mother Son Dance event.",
+    "description": "Mother Son Dance on February 7th at 6:00 PM.",
     "url": null,
     "source": "pta_website"
-  },
-  {
-    "name": "PTA General Meeting",
-    "date": "2026-01-23",
-    "type": "event",
-    "priority": "medium",
-    "description": "PTA General Meeting",
-    "url": null
-  },
-  {
-    "name": "PTA Math Kangaroo",
-    "date": "2026-02-19",
-    "type": "event",
-    "priority": "medium",
-    "description": "PTA Math Kangaroo",
-    "url": null
-  },
-  {
-    "name": "Variety Show",
-    "date": "2026-03-20",
-    "time": "4:00 PM",
-    "type": "event",
-    "priority": "high",
-    "description": "Volunteers needed for MCs, stage hands, AV support, and concessions. Performers can submit audition videos by 3/6.",
-    "url": null,
-    "source": "pta_website"
-  },
-  {
-    "name": "PTA Hicklebee's Book Fair",
-    "date": "2026-02-23",
-    "type": "event",
-    "priority": "medium",
-    "description": "PTA Hicklebee's Book Fair",
-    "url": null
-  },
-  {
-    "name": "Spring Pictures",
-    "date": "2026-01-26",
-    "type": "event",
-    "priority": "low",
-    "description": "Spring Pictures (Free Dress)",
-    "url": null
-  },
-  {
-    "name": "SPIRIT DAY: Dress as your favorite book character",
-    "date": "2026-01-27",
-    "type": "event",
-    "priority": "low",
-    "description": "SPIRIT DAY: Dress as your favorite book character",
-    "url": null
-  },
-  {
-    "name": "Open House",
-    "date": "2026-01-31",
-    "type": "event",
-    "priority": "medium",
-    "description": "Open House",
-    "url": null
-  },
-  {
-    "name": "Winter recess (No School)",
-    "date": "2026-02-16",
-    "time": null,
-    "type": "event",
-    "priority": "high",
-    "description": "Winter recess",
-    "url": null,
-    "source": "student_calendar"
   },
   {
     "name": "Elementary schools out 2 hours early",
@@ -152,77 +91,129 @@
     "source": "student_calendar"
   },
   {
-    "name": "SPIRIT DAY: Crazy Hat / Hair Day",
-    "date": "2026-03-02",
-    "type": "event",
-    "priority": "low",
-    "description": "SPIRIT DAY: Crazy Hat / Hair Day",
-    "url": null
-  },
-  {
     "name": "SPIRIT DAY: Wear Green",
     "date": "2026-03-17",
     "type": "event",
     "priority": "low",
-    "description": "SPIRIT DAY: Wear Green",
-    "url": null
+    "description": "School spirit day"
   },
   {
-    "name": "Middle School Information Night",
-    "date": null,
+    "name": "PTA Math Kangaroo",
+    "date": "2026-02-19",
     "type": "event",
     "priority": "medium",
-    "description": "Middle and high school selection process, how SJUSD supports students during transitions, and overview of middle and high school programs",
-    "url": "https://sjusd.webex.com/webappng/sites/sjusd/meeting/register/8c5134fdab6542b38101fd9096c9f419?ticket=4832534b00000008bd987a5437fc0d999ac2301c62db193eeeabee9ce61082da0dd25aa2c96c5095&timestamp=1765912863030&RGID=rd98a8bf2c64fe433ea8b62a379040f49&isAutoPopRegisterForm=false"
+    "description": "Math competition, 2:30pm-3:45pm"
   },
   {
-    "name": "TK Tour for 2026-2027 School Year",
-    "date": "2026-02-05",
+    "name": "Variety Show",
+    "date": "2026-03-20",
+    "time": "4:00 PM",
     "type": "event",
-    "priority": "medium",
-    "description": "TK Tour for new families only",
-    "url": "https://forms.gle/zoio4ufN4ieSyif2A"
-  },
-  {
-    "name": "2026-2027 School Year New Student Enrollment",
-    "date": "2025-12-01",
-    "type": "deadline",
     "priority": "high",
-    "description": "Online and in-person enrollment begins for students not currently enrolled in SJUSD",
-    "url": "https://www.sjusd.org/enrollment"
+    "description": "The Variety Show is on Friday, March 20th. Volunteers are needed for MCs, stage hands, AV support, and concessions. Audition videos are due by March 6th.",
+    "url": null,
+    "source": "pta_website"
   },
   {
-    "name": "Middle and High School Choice Deadline",
+    "name": "PTA Book Fair",
+    "date": "2026-03-23",
+    "type": "event",
+    "priority": "medium",
+    "description": "Hicklebee's book fair"
+  },
+  {
+    "name": "SPRING PICTURES",
+    "date": "2026-03-26",
+    "type": "event",
+    "priority": "low",
+    "description": "Free dress day for spring pictures"
+  },
+  {
+    "name": "SPIRIT DAY: Dress as Book Character",
+    "date": "2026-03-27",
+    "type": "event",
+    "priority": "low",
+    "description": "School spirit day"
+  },
+  {
+    "name": "Open House",
+    "date": "2026-03-31",
+    "type": "event",
+    "priority": "medium",
+    "description": "Evening open house, 5pm-6pm"
+  },
+  {
+    "name": "PTA General Meeting",
+    "date": "2026-01-23",
+    "type": "event",
+    "priority": "medium",
+    "description": "PTA General Meeting at 8:10am"
+  },
+  {
+    "name": "Winter Recess",
+    "date": "2026-02-16",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "All Day",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Middle School Selection Deadline",
     "date": "2026-02-13",
     "type": "deadline",
     "priority": "high",
-    "description": "Deadline to request a school other than the neighborhood school",
-    "url": null
+    "description": "Deadline to submit middle school preferences"
   },
   {
-    "name": "Elementary Magnet and Two-Way Bilingual Immersion Choice Deadline",
-    "date": "2026-03-13",
-    "type": "deadline",
+    "name": "Four Seasons Fundraising Concert",
+    "date": "2026-01-30",
+    "time": "7:30 PM",
+    "type": "event",
     "priority": "high",
-    "description": "Deadline to request a school other than the neighborhood school",
-    "url": null
+    "description": "The Castillero Middle School Orchestras will perform a concert featuring two-time Grammy-winning jazz violinist Mads Tolling.",
+    "url": null,
+    "source": "pta_website"
   },
   {
-    "name": "Future Chefs Recipe Submission Deadline",
-    "date": "2026-01-16",
-    "type": "deadline",
+    "name": "Galentine's Night Out at F45 Branham Park",
+    "date": "2026-02-12",
+    "time": null,
+    "type": "event",
     "priority": "high",
-    "description": "Deadline for 3rd-5th grade students to submit recipes for the Future Chefs National Challenge",
-    "url": "https://www.sjusd.org/your-resources/student-nutrition-services/"
+    "description": "45 minutes of strength training followed by bubbles. This is a free event with a max of 30 people.",
+    "url": "text \"LAMOMS\" to 408.549.7760",
+    "source": "pta_website"
   },
   {
     "name": "Yearbook Cover Contest",
     "date": "2026-02-23",
     "time": null,
     "type": "deadline",
-    "priority": "low",
-    "description": "5th graders can submit artwork for the yearbook cover with the theme \"Under the Sea\".",
-    "url": "LosAlamitosPTA@gmail.com",
+    "priority": "medium",
+    "description": "Entries due by February 23, 2026 for 5th graders to design the yearbook cover.",
+    "url": null,
+    "source": "pta_website"
+  },
+  {
+    "name": "Math Kangaroo Competition",
+    "date": "2025-03-19",
+    "time": "2:30 PM - 3:45 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "The Math Kangaroo competition is coming to Los Alamitos. Registration code: CASAN_J0017001@2026math",
+    "url": null,
+    "source": "pta_website"
+  },
+  {
+    "name": "Reading Lab Volunteers",
+    "date": null,
+    "time": "12:45 PM - 2:00 PM",
+    "type": "volunteer",
+    "priority": "medium",
+    "description": "The Reading Lab is looking for volunteers to tutor students once a week on Tuesdays, Wednesdays, or Thursdays.",
+    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
     "source": "pta_website"
   },
   {
@@ -231,58 +222,8 @@
     "time": null,
     "type": "deadline",
     "priority": "low",
-    "description": "Last day to order the 2025-26 yearbook. 5th grade parents should submit baby photos by 3/1.",
+    "description": "The last day to order the 2025-26 Yearbook is April 20th. 5th grade parents should submit baby photos by March 1st.",
     "url": "https://www.betteryearbook.com/",
-    "source": "pta_website"
-  },
-  {
-    "name": "Shawn Harris Author Visit",
-    "date": "2026-01-27",
-    "time": null,
-    "type": "event",
-    "priority": "medium",
-    "description": "The PTA is hosting author Shawn Harris for an assembly for our students. Focus will be on his books Let's Be Bees and The First Cat in Space series.",
-    "url": null,
-    "source": "pta_website"
-  },
-  {
-    "name": "Four Seasons Fundraising Concert",
-    "date": "2026-01-30",
-    "time": "7:30 PM",
-    "type": "event",
-    "priority": "high",
-    "description": "Featuring the Castillero Middle School Orchestras and guest performer jazz violinist Mads Tolling. Fundraiser for the Castillero music program.",
-    "url": null,
-    "source": "pta_website"
-  },
-  {
-    "name": "Galentine's Night Out",
-    "date": "2026-02-12",
-    "time": null,
-    "type": "event",
-    "priority": "medium",
-    "description": "45 minutes of strength training workout followed by bubbles at F45 Branham Park. Free event, max 30 people.",
-    "url": "text \"LAMOMS\" to 408.549.7760",
-    "source": "pta_website"
-  },
-  {
-    "name": "Math Kangaroo Competition",
-    "date": "2026-03-19",
-    "time": "2:30 PM - 3:45 PM",
-    "type": "event",
-    "priority": "medium",
-    "description": "Math competition for students. Registration required using code CASAN_J0017001@2026math.",
-    "url": null,
-    "source": "pta_website"
-  },
-  {
-    "name": "Reading Lab Volunteers Needed",
-    "date": null,
-    "time": "12:45 PM - 2:00 PM",
-    "type": "opportunity",
-    "priority": "medium",
-    "description": "Volunteers needed 1 day per week to tutor students in the Reading Lab program.",
-    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
     "source": "pta_website"
   },
   {
@@ -431,7 +372,7 @@
     "time": null,
     "type": "event",
     "priority": "medium",
-    "description": "All schools out 2 hours early",
+    "description": null,
     "url": null,
     "source": "district_calendar"
   },

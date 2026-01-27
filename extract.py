@@ -91,12 +91,18 @@ Return a JSON array with these fields:
 - "description": Brief description
 - "url": Registration or sign-up URL if mentioned (null if none)
 
-EXTRACT EVERYTHING INCLUDING:
+EXTRACT events relevant to ELEMENTARY SCHOOL students and parents:
 - ALL PTA events (dances, meetings, fundraisers, etc.)
 - School holidays and no-school days
 - Minimum days / early dismissal
-- Tours, info nights, workshops
-- Any deadlines or due dates
+- Tours, info nights, workshops for elementary
+- Any deadlines or due dates relevant to elementary students
+
+DO NOT EXTRACT:
+- Middle school information nights or events
+- High school information nights or events
+- Events specific to a named middle or high school
+- District committee or board meetings
 
 DATE PARSING RULES:
 - School newsletters have calendar tables with month columns (JANUARY, FEBRUARY, MARCH)
