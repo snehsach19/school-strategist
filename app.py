@@ -979,12 +979,6 @@ def main():
         afternoon_events = [e for e in selected_other if event_time_of_day(e) == "afternoon"]
         evening_events = [e for e in selected_other if event_time_of_day(e) == "evening"]
 
-        time_sections = {
-            "morning": ("\u2600\uFE0F", "Morning"),
-            "afternoon": ("\U0001F324\uFE0F", "Afternoon"),
-            "evening": ("\U0001F319", "Evening"),
-        }
-
         def render_event_card(ev):
             priority = ev.get("priority", "medium")
             url = event_fallback_url(ev)
@@ -1025,47 +1019,44 @@ def main():
                 </div>
             """)
 
-        # ── Morning ──
-        _html(f'<div class="time-section"><span class="ts-icon">{time_sections["morning"][0]}</span><span class="ts-label">{time_sections["morning"][1]}</span></div>')
+        # ── Meals ──
         breakfast_text = (
             selected_breakfast[0].get("description", "No menu")
             if selected_breakfast
             else "No school or menu not available"
         )
-        _html(f"""\
-            <div class="card">
-                <div class="card-header">Breakfast</div>
-                <div class="menu-item breakfast">
-                    <div class="card-value">{breakfast_text}</div>
-                </div>
-            </div>
-        """)
-        for ev in morning_events:
-            render_event_card(ev)
-
-        # ── Afternoon ──
-        _html(f'<div class="time-section"><span class="ts-icon">{time_sections["afternoon"][0]}</span><span class="ts-label">{time_sections["afternoon"][1]}</span></div>')
         lunch_text = (
             selected_lunch[0].get("description", "No menu")
             if selected_lunch
             else "No school or menu not available"
         )
-        _html(f"""\
-            <div class="card">
-                <div class="card-header">Lunch</div>
-                <div class="menu-item lunch">
-                    <div class="card-value">{lunch_text}</div>
+        col1, col2 = st.columns(2)
+        with col1:
+            _html(f"""\
+                <div class="card">
+                    <div class="card-header">Breakfast</div>
+                    <div class="menu-item breakfast">
+                        <div class="card-value">{breakfast_text}</div>
+                    </div>
                 </div>
-            </div>
-        """)
-        for ev in afternoon_events:
-            render_event_card(ev)
+            """)
+        with col2:
+            _html(f"""\
+                <div class="card">
+                    <div class="card-header">Lunch</div>
+                    <div class="menu-item lunch">
+                        <div class="card-value">{lunch_text}</div>
+                    </div>
+                </div>
+            """)
 
-        # ── Evening (only show if there are evening events) ──
-        if evening_events:
-            _html(f'<div class="time-section"><span class="ts-icon">{time_sections["evening"][0]}</span><span class="ts-label">{time_sections["evening"][1]}</span></div>')
-            for ev in evening_events:
+        # ── Events ──
+        all_day_events = morning_events + afternoon_events + evening_events
+        if all_day_events:
+            _html(f'<div class="time-section"><span class="ts-icon">\U0001F4C5</span><span class="ts-label">Events</span></div>')
+            for ev in all_day_events:
                 render_event_card(ev)
+
 
     # ── 4. Upcoming Events Timeline ──
     _html('<div class="section-label">Upcoming Events</div>')
