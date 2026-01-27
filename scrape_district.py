@@ -1,9 +1,11 @@
+import io
 import json
 from datetime import datetime, timedelta
 from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
+from pypdf import PdfReader
 
 DISTRICT_URL = "https://www.sjusd.org/events"
 DATA_DIR = Path("data")
@@ -54,7 +56,72 @@ def extract_text(html):
     return "\n".join(lines)
 
 
-def save_district_data(text):
+def find_student_calendar_url(html):
+    """Find the student calendar PDF URL for the current school year."""
+    soup = BeautifulSoup(html, "html.parser")
+    now = datetime.now()
+
+    # Determine the current school year label (e.g., "2025-2026")
+    # School year runs Aug-May, so Aug+ is the start of a new year
+    if now.month >= 8:
+        school_year = f"{now.year}-{now.year + 1}"
+    else:
+        school_year = f"{now.year - 1}-{now.year}"
+
+    # Find links containing the school year near "Student calendar" or "English"
+    for link in soup.find_all("a", href=True):
+        href = link["href"]
+        if "/fs/resource-manager/view/" not in href:
+            continue
+        # Walk nearby text to see if this is a student calendar link
+        text_context = link.get_text(strip=True)
+        parent_text = link.parent.get_text(separator=" ", strip=True) if link.parent else ""
+        # Look for the English student calendar for the current school year
+        if school_year in parent_text and "english" in text_context.lower():
+            if "student" in parent_text.lower() or "student" in text_context.lower():
+                return href
+
+    # Fallback: find any link with the school year and resource-manager
+    for link in soup.find_all("a", href=True):
+        href = link["href"]
+        if "/fs/resource-manager/view/" in href:
+            parent_text = link.parent.get_text(separator=" ", strip=True) if link.parent else ""
+            if school_year in parent_text and "english" in link.get_text(strip=True).lower():
+                return href
+
+    return None
+
+
+def fetch_student_calendar_pdf(html):
+    """Download and extract text from the student calendar PDF."""
+    pdf_path = find_student_calendar_url(html)
+    if not pdf_path:
+        print("  Could not find student calendar PDF link on events page")
+        return None
+
+    # Build full URL
+    if pdf_path.startswith("/"):
+        pdf_url = f"https://www.sjusd.org{pdf_path}"
+    else:
+        pdf_url = pdf_path
+
+    print(f"  Downloading student calendar PDF...")
+    response = requests.get(pdf_url, timeout=30, allow_redirects=True)
+    response.raise_for_status()
+
+    reader = PdfReader(io.BytesIO(response.content))
+    text_parts = []
+    for page in reader.pages:
+        text = page.extract_text()
+        if text:
+            text_parts.append(text)
+
+    combined = "\n".join(text_parts)
+    print(f"  Extracted {len(combined)} characters from student calendar PDF")
+    return combined
+
+
+def save_district_data(text, student_calendar_text=None):
     """Save scraped district calendar data to JSON."""
     DATA_DIR.mkdir(exist_ok=True)
 
@@ -63,6 +130,8 @@ def save_district_data(text):
         "scraped_at": datetime.now().isoformat(),
         "text": text,
     }
+    if student_calendar_text:
+        data["student_calendar"] = student_calendar_text
 
     with open(DISTRICT_FILE, "w") as f:
         json.dump(data, f, indent=2)
@@ -71,37 +140,29 @@ def save_district_data(text):
 
 
 def main():
-    """Scrape district calendar (current + next month) with 24h cache."""
+    """Scrape district calendar (current month events + student calendar PDF) with 24h cache."""
     if is_cache_fresh():
         print(f"District calendar cache is fresh (< {CACHE_HOURS}h old). Skipping scrape.")
         print(f"  Cached file: {DISTRICT_FILE}")
         return
 
     now = datetime.now()
-    # Current month + next month
-    months = [
-        (now.month, now.year),
-    ]
-    # Handle December -> January rollover
-    if now.month == 12:
-        months.append((1, now.year + 1))
-    else:
-        months.append((now.month + 1, now.year))
 
-    all_text = []
-    for month, year in months:
-        month_name = datetime(year, month, 1).strftime("%B %Y")
-        print(f"Fetching district calendar: {month_name}")
-        html = fetch_calendar_page(month, year)
+    # Fetch the events page (current month)
+    month_name = now.strftime("%B %Y")
+    print(f"Fetching district calendar: {month_name}")
+    html = fetch_calendar_page(now.month, now.year)
 
-        print(f"  Extracting text content for {month_name}...")
-        text = extract_text(html)
-        print(f"  Extracted {len(text)} characters")
+    print(f"  Extracting text content for {month_name}...")
+    events_text = extract_text(html)
+    print(f"  Extracted {len(events_text)} characters")
 
-        all_text.append(f"=== {month_name} ===\n{text}")
+    # Also fetch the student calendar PDF (has all important dates for the year)
+    print("Fetching student calendar PDF...")
+    student_cal_text = fetch_student_calendar_pdf(html)
 
-    combined = "\n\n".join(all_text)
-    output = save_district_data(combined)
+    combined = f"=== {month_name} Events ===\n{events_text}"
+    output = save_district_data(combined, student_cal_text)
     print(f"\nSaved combined calendar to {output}")
 
 

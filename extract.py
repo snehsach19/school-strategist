@@ -1,6 +1,7 @@
 import os
 import json
-from datetime import datetime, timedelta
+import re
+from datetime import datetime, timedelta, date
 from difflib import SequenceMatcher
 from pathlib import Path
 
@@ -161,7 +162,7 @@ Return ONLY valid JSON array, no other text."""
 
 
 def load_district_calendar():
-    """Load scraped district calendar data."""
+    """Load scraped district calendar data (events page + student calendar PDF)."""
     if not DISTRICT_FILE.exists():
         print(f"WARNING: {DISTRICT_FILE} not found. Run scrape_district.py first.")
         return None
@@ -169,7 +170,114 @@ def load_district_calendar():
     with open(DISTRICT_FILE) as f:
         data = json.load(f)
 
-    return data.get("text", "")
+    parts = []
+    if data.get("text"):
+        parts.append(data["text"])
+    if data.get("student_calendar"):
+        parts.append(f"=== Student Calendar (Important Dates) ===\n{data['student_calendar']}")
+
+    return "\n\n".join(parts) if parts else None
+
+
+def parse_student_calendar_dates():
+    """Parse the student calendar PDF text to extract no-school and important dates.
+
+    This directly parses date ranges like '16-20February Winter recess' from the
+    student calendar, expanding them into individual day events. More reliable
+    than LLM extraction for structured date ranges.
+    """
+    if not DISTRICT_FILE.exists():
+        return []
+
+    with open(DISTRICT_FILE) as f:
+        data = json.load(f)
+
+    text = data.get("student_calendar", "")
+    if not text:
+        return []
+
+    now = datetime.now()
+
+    # Determine school year: Aug+ = current year start, else previous year
+    if now.month >= 8:
+        fall_year = now.year
+    else:
+        fall_year = now.year - 1
+    spring_year = fall_year + 1
+
+    MONTH_MAP = {
+        "january": 1, "february": 2, "march": 3, "april": 4,
+        "may": 5, "june": 6, "july": 7, "august": 8,
+        "september": 9, "october": 10, "november": 11, "december": 12,
+    }
+
+    # Match patterns like "16-20February Winter recess" or "26-28November Thanksgiving recess"
+    # Also handles single-day patterns like "19December All schools out 2 hours early"
+    pattern = re.compile(
+        r'(\d{1,2})(?:-(\d{1,2}))?\s*(January|February|March|April|May|June|July|August|September|October|November|December)\s+(.+?)(?:\n|$)',
+        re.IGNORECASE,
+    )
+
+    events = []
+    today = now.date()
+
+    for match in pattern.finditer(text):
+        start_day = int(match.group(1))
+        end_day = int(match.group(2)) if match.group(2) else start_day
+        month_name = match.group(3)
+        description = match.group(4).strip()
+
+        month_num = MONTH_MAP[month_name.lower()]
+
+        # Assign the right year based on month (Aug-Dec = fall_year, Jan-Jul = spring_year)
+        if month_num >= 8:
+            year = fall_year
+        else:
+            year = spring_year
+
+        # Determine if this is a no-school/recess event
+        desc_lower = description.lower()
+        is_no_school = any(kw in desc_lower for kw in ["recess", "no school", "holiday"])
+        is_early_release = "hours early" in desc_lower or "early" in desc_lower
+
+        if is_no_school:
+            event_name = description.rstrip(".")
+            if "no school" not in event_name.lower():
+                event_name = f"{event_name} (No School)"
+            priority = "high"
+        elif is_early_release:
+            event_name = description.rstrip(".")
+            priority = "medium"
+        else:
+            # Skip non-relevant items (graduation ceremonies, extended year, etc.)
+            continue
+
+        # Create one event per day in the range
+        for day in range(start_day, end_day + 1):
+            try:
+                event_date = date(year, month_num, day)
+            except ValueError:
+                continue
+
+            if event_date < today:
+                continue
+
+            # Skip weekends
+            if event_date.weekday() >= 5:
+                continue
+
+            events.append({
+                "name": event_name,
+                "date": event_date.isoformat(),
+                "time": None,
+                "type": "event",
+                "priority": priority,
+                "description": description,
+                "url": None,
+                "source": "student_calendar",
+            })
+
+    return events
 
 
 def extract_events_from_pta(pta_text):
@@ -249,11 +357,18 @@ EXTRACT EVERYTHING INCLUDING:
 - Early dismissal or minimum days
 - Any other district events or dates
 
-RULES:
+CRITICAL RULE FOR MULTI-DAY EVENTS:
+- When you see a date range like "16-20 February" or "6-10 April", you MUST create a SEPARATE event for EACH day in the range.
+- Example: "16-20 February Winter recess" means create 5 events: Feb 16, Feb 17, Feb 18, Feb 19, Feb 20 — each named "Winter Recess (No School)".
+- Example: "26-28 November Thanksgiving recess" means create 3 events: Nov 26, Nov 27, Nov 28.
+- This applies to ALL recesses, holidays, and multi-day events.
+
+OTHER RULES:
 - Current school year: Fall 2025, Spring 2026
 - Only extract events dated {now.strftime('%Y-%m-%d')} or later
 - If a date is ambiguous, use the next upcoming occurrence
 - Include as much detail as available (times, locations)
+- For recesses and no-school days, set priority to "high"
 
 ## DISTRICT CALENDAR CONTENT:
 {district_text}
@@ -313,8 +428,8 @@ def deduplicate_events(email_events, pta_events, district_events=None):
                 if similarity > best_similarity:
                     best_similarity = similarity
                     best_match_idx = i
-            # Very similar name (>0.8) even without date match
-            elif similarity > 0.8:
+            # Very similar name (>0.8) when at least one has no date
+            elif similarity > 0.8 and (not email_date or not other_date):
                 if similarity > best_similarity:
                     best_similarity = similarity
                     best_match_idx = i
@@ -356,7 +471,7 @@ def _dedup_pair(primary, secondary):
             if sec_date and pri_date and sec_date == pri_date and similarity > 0.5:
                 is_dup = True
                 break
-            elif similarity > 0.8:
+            elif similarity > 0.8 and (not sec_date or not pri_date):
                 is_dup = True
                 break
 
@@ -374,7 +489,7 @@ def _dedup_within(events):
     keep = []
     for i, event in enumerate(events):
         name = (event.get("name") or "").lower()
-        date = event.get("date")
+        ev_date = event.get("date")
         is_dup = False
 
         for j in range(i):
@@ -383,10 +498,10 @@ def _dedup_within(events):
             other_date = other.get("date")
             similarity = SequenceMatcher(None, name, other_name).ratio()
 
-            if date and other_date and date == other_date and similarity > 0.5:
+            if ev_date and other_date and ev_date == other_date and similarity > 0.5:
                 is_dup = True
                 break
-            elif similarity > 0.8:
+            elif similarity > 0.8 and (not ev_date or not other_date):
                 is_dup = True
                 break
 
@@ -469,9 +584,18 @@ def main():
             with open("pta_events_raw.txt", "w") as f:
                 f.write(pta_result)
 
-    # Phase 4: Extract events from district calendar
+    # Phase 4a: Parse student calendar dates directly (recesses, no-school days)
+    print("\nPhase 4a: Parsing student calendar dates...")
+    student_cal_events = parse_student_calendar_dates()
+    if student_cal_events:
+        district_events.extend(student_cal_events)
+        print(f"  Found {len(student_cal_events)} student calendar events")
+    else:
+        print("  No student calendar dates found")
+
+    # Phase 4b: Extract other events from district calendar via LLM
     if district_text:
-        print("\nPhase 4: Extracting events from district calendar...")
+        print("\nPhase 4b: Extracting events from district calendar...")
         district_result = extract_events_from_district(district_text)
         district_parsed = parse_json_response(district_result)
         if district_parsed:

@@ -6,28 +6,26 @@
     "type": "event",
     "priority": "medium",
     "description": "Come to the PTA meeting to hear what the PTA is up to and have a say!",
-    "url": null,
+    "url": "https://ptapta.agenda",
     "source": "pta_website"
   },
   {
-    "name": "Spelling Bee Finals",
+    "name": "Los Alamitos Spelling Bee",
     "date": "2026-01-26",
     "time": "6:00 PM",
     "type": "event",
     "priority": "medium",
-    "description": "Congratulations to our finalists for earning a spot in the next round! Please come out and cheer them on at the Los Alamitos Spelling Bee.",
+    "description": "Congratulations to our finalists for earning a spot in the next round! Please come out and cheer them on.",
     "url": null,
     "source": "pta_website"
   },
   {
-    "name": "Shawn Harris Author Assembly",
+    "name": "PTA Author Assembly: Shawn Harris",
     "date": "2026-01-27",
-    "time": null,
     "type": "event",
-    "priority": "medium",
-    "description": "The PTA is hosting author Shawn Harris for an assembly for our students on January 27th for the release of: Let's Be Bees",
-    "url": null,
-    "source": "pta_website"
+    "priority": "high",
+    "description": "Author Shawn Harris will be our guest on January 27th for the release of: Let's Be Bees",
+    "url": "https://email.membershiptoolkit.com/ls/click?upn=u001.aIuRBLgc-2FlX1gZ2S1m5zRGqgjil94XU1p-2BpUVzXYbMk6qBFoMiG1FAXoXjoeTdMinzVTIYW6UelDFs9As6phpQ-3D-3DjKXv_rGGoVk50CQtIB1fPtO9IFzNIsMB8Uql-2BoBBy6JaKnaqCgtDVtYsILCg6JxRTZgAAHF484OtFhK35wA0Yo35pLToB1k9oJmRexxSzokC9ndZ-2FQYUC7DprK0NF38ftGc4SXxO3t5uom-2FNPqeN-2BRYluBrEPGtND0kHw3Ivs-2FeTl0Lo7Jf82apqAxlYfrRn8yMTfgMX-2FdJ8tAAaKd-2FiguBPfQgK9NnwvzlyWV-2F4RzosGdf9oyVwM7-2BgxgrC4-2BmxnMiO2yfOdb2cqyPneMYheO9k5qhqjnUBNDL32IsjHwAP-2FraXmhNFoXPd3bGjmbsEQ7c8syx4-2BjXU8xi24xC1W3CjgHKtzVBypsFLypPhH3cGJ0m8-2Fmp3k4tdMGbKEM-2FTEZZNO"
   },
   {
     "name": "SPIRIT DAY: Wear a Sports Shirt",
@@ -43,7 +41,7 @@
     "time": "9:00 AM",
     "type": "event",
     "priority": "high",
-    "description": "Bubblefest takes place in the cafeteria. Volunteers are needed for set up, event, and clean up.",
+    "description": "Bubblefest takes place in the cafeteria. Volunteers needed for setup and cleanup.",
     "url": "https://signup.com/go/AHeWeDU",
     "source": "pta_website"
   },
@@ -54,46 +52,6 @@
     "priority": "medium",
     "description": "School Site Council Meeting",
     "url": null
-  },
-  {
-    "name": "PTA General Meeting",
-    "date": "2026-01-23",
-    "type": "event",
-    "priority": "medium",
-    "description": "PTA General Meeting",
-    "url": null
-  },
-  {
-    "name": "Spring Pictures",
-    "date": "2026-01-26",
-    "type": "event",
-    "priority": "low",
-    "description": "Spring Pictures",
-    "url": null
-  },
-  {
-    "name": "SPIRIT DAY: Dress as your favorite book character",
-    "date": "2026-01-27",
-    "type": "event",
-    "priority": "low",
-    "description": "SPIRIT DAY: Dress as your favorite book character",
-    "url": null
-  },
-  {
-    "name": "Open House",
-    "date": "2026-01-31",
-    "type": "event",
-    "priority": "medium",
-    "description": "Open House",
-    "url": null
-  },
-  {
-    "name": "TK Tour",
-    "date": "2026-02-05",
-    "type": "event",
-    "priority": "medium",
-    "description": "TK Tour",
-    "url": "https://forms.gle/zoio4ufN4ieSyif2A"
   },
   {
     "name": "Father Daughter Dance",
@@ -116,64 +74,14 @@
     "source": "pta_website"
   },
   {
-    "name": "PTA Math Kangaroo",
-    "date": "2026-02-19",
-    "type": "event",
-    "priority": "medium",
-    "description": "PTA Math Kangaroo",
-    "url": null
-  },
-  {
-    "name": "Winter Recess (No School)",
-    "date": "2026-02-16",
-    "type": "event",
-    "priority": "low",
-    "description": "Winter Recess (No School)",
-    "url": null
-  },
-  {
-    "name": "Variety Show",
-    "date": "2026-03-20",
-    "time": "4:00 PM",
-    "type": "event",
-    "priority": "high",
-    "description": "Volunteers are needed for MCs, stage hands, AV support, and concession organizer. Audition videos are due by March 6th, dress rehearsal is on March 19th.",
-    "url": null,
-    "source": "pta_website"
-  },
-  {
-    "name": "PTA Hicklebee's Book Fair",
-    "date": "2026-02-23",
-    "type": "event",
-    "priority": "medium",
-    "description": "PTA Hicklebee's Book Fair",
-    "url": null
-  },
-  {
-    "name": "Yearbook Cover Contest",
-    "date": "2026-02-23",
-    "time": null,
-    "type": "deadline",
-    "priority": "low",
-    "description": "Entries due by February 23, 2026. Los Alamitos PTA is inviting all Los Alamitos 5th graders to enter their drawings in our Yearbook cover contest. 2 winners will be selected to be displayed on the front and back cover, by the Yearbook committee panel.",
-    "url": null,
-    "source": "pta_website"
-  },
-  {
-    "name": "Elementary Minimum Days (Dismissed at 12:06pm)",
+    "name": "Elementary schools out 2 hours early",
     "date": "2026-03-12",
+    "time": null,
     "type": "event",
-    "priority": "low",
-    "description": "Elementary Minimum Days (Dismissed at 12:06pm)",
-    "url": null
-  },
-  {
-    "name": "SPIRIT DAY: Crazy Hat / Hair Day",
-    "date": "2026-03-02",
-    "type": "event",
-    "priority": "low",
-    "description": "SPIRIT DAY: Crazy Hat / Hair Day",
-    "url": null
+    "priority": "medium",
+    "description": "Elementary schools out 2 hours early",
+    "url": null,
+    "source": "student_calendar"
   },
   {
     "name": "SPIRIT DAY: Wear Green",
@@ -184,12 +92,72 @@
     "url": null
   },
   {
+    "name": "PTA Math Kangaroo",
+    "date": "2026-02-19",
+    "type": "event",
+    "priority": "medium",
+    "description": "PTA Math Kangaroo (2:30pm - 3:45pm - Library)",
+    "url": null
+  },
+  {
+    "name": "Variety Show",
+    "date": "2026-03-20",
+    "time": "4:00 PM",
+    "type": "event",
+    "priority": "high",
+    "description": "Volunteers needed for MCs, stage hands, AV support, and concession organizer. Audition videos due by March 6th, dress rehearsal on March 19th.",
+    "url": null,
+    "source": "pta_website"
+  },
+  {
+    "name": "PTA Hicklebee's Book Fair",
+    "date": "2026-03-23",
+    "type": "event",
+    "priority": "medium",
+    "description": "PTA Hicklebee's Book Fair",
+    "url": null
+  },
+  {
+    "name": "SPRING PICTURES",
+    "date": "2026-01-26",
+    "type": "event",
+    "priority": "low",
+    "description": "SPRING PICTURES (Free Dress)",
+    "url": null
+  },
+  {
+    "name": "SPIRIT DAY: Dress as your favorite book character",
+    "date": "2026-01-27",
+    "type": "event",
+    "priority": "low",
+    "description": "SPIRIT DAY: Dress as your favorite book character",
+    "url": null
+  },
+  {
+    "name": "Open House",
+    "date": "2026-01-31",
+    "type": "event",
+    "priority": "medium",
+    "description": "Open House (5:00pm - 6:00pm)",
+    "url": null
+  },
+  {
+    "name": "Winter Recess",
+    "date": "2026-02-16",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "Winter Recess (No School)",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
     "name": "Martin Luther King Jr. Day",
     "date": "2026-01-19",
     "time": null,
     "type": "event",
     "priority": "high",
-    "description": "No school",
+    "description": "Martin Luther King Jr. Day (No School)",
     "url": null,
     "source": "district_calendar"
   },
@@ -200,6 +168,76 @@
     "priority": "low",
     "description": "100th Day of School",
     "url": null
+  },
+  {
+    "name": "TK Tour",
+    "date": "2026-02-05",
+    "type": "event",
+    "priority": "medium",
+    "description": "TK Tour (8:30am - 10am)",
+    "url": "https://forms.gle/zoio4ufN4ieSyif2A"
+  },
+  {
+    "name": "SPIRIT DAY: Crazy Hat / Hair Day",
+    "date": "2026-03-02",
+    "type": "event",
+    "priority": "low",
+    "description": "SPIRIT DAY: Crazy Hat / Hair Day",
+    "url": null
+  },
+  {
+    "name": "Middle School Selection Deadline",
+    "date": "2026-02-13",
+    "type": "deadline",
+    "priority": "high",
+    "description": "Deadline to submit middle and high school preferences",
+    "url": null
+  },
+  {
+    "name": "Future Chefs Challenge Deadline",
+    "date": "2026-01-16",
+    "type": "deadline",
+    "priority": "medium",
+    "description": "Deadline to submit Future Chefs Challenge recipes",
+    "url": null
+  },
+  {
+    "name": "Yearbook Cover Contest",
+    "date": "2026-02-23",
+    "time": null,
+    "type": "deadline",
+    "priority": "medium",
+    "description": "Entries due by February 23, 2026 for 5th graders to design the yearbook cover",
+    "url": "LosAlamitosPTA@gmail.com",
+    "source": "pta_website"
+  },
+  {
+    "name": "Variety Show Audition Deadline",
+    "date": "2026-03-07",
+    "type": "deadline",
+    "priority": "medium",
+    "description": "Deadline to submit Variety Show audition videos",
+    "url": null
+  },
+  {
+    "name": "Yearbook Orders",
+    "date": "2026-04-20",
+    "time": null,
+    "type": "deadline",
+    "priority": "medium",
+    "description": "Last day to order the 2025-26 yearbook. 5th grade baby photos due by March 1st.",
+    "url": "https://www.betteryearbook.com/",
+    "source": "pta_website"
+  },
+  {
+    "name": "Shawn Harris Assembly",
+    "date": "2026-01-27",
+    "time": null,
+    "type": "event",
+    "priority": "medium",
+    "description": "The PTA is hosting author Shawn Harris for an assembly for our students on January 27th for the release of: Let's Be Bees",
+    "url": null,
+    "source": "pta_website"
   },
   {
     "name": "Four Seasons Fundraising Concert",
@@ -217,7 +255,7 @@
     "time": null,
     "type": "event",
     "priority": "high",
-    "description": "45 minutes of strength training work out followed by bubbles at F45 Branham Park. This is a free event with a maximum of 30 people.",
+    "description": "45 minutes of strength training work out followed by bubbles at F45 Branham Park",
     "url": "text \"LAMOMS\" to 408.549.7760",
     "source": "pta_website"
   },
@@ -227,7 +265,7 @@
     "time": "2:30 PM - 3:45 PM",
     "type": "event",
     "priority": "medium",
-    "description": "The Math Kangaroo competition is coming to Los Alamitos. Use the invitation code CASAN_J0017001@2026math to register.",
+    "description": "Math competition for students, registration required using code: CASAN_J0017001@2026math",
     "url": null,
     "source": "pta_website"
   },
@@ -235,21 +273,151 @@
     "name": "Reading Lab Volunteers",
     "date": null,
     "time": "12:45 PM - 2:00 PM",
-    "type": "opportunity",
+    "type": "volunteer",
     "priority": "medium",
-    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. Volunteers are needed once a week on Tuesdays, Wednesdays, or Thursdays.",
-    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
+    "description": "Volunteers needed once a week (Tuesday, Wednesday, or Thursday) to tutor students in the Reading Lab program",
+    "url": "https://forms.gle/FqpLea77SxjtGwJTR9",
     "source": "pta_website"
   },
   {
-    "name": "Yearbook Orders",
-    "date": "2026-04-20",
+    "name": "Winter recess (No School)",
+    "date": "2026-02-17",
     "time": null,
-    "type": "deadline",
-    "priority": "low",
-    "description": "Order your 2025-26 Yearbook today. 5th grade parents need to submit baby photos by March 1st.",
-    "url": "https://www.betteryearbook.com/",
-    "source": "pta_website"
+    "type": "event",
+    "priority": "high",
+    "description": "Winter recess",
+    "url": null,
+    "source": "student_calendar"
+  },
+  {
+    "name": "Winter recess (No School)",
+    "date": "2026-02-18",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "Winter recess",
+    "url": null,
+    "source": "student_calendar"
+  },
+  {
+    "name": "Winter recess (No School)",
+    "date": "2026-02-19",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "Winter recess",
+    "url": null,
+    "source": "student_calendar"
+  },
+  {
+    "name": "Winter recess (No School)",
+    "date": "2026-02-20",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "Winter recess",
+    "url": null,
+    "source": "student_calendar"
+  },
+  {
+    "name": "Elementary schools out 2 hours early",
+    "date": "2026-03-13",
+    "time": null,
+    "type": "event",
+    "priority": "medium",
+    "description": "Elementary schools out 2 hours early",
+    "url": null,
+    "source": "student_calendar"
+  },
+  {
+    "name": "Spring recess (No School)",
+    "date": "2026-04-06",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "Spring recess",
+    "url": null,
+    "source": "student_calendar"
+  },
+  {
+    "name": "Spring recess (No School)",
+    "date": "2026-04-07",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "Spring recess",
+    "url": null,
+    "source": "student_calendar"
+  },
+  {
+    "name": "Spring recess (No School)",
+    "date": "2026-04-08",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "Spring recess",
+    "url": null,
+    "source": "student_calendar"
+  },
+  {
+    "name": "Spring recess (No School)",
+    "date": "2026-04-09",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "Spring recess",
+    "url": null,
+    "source": "student_calendar"
+  },
+  {
+    "name": "Spring recess (No School)",
+    "date": "2026-04-10",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "Spring recess",
+    "url": null,
+    "source": "student_calendar"
+  },
+  {
+    "name": "Secondary schools out 2 hours early",
+    "date": "2026-05-26",
+    "time": null,
+    "type": "event",
+    "priority": "medium",
+    "description": "Secondary schools out 2 hours early",
+    "url": null,
+    "source": "student_calendar"
+  },
+  {
+    "name": "Secondary schools out 2 hours early",
+    "date": "2026-05-27",
+    "time": null,
+    "type": "event",
+    "priority": "medium",
+    "description": "Secondary schools out 2 hours early",
+    "url": null,
+    "source": "student_calendar"
+  },
+  {
+    "name": "Secondary schools out 2 hours early",
+    "date": "2026-05-28",
+    "time": null,
+    "type": "event",
+    "priority": "medium",
+    "description": "Secondary schools out 2 hours early",
+    "url": null,
+    "source": "student_calendar"
+  },
+  {
+    "name": "All schools out 2 hours early",
+    "date": "2026-05-29",
+    "time": null,
+    "type": "event",
+    "priority": "medium",
+    "description": "All schools out 2 hours early",
+    "url": null,
+    "source": "student_calendar"
   },
   {
     "name": "New Year Recess",
@@ -257,7 +425,47 @@
     "time": null,
     "type": "event",
     "priority": "high",
-    "description": "New Year Recess",
+    "description": "New Year Recess (No School)",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "New Year Recess",
+    "date": "2026-01-02",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "New Year Recess (No School)",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "New Year Recess",
+    "date": "2026-01-03",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "New Year Recess (No School)",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "New Year Recess",
+    "date": "2026-01-04",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "New Year Recess (No School)",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "New Year Recess",
+    "date": "2026-01-05",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "New Year Recess (No School)",
     "url": null,
     "source": "district_calendar"
   },
@@ -277,7 +485,7 @@
     "time": "6:00 PM - 8:00 PM",
     "type": "event",
     "priority": "medium",
-    "description": "855 Lenzen Ave, San Jose, CA 95126, USA",
+    "description": "Parcel Tax Oversight Committee (PTOC) at 855 Lenzen Ave, San Jose, CA 95126, USA",
     "url": null,
     "source": "district_calendar"
   },
@@ -287,7 +495,27 @@
     "time": "6:00 PM - 8:00 PM",
     "type": "event",
     "priority": "medium",
-    "description": "855 Lenzen Ave, San Jose, CA 95126, USA",
+    "description": "Schools of Tomorrow Implementation Committee at 855 Lenzen Ave, San Jose, CA 95126, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "High School Information Night",
+    "date": "2026-01-14",
+    "time": "6:00 PM - 7:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "High School Information Night",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Herbert Hoover Middle School Information Night",
+    "date": "2026-01-15",
+    "time": "5:00 PM - 6:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "Herbert Hoover Middle School Information Night at Herbert Hoover Middle School, 1635 Park Ave, San Jose, CA 95126, USA",
     "url": null,
     "source": "district_calendar"
   },
@@ -297,7 +525,27 @@
     "time": "6:00 PM - 8:00 PM",
     "type": "event",
     "priority": "medium",
-    "description": "855 Lenzen Ave, San Jose, CA 95126, USA",
+    "description": "Board Meeting at 855 Lenzen Ave, San Jose, CA 95126, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Pioneer High School Information Night",
+    "date": "2026-01-20",
+    "time": "5:30 PM - 7:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "Pioneer High School Information Night at Pioneer High School, 1290 Blossom Hill Rd, San Jose, CA 95118, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Castillero Middle School Information Night",
+    "date": "2026-01-21",
+    "time": "5:30 PM - 7:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "Castillero Middle School Information Night at Castillero Middle School, 6384 Leyland Park Dr, San Jose, CA 95120, USA",
     "url": null,
     "source": "district_calendar"
   },
@@ -307,7 +555,7 @@
     "time": "3:00 PM - 4:30 PM",
     "type": "event",
     "priority": "medium",
-    "description": "855 Lenzen Ave, San Jose, CA 95126, USA",
+    "description": "Coordinated School Health Collaborative Meetings (CSH) at 855 Lenzen Ave, San Jose, CA 95126, USA",
     "url": null,
     "source": "district_calendar"
   },
@@ -317,7 +565,27 @@
     "time": "6:00 PM - 8:00 PM",
     "type": "event",
     "priority": "medium",
-    "description": "855 Lenzen Ave, San Jose, CA 95126, USA",
+    "description": "Advisory Committee on Use of SJPD Officers at 855 Lenzen Ave, San Jose, CA 95126, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "San Jos\u00e9 High School Information Night",
+    "date": "2026-01-22",
+    "time": "6:00 PM - 7:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "San Jos\u00e9 High School Information Night at San Jose High School, 275 N 24th St, San Jose, CA 95116, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Muwekma Ohlone Middle School Information Night",
+    "date": "2026-01-26",
+    "time": "5:00 PM - 6:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "Muwekma Ohlone Middle School Information Night at Muwekma Ohlone Middle School, 850 N 2nd St, San Jose, CA 95112, USA",
     "url": null,
     "source": "district_calendar"
   },
@@ -327,7 +595,37 @@
     "time": "6:00 PM - 8:00 PM",
     "type": "event",
     "priority": "medium",
-    "description": "855 Lenzen Ave, San Jose, CA 95126, USA",
+    "description": "Voluntary Integration Plan (VIP) at 855 Lenzen Ave, San Jose, CA 95126, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Bret Harte Middle School Information Night",
+    "date": "2026-01-27",
+    "time": "5:00 PM - 6:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "Bret Harte Middle School Information Night at Bret Harte Middle School, 7050 Bret Harte Dr, San Jose, CA 95120, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Schools of Tomorrow Implementation Committee",
+    "date": "2026-01-27",
+    "time": "6:00 PM - 8:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "Schools of Tomorrow Implementation Committee at 855 Lenzen Ave, San Jose, CA 95126, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "John Muir Middle School Information Night",
+    "date": "2026-01-28",
+    "time": "5:00 PM - 7:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "John Muir Middle School Information Night at John Muir Middle School, 1260 Branham Ln, San Jose, CA 95118, USA",
     "url": null,
     "source": "district_calendar"
   },
@@ -337,7 +635,17 @@
     "time": "6:00 PM - 7:00 PM",
     "type": "event",
     "priority": "medium",
-    "description": null,
+    "description": "Seminario web sobre la evaluaci\u00f3n de los estudiantes aprendiendo ingl\u00e9s",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Leland High School Information Night",
+    "date": "2026-01-29",
+    "time": "6:00 PM - 7:30 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "Leland High School Information Night at Leland High School, 6677 Camden Ave, San Jose, CA 95120, USA",
     "url": null,
     "source": "district_calendar"
   },
@@ -496,115 +804,115 @@
     "description": "Glazed Chicken Drumstick with Rice, Italian Cheese & Garlic Pull-Apart"
   },
   {
-    "name": "Chicken Tenders, Spicy Chicken Tenders, Veggie Nuggets with a Roll",
+    "name": "Chicken Tenders",
     "date": "2026-01-08",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Chicken Tenders, Spicy Chicken Tenders, Veggie Nuggets with a Roll"
   },
   {
-    "name": "Hot Dog - Turkey, Cheese Quesadilla",
+    "name": "Hot Dog - Turkey",
     "date": "2026-01-09",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Hot Dog - Turkey, Cheese Quesadilla"
   },
   {
-    "name": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich",
+    "name": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link",
     "date": "2026-01-12",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich"
   },
   {
-    "name": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart",
+    "name": "Chicken Burger",
     "date": "2026-01-13",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart"
   },
   {
-    "name": "Beef Rib B Que Sandwich, Veggie Burger, Yogurt, Cinnamon Goldfish & String Cheese",
+    "name": "Beef Rib B Que Sandwich",
     "date": "2026-01-14",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Beef Rib B Que Sandwich, Veggie Burger, Yogurt, Cinnamon Goldfish & String Cheese"
   },
   {
-    "name": "Turkey & Gravy with Mashed Potatoes, Italian Dunkers",
+    "name": "Turkey & Gravy with Mashed Potatoes",
     "date": "2026-01-15",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Turkey & Gravy with Mashed Potatoes, Italian Dunkers"
   },
   {
-    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap",
+    "name": "Nachos - Turkey Taco Meat & Bean Nachos",
     "date": "2026-01-16",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
+    "description": "Nachos - Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
   },
   {
-    "name": "Pepperoni Pizza, Bean & Cheese Burrito",
+    "name": "Pepperoni Pizza",
     "date": "2026-01-20",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Pepperoni Pizza, Bean & Cheese Burrito"
   },
   {
-    "name": "Breaded Chicken Drumstick with Rice, Italian Cheese & Garlic Pull-Apart",
+    "name": "Breaded Chicken Drumstick with Rice",
     "date": "2026-01-21",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Breaded Chicken Drumstick with Rice, Italian Cheese & Garlic Pull-Apart"
   },
   {
-    "name": "Turkey Soft Taco, Three Cheese Quesadilla",
+    "name": "Turkey Soft Taco",
     "date": "2026-01-22",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Turkey Soft Taco, Three Cheese Quesadilla"
   },
   {
-    "name": "Chicken Popcorn Bowl with Mashed Potatoes, Grilled Cheese Sandwich",
+    "name": "Chicken Popcorn Bowl with Mashed Potatoes",
     "date": "2026-01-23",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Chicken Popcorn Bowl with Mashed Potatoes, Grilled Cheese Sandwich"
   },
   {
-    "name": "Chicken Corndog, Pasta Alfredo",
+    "name": "Chicken Corndog",
     "date": "2026-01-26",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Chicken Corndog, Pasta Alfredo"
   },
   {
-    "name": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart",
+    "name": "Chicken Burger",
     "date": "2026-01-27",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart"
   },
   {
-    "name": "Butter Chicken with Rice, Italian Dunkers",
+    "name": "Butter Chicken with Rice",
     "date": "2026-01-28",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Butter Chicken with Rice, Italian Dunkers"
   },
   {
-    "name": "Beef Burger, Veggie Burger, Yogurt-Cinnamon Goldfish and String Cheese",
+    "name": "Beef Burger",
     "date": "2026-01-29",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Beef Burger, Veggie Burger, Yogurt-Cinnamon Goldfish and String Cheese"
   },
   {
-    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap",
+    "name": "Nachos - Turkey Taco Meat & Bean Nachos",
     "date": "2026-01-30",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
+    "description": "Nachos - Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
   }
 ]
