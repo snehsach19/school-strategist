@@ -1,0 +1,5 @@
+.env
+__pycache__/
+*.pyc
+raw_emails.json
+events_raw.txt

@@ -1,0 +1,9 @@
+streamlit
+imap-tools
+pandas
+anthropic
+python-dotenv
+tqdm
+beautifulsoup4
+requests
+pypdf
