@@ -516,12 +516,17 @@ PTA_HOME_URL = "https://losalamitospta.membershiptoolkit.com/home"
 
 
 def event_fallback_url(event):
-    """Return the event URL, or a fallback for PTA events."""
+    """Return the event URL, or a fallback for PTA/school events."""
     url = event.get("url")
     if url:
         return url
     n = event.get("name", "").lower()
-    if "pta" in n:
+    source = event.get("source", "")
+    # Events from PTA website always link back to PTA
+    if source == "pta_website":
+        return PTA_HOME_URL
+    # Events with PTA in the name or common PTA-organized events
+    if "pta" in n or "dance" in n or "variety show" in n or "book fair" in n:
         return PTA_HOME_URL
     return None
 

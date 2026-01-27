@@ -1,13 +1,11 @@
 [
   {
-    "name": "PTA Meeting",
+    "name": "PTA General Meeting",
     "date": "2026-01-26",
-    "time": "8:15 AM",
     "type": "event",
     "priority": "medium",
-    "description": "Come to the PTA meeting to hear what the PTA is up to and have a say!",
-    "url": null,
-    "source": "pta_website"
+    "description": "PTA General Meeting",
+    "url": null
   },
   {
     "name": "Spelling Bee Finals",
@@ -15,7 +13,7 @@
     "time": "6:00 PM",
     "type": "event",
     "priority": "medium",
-    "description": "Congratulations to our finalists for earning a spot in the next round! Come out and cheer them on at the Los Alamitos Spelling Bee.",
+    "description": "Congratulations to our finalists for earning a spot in the next round! Please come out and cheer them on.",
     "url": null,
     "source": "pta_website"
   },
@@ -25,16 +23,17 @@
     "time": null,
     "type": "event",
     "priority": "high",
-    "description": "The PTA is hosting author Shawn Harris for an assembly for our students on January 27th for the release of his book Let's Be Bees.",
-    "url": null,
+    "description": "The PTA is hosting author Shawn Harris for an assembly for our students on the release of his new book 'Let's Be Bees'.",
+    "url": "hicklebees.com/shawnharris-losalamitos",
     "source": "pta_website"
   },
   {
-    "name": "SPIRIT DAY: Wear a Sports Shirt",
+    "name": "Spirit Day - Wear a Sports Shirt",
     "date": "2026-01-30",
     "type": "event",
     "priority": "low",
-    "description": "School spirit day"
+    "description": "Spirit Day - Wear a Sports Shirt",
+    "url": null
   },
   {
     "name": "Bubblefest",
@@ -42,7 +41,7 @@
     "time": "9:00 AM",
     "type": "event",
     "priority": "high",
-    "description": "Bubblefest takes place in the cafeteria. Volunteers are still needed for setup, cleanup, and the event itself.",
+    "description": "Bubblefest takes place in the cafeteria. The PTA is looking for volunteers to help with setting up and cleaning up.",
     "url": "https://signup.com/go/AHeWeDU",
     "source": "pta_website"
   },
@@ -51,14 +50,8 @@
     "date": "2026-01-09",
     "type": "event",
     "priority": "medium",
-    "description": "School Site Council meeting at 2:30pm"
-  },
-  {
-    "name": "TK Tour",
-    "date": "2026-02-05",
-    "type": "event",
-    "priority": "medium",
-    "description": "Tour for new TK families, 8:30am-10am"
+    "description": "School Site Council Meeting",
+    "url": null
   },
   {
     "name": "Father Daughter Dance",
@@ -66,7 +59,7 @@
     "time": "6:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "Father Daughter Dance on February 6th at 6:00 PM.",
+    "description": null,
     "url": null,
     "source": "pta_website"
   },
@@ -76,7 +69,7 @@
     "time": "6:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "Mother Son Dance on February 7th at 6:00 PM.",
+    "description": null,
     "url": null,
     "source": "pta_website"
   },
@@ -91,18 +84,20 @@
     "source": "student_calendar"
   },
   {
-    "name": "SPIRIT DAY: Wear Green",
+    "name": "Spirit Day - Wear Green",
     "date": "2026-03-17",
     "type": "event",
     "priority": "low",
-    "description": "School spirit day"
+    "description": "Spirit Day - Wear Green",
+    "url": null
   },
   {
     "name": "PTA Math Kangaroo",
     "date": "2026-02-19",
     "type": "event",
     "priority": "medium",
-    "description": "Math competition, 2:30pm-3:45pm"
+    "description": "PTA Math Kangaroo event from 2:30pm-3:45pm in the Library",
+    "url": null
   },
   {
     "name": "Variety Show",
@@ -110,44 +105,41 @@
     "time": "4:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "The Variety Show is on Friday, March 20th. Volunteers are needed for MCs, stage hands, AV support, and concessions. Audition videos are due by March 6th.",
-    "url": null,
+    "description": "The PTA is looking for volunteers to help as MCs, stage hands, AV support, and concession organizers. Audition videos are due by March 6th, and the dress rehearsal is on March 19th.",
+    "url": "SIGN UP: To Sign Up, Use the Link HERE",
     "source": "pta_website"
   },
   {
-    "name": "PTA Book Fair",
-    "date": "2026-03-23",
+    "name": "PTA Hicklebee's Book Fair",
+    "date": "2026-02-23",
     "type": "event",
     "priority": "medium",
-    "description": "Hicklebee's book fair"
+    "description": "PTA Hicklebee's Book Fair",
+    "url": null
   },
   {
-    "name": "SPRING PICTURES",
-    "date": "2026-03-26",
+    "name": "Spring Pictures",
+    "date": "2026-01-26",
     "type": "event",
     "priority": "low",
-    "description": "Free dress day for spring pictures"
+    "description": "Spring Pictures - Free Dress",
+    "url": null
   },
   {
-    "name": "SPIRIT DAY: Dress as Book Character",
-    "date": "2026-03-27",
+    "name": "Spirit Day - Dress as your favorite book character",
+    "date": "2026-01-27",
     "type": "event",
     "priority": "low",
-    "description": "School spirit day"
+    "description": "Spirit Day - Dress as your favorite book character",
+    "url": null
   },
   {
     "name": "Open House",
-    "date": "2026-03-31",
+    "date": "2026-01-31",
     "type": "event",
     "priority": "medium",
-    "description": "Evening open house, 5pm-6pm"
-  },
-  {
-    "name": "PTA General Meeting",
-    "date": "2026-01-23",
-    "type": "event",
-    "priority": "medium",
-    "description": "PTA General Meeting at 8:10am"
+    "description": "Open House from 5:00pm-6:00pm",
+    "url": null
   },
   {
     "name": "Winter Recess",
@@ -160,11 +152,54 @@
     "source": "district_calendar"
   },
   {
-    "name": "Middle School Selection Deadline",
-    "date": "2026-02-13",
-    "type": "deadline",
+    "name": "TK Tour",
+    "date": "2026-02-05",
+    "type": "event",
+    "priority": "medium",
+    "description": "TK Tour for new families",
+    "url": "https://forms.gle/zoio4ufN4ieSyif2A"
+  },
+  {
+    "name": "TK Tour",
+    "date": "2026-01-15",
+    "type": "event",
+    "priority": "medium",
+    "description": "TK Tour for new families",
+    "url": "https://forms.gle/zoio4ufN4ieSyif2A"
+  },
+  {
+    "name": "TK Tour",
+    "date": "2026-01-12",
+    "type": "event",
+    "priority": "medium",
+    "description": "TK Tour for new families",
+    "url": "https://forms.gle/zoio4ufN4ieSyif2A"
+  },
+  {
+    "name": "Schools of Tomorrow Parent Talk",
+    "date": "2026-01-12",
+    "type": "event",
+    "priority": "medium",
+    "description": "Schools of Tomorrow parent talk in the cafeteria at 8:30am",
+    "url": null
+  },
+  {
+    "name": "Martin Luther King Jr. Day",
+    "date": "2026-01-19",
+    "time": null,
+    "type": "event",
     "priority": "high",
-    "description": "Deadline to submit middle school preferences"
+    "description": "All Day",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "100th Day of School",
+    "date": "2026-01-22",
+    "type": "event",
+    "priority": "low",
+    "description": "100th Day of School",
+    "url": null
   },
   {
     "name": "Four Seasons Fundraising Concert",
@@ -172,7 +207,7 @@
     "time": "7:30 PM",
     "type": "event",
     "priority": "high",
-    "description": "The Castillero Middle School Orchestras will perform a concert featuring two-time Grammy-winning jazz violinist Mads Tolling.",
+    "description": "The concert will feature the Castillero Middle School Orchestras and guest performers including two-time Grammy-winning jazz violinist Mads Tolling.",
     "url": null,
     "source": "pta_website"
   },
@@ -182,37 +217,37 @@
     "time": null,
     "type": "event",
     "priority": "high",
-    "description": "45 minutes of strength training followed by bubbles. This is a free event with a max of 30 people.",
+    "description": "45 minutes of strength training workout followed by bubbles. This is a free event with a maximum of 30 people.",
     "url": "text \"LAMOMS\" to 408.549.7760",
     "source": "pta_website"
   },
   {
-    "name": "Yearbook Cover Contest",
+    "name": "Yearbook Cover Contest (5th Graders Only)",
     "date": "2026-02-23",
     "time": null,
     "type": "deadline",
     "priority": "medium",
-    "description": "Entries due by February 23, 2026 for 5th graders to design the yearbook cover.",
+    "description": "Entries due for the Yearbook cover contest. 2 winners will be selected to be displayed on the front and back cover.",
     "url": null,
     "source": "pta_website"
   },
   {
     "name": "Math Kangaroo Competition",
-    "date": "2025-03-19",
+    "date": "2026-03-19",
     "time": "2:30 PM - 3:45 PM",
     "type": "event",
     "priority": "medium",
-    "description": "The Math Kangaroo competition is coming to Los Alamitos. Registration code: CASAN_J0017001@2026math",
+    "description": "Math Kangaroo competition for students. Use invitation code CASAN_J0017001@2026math to register.",
     "url": null,
     "source": "pta_website"
   },
   {
-    "name": "Reading Lab Volunteers",
+    "name": "Reading Lab Volunteers Needed",
     "date": null,
     "time": "12:45 PM - 2:00 PM",
     "type": "volunteer",
     "priority": "medium",
-    "description": "The Reading Lab is looking for volunteers to tutor students once a week on Tuesdays, Wednesdays, or Thursdays.",
+    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. Volunteers are needed once per week on Tuesdays, Wednesdays, or Thursdays.",
     "url": "https://forms.gle/FqpLea77SxjtwJTR9",
     "source": "pta_website"
   },
@@ -221,8 +256,8 @@
     "date": "2026-04-20",
     "time": null,
     "type": "deadline",
-    "priority": "low",
-    "description": "The last day to order the 2025-26 Yearbook is April 20th. 5th grade parents should submit baby photos by March 1st.",
+    "priority": "medium",
+    "description": "Last day to order the 2025-26 Yearbook. 5th grade parents need to submit baby photos by March 1st.",
     "url": "https://www.betteryearbook.com/",
     "source": "pta_website"
   },
@@ -347,28 +382,8 @@
     "source": "district_calendar"
   },
   {
-    "name": "Martin Luther King Jr. Day",
-    "date": "2026-01-19",
-    "time": null,
-    "type": "event",
-    "priority": "high",
-    "description": "All Day",
-    "url": null,
-    "source": "district_calendar"
-  },
-  {
     "name": "Secondary schools out 2 hours early",
     "date": "2026-05-26",
-    "time": null,
-    "type": "event",
-    "priority": "medium",
-    "description": null,
-    "url": null,
-    "source": "district_calendar"
-  },
-  {
-    "name": "Last day of regular school year",
-    "date": "2026-05-29",
     "time": null,
     "type": "event",
     "priority": "medium",

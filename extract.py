@@ -307,7 +307,7 @@ Return a JSON array with these fields:
 - "type": "event" or "deadline"
 - "priority": "high" for dances/fundraisers/major school events, "medium" for meetings/assemblies, "low" for minor items
 - "description": Brief description including any relevant details
-- "url": Registration or sign-up URL if mentioned (null if none)
+- "url": Registration, sign-up, or related URL if mentioned (null if none). Look carefully for hyperlinks near event descriptions — include signup.com, Google Forms, external sites, etc.
 - "source": "pta_website"
 
 EXTRACT EVERYTHING INCLUDING:
@@ -317,6 +317,8 @@ EXTRACT EVERYTHING INCLUDING:
 - Volunteer opportunities
 - Deadlines for sign-ups or registrations
 - Any other events or dates mentioned
+
+IMPORTANT: Capture any URLs associated with events. Look for links labeled "HERE", "Sign Up", "Register", or embedded in the text near event descriptions.
 
 RULES:
 - Current school year: Fall 2025, Spring 2026
