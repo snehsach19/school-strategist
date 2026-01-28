@@ -57,15 +57,17 @@ def load_current_menus():
 
 
 def load_pta_page():
-    """Load scraped PTA page data."""
+    """Load scraped PTA page data including images."""
     if not PTA_FILE.exists():
         print(f"WARNING: {PTA_FILE} not found. Run scrape_pta.py first.")
-        return None
+        return None, []
 
     with open(PTA_FILE) as f:
         data = json.load(f)
 
-    return data.get("text", "")
+    text = data.get("text", "")
+    images = data.get("images", [])
+    return text, images
 
 
 def extract_events_from_emails(emails):
@@ -97,7 +99,9 @@ Return a JSON array with these fields:
 - "type": "event" or "deadline"
 - "priority": "high" for dances/major events, "medium" for meetings, "low" for minor items
 - "description": Brief description
+- "location": Location/venue if mentioned (e.g., "Cafeteria", "Library", "MPR", "Gym") - null if not specified
 - "url": Registration or sign-up URL if mentioned (null if none)
+- "image_url": Flyer or event image URL if found near the event mention (look for .jpg, .png, .jpeg URLs from s3.amazonaws.com or cdn.filestackcontent.com) - null if none
 
 EXTRACT events relevant to ELEMENTARY SCHOOL students and parents:
 - ALL PTA events (dances, meetings, fundraisers, etc.)
@@ -298,11 +302,86 @@ def parse_student_calendar_dates():
     return events
 
 
-def extract_events_from_pta(pta_text):
-    """Extract events from PTA website text."""
+def analyze_image_content(client, image_url):
+    """Use vision to understand what an image contains."""
+    import base64
+    import requests as req
+
+    try:
+        # Download image
+        response = req.get(image_url, timeout=10)
+        if response.status_code != 200:
+            return None
+
+        # Encode as base64
+        image_data = base64.standard_b64encode(response.content).decode("utf-8")
+
+        # Determine media type
+        content_type = response.headers.get("content-type", "image/jpeg")
+        if "png" in content_type or image_url.endswith(".png"):
+            media_type = "image/png"
+        elif "gif" in content_type:
+            media_type = "image/gif"
+        else:
+            media_type = "image/jpeg"
+
+        # Ask Claude to describe the image
+        result = client.messages.create(
+            model="claude-3-haiku-20240307",
+            max_tokens=200,
+            messages=[{
+                "role": "user",
+                "content": [
+                    {
+                        "type": "image",
+                        "source": {
+                            "type": "base64",
+                            "media_type": media_type,
+                            "data": image_data,
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "text": "What event or activity is this flyer/image about? Reply with just the event name or 'unknown' if not an event flyer. Keep it to 5 words max."
+                    }
+                ]
+            }]
+        )
+        return result.content[0].text.strip()
+    except Exception as e:
+        print(f"    Error analyzing image: {e}")
+        return None
+
+
+def extract_events_from_pta(pta_text, pta_images=None):
+    """Extract events from PTA website text and images."""
     client = Anthropic()
 
     now = datetime.now()
+
+    # Build images context with analyzed content
+    images_context = ""
+    image_map = {}  # Map event descriptions to image URLs
+
+    if pta_images:
+        print("  Analyzing images with vision...")
+        images_context = "\n\nIMAGES FOUND ON PAGE:\n"
+        for i, img in enumerate(pta_images):
+            # Extract clean URL from Google proxy URLs
+            url = img.get("url", "")
+            if "#" in url:
+                url = url.split("#")[-1]  # Get the actual URL after #
+
+            # Skip small icons and logos
+            if any(x in url.lower() for x in ["button", "header", "logo"]):
+                continue
+
+            # Analyze image content
+            description = analyze_image_content(client, url)
+            if description and description.lower() != "unknown":
+                images_context += f"- Image about '{description}': {url}\n"
+                image_map[description.lower()] = url
+                print(f"    Found: {description}")
 
     prompt = f"""Extract ALL upcoming events from this PTA website page.
 
@@ -315,7 +394,9 @@ Return a JSON array with these fields:
 - "type": "event" or "deadline"
 - "priority": "high" for dances/fundraisers/major school events, "medium" for meetings/assemblies, "low" for minor items
 - "description": Brief description including any relevant details
+- "location": Location/venue if mentioned (e.g., "Cafeteria", "Library", "MPR", "Gym", "Auditorium") - null if not specified
 - "url": Registration, sign-up, or related URL if mentioned (null if none). Look carefully for hyperlinks near event descriptions — include signup.com, Google Forms, external sites, etc.
+- "image_url": Flyer or event image URL if found (look for .jpg, .png, .jpeg image URLs) - null if none
 - "source": "pta_website"
 
 EXTRACT EVERYTHING INCLUDING:
@@ -326,7 +407,9 @@ EXTRACT EVERYTHING INCLUDING:
 - Deadlines for sign-ups or registrations
 - Any other events or dates mentioned
 
-IMPORTANT: Capture any URLs associated with events. Look for links labeled "HERE", "Sign Up", "Register", or embedded in the text near event descriptions.
+IMPORTANT:
+- Capture any URLs associated with events. Look for links labeled "HERE", "Sign Up", "Register", or embedded in the text near event descriptions.
+- Match images to events based on the image descriptions provided. If an image description matches an event name, use that image URL for the event's image_url field.
 
 RULES:
 - Current school year: Fall 2025, Spring 2026
@@ -336,6 +419,7 @@ RULES:
 
 ## PTA WEBSITE CONTENT:
 {pta_text}
+{images_context}
 
 Return ONLY valid JSON array, no other text."""
 
@@ -529,6 +613,84 @@ def _dedup_within(events):
     return keep
 
 
+def consolidate_consecutive_dates(events):
+    """Merge events with same name on consecutive dates into single entries."""
+    from collections import defaultdict
+
+    # Separate events that should be consolidated vs those that shouldn't
+    to_consolidate = []
+    others = []
+
+    # Keywords that indicate multi-day events to consolidate
+    consolidate_keywords = ["recess", "no school", "holiday", "break", "vacation"]
+
+    for event in events:
+        name = (event.get("name") or "").lower()
+        if any(kw in name for kw in consolidate_keywords) and event.get("date"):
+            to_consolidate.append(event)
+        else:
+            others.append(event)
+
+    if not to_consolidate:
+        return events
+
+    # Group by normalized name
+    groups = defaultdict(list)
+    for event in to_consolidate:
+        # Normalize name for grouping
+        name = event.get("name", "")
+        groups[name].append(event)
+
+    consolidated = []
+    for name, group in groups.items():
+        # Sort by date
+        group.sort(key=lambda x: x.get("date", ""))
+
+        # Find consecutive date ranges
+        ranges = []
+        current_range = [group[0]]
+
+        for i in range(1, len(group)):
+            prev_date = date.fromisoformat(group[i - 1]["date"])
+            curr_date = date.fromisoformat(group[i]["date"])
+
+            # Check if consecutive (including skipping weekends)
+            diff = (curr_date - prev_date).days
+            if diff == 1 or (diff <= 3 and prev_date.weekday() == 4):  # Friday to Monday
+                current_range.append(group[i])
+            else:
+                ranges.append(current_range)
+                current_range = [group[i]]
+
+        ranges.append(current_range)
+
+        # Create consolidated events
+        for r in ranges:
+            if len(r) == 1:
+                consolidated.append(r[0])
+            else:
+                # Merge into single event with date range
+                start_date = r[0]["date"]
+                end_date = r[-1]["date"]
+
+                merged = r[0].copy()
+                merged["date"] = start_date
+                merged["end_date"] = end_date
+
+                # Format nice date range for display
+                start = date.fromisoformat(start_date)
+                end = date.fromisoformat(end_date)
+                if start.month == end.month:
+                    date_display = f"{start.strftime('%b %d')}-{end.strftime('%d')}"
+                else:
+                    date_display = f"{start.strftime('%b %d')} - {end.strftime('%b %d')}"
+                merged["date_display"] = date_display
+
+                consolidated.append(merged)
+
+    return others + consolidated
+
+
 def parse_json_response(text):
     """Try to parse JSON, handling truncation."""
     try:
@@ -550,12 +712,12 @@ def main():
     print("Loading data sources...")
     emails = load_raw_emails()
     menus = load_current_menus()
-    pta_text = load_pta_page()
+    pta_text, pta_images = load_pta_page()
     district_text = load_district_calendar()
 
     print(f"Loaded {len(emails)} emails")
     print(f"Menu files: {len(menus)}")
-    print(f"PTA page: {'loaded' if pta_text else 'not available'}")
+    print(f"PTA page: {'loaded' if pta_text else 'not available'} ({len(pta_images)} images)")
     print(f"District calendar: {'loaded' if district_text else 'not available'}")
 
     email_events = []
@@ -592,7 +754,7 @@ def main():
     # Phase 3: Extract events from PTA website
     if pta_text:
         print("\nPhase 3: Extracting events from PTA website...")
-        pta_result = extract_events_from_pta(pta_text)
+        pta_result = extract_events_from_pta(pta_text, pta_images)
         pta_parsed = parse_json_response(pta_result)
         if pta_parsed:
             pta_events.extend(pta_parsed)
@@ -632,6 +794,12 @@ def main():
 
     # Combine with menu events (no dedup needed for menus)
     all_events = merged_events + menu_events
+
+    # Consolidate consecutive date events (e.g., Winter Recess Mon-Fri)
+    print("\nConsolidating consecutive date events...")
+    before_count = len(all_events)
+    all_events = consolidate_consecutive_dates(all_events)
+    print(f"  Consolidated {before_count} -> {len(all_events)} events")
 
     # Save combined results
     if all_events:

@@ -7,3 +7,6 @@ tqdm
 beautifulsoup4
 requests
 pypdf
+flask
+flask-cors
+gunicorn

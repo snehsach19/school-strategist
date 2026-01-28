@@ -50,7 +50,45 @@ def extract_text(html):
     return "\n".join(lines)
 
 
-def save_pta_data(text, url):
+def extract_images(html, base_url):
+    """Extract image URLs from HTML, focusing on event flyers."""
+    soup = BeautifulSoup(html, "html.parser")
+
+    images = []
+    for img in soup.find_all("img"):
+        src = img.get("src", "")
+        alt = img.get("alt", "")
+
+        # Skip tiny images (icons, spacers)
+        width = img.get("width", "")
+        height = img.get("height", "")
+        if width and width.isdigit() and int(width) < 50:
+            continue
+        if height and height.isdigit() and int(height) < 50:
+            continue
+
+        # Skip common non-flyer images
+        skip_patterns = ["logo", "icon", "avatar", "profile", "spacer", "pixel"]
+        if any(p in src.lower() or p in alt.lower() for p in skip_patterns):
+            continue
+
+        if src:
+            # Make absolute URL if needed
+            if src.startswith("//"):
+                src = "https:" + src
+            elif src.startswith("/"):
+                from urllib.parse import urljoin
+                src = urljoin(base_url, src)
+
+            images.append({
+                "url": src,
+                "alt": alt,
+            })
+
+    return images
+
+
+def save_pta_data(text, url, images=None):
     """Save scraped PTA data to JSON."""
     DATA_DIR.mkdir(exist_ok=True)
 
@@ -58,6 +96,7 @@ def save_pta_data(text, url):
         "source_url": url,
         "scraped_at": datetime.now().isoformat(),
         "text": text,
+        "images": images or [],
     }
 
     with open(PTA_FILE, "w") as f:
@@ -66,9 +105,9 @@ def save_pta_data(text, url):
     return PTA_FILE
 
 
-def main():
+def main(force=False):
     """Scrape PTA homepage with 24h cache."""
-    if is_cache_fresh():
+    if not force and is_cache_fresh():
         print(f"PTA cache is fresh (< {CACHE_HOURS}h old). Skipping scrape.")
         print(f"  Cached file: {PTA_FILE}")
         return
@@ -79,11 +118,21 @@ def main():
     print("Extracting text content...")
     text = extract_text(html)
 
-    print(f"Extracted {len(text)} characters of text")
+    print("Extracting images...")
+    images = extract_images(html, PTA_URL)
 
-    output = save_pta_data(text, PTA_URL)
+    print(f"Extracted {len(text)} characters of text and {len(images)} images")
+
+    output = save_pta_data(text, PTA_URL, images)
     print(f"Saved to {output}")
+
+    if images:
+        print("Images found:")
+        for img in images[:10]:  # Show first 10
+            print(f"  - {img['alt'] or 'No alt'}: {img['url'][:80]}...")
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    force = "--force" in sys.argv or "-f" in sys.argv
+    main(force=force)

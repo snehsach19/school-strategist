@@ -3,3 +3,12 @@ __pycache__/
 *.pyc
 raw_emails.json
 events_raw.txt
+menus_raw.txt
+pta_events_raw.txt
+district_events_raw.txt
+
+# React / Node
+school-ui/node_modules/
+school-ui/dist/
+school-ui/.env
+*.log
