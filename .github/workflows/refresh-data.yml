@@ -5,6 +5,9 @@ on:
     - cron: '0 14 * * *'  # 6 AM PT (2 PM UTC)
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -20,14 +23,6 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
-
-      - name: Debug secrets
-        env:
-          GMAIL_EMAIL: ${{ secrets.GMAIL_EMAIL }}
-          GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
-        run: |
-          echo "GMAIL_EMAIL length: ${#GMAIL_EMAIL}"
-          echo "GMAIL_PASSWORD length: ${#GMAIL_PASSWORD}"
 
       - name: Fetch emails
         env:
