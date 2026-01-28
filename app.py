@@ -1171,7 +1171,27 @@ def main():
                 except Exception as e:
                     st.error(f"Error: {e}")
 
-    # ── 6. Footer ──
+    # ── 6. About ──
+    with st.expander("About this app", expanded=False):
+        st.markdown("""\
+**Los Alamitos Smart Calendar** pulls together everything happening at
+Los Alamitos Elementary so you never miss a beat.
+
+**Where does the data come from?**
+- ParentSquare emails (school announcements)
+- PTA website (events, sign-ups, volunteer opportunities)
+- SJUSD district calendar (holidays, no-school days, early release)
+- Student Nutrition website (daily breakfast & lunch menus)
+
+**How often is it updated?**
+
+Data refreshes automatically every morning. You can also ask the
+assistant above any question about upcoming events.
+
+**Built by Los Alamitos parents, for Los Alamitos parents.**
+""")
+
+    # ── 7. Footer ──
     _html(f"""\
         <div class="app-footer">
             Last updated: {datetime.now().strftime('%B %d, %Y at %I:%M %p')} &middot; {len(events)} items
