@@ -21,6 +21,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Debug secrets
+        env:
+          GMAIL_EMAIL: ${{ secrets.GMAIL_EMAIL }}
+          GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
+        run: |
+          echo "GMAIL_EMAIL length: ${#GMAIL_EMAIL}"
+          echo "GMAIL_PASSWORD length: ${#GMAIL_PASSWORD}"
+
       - name: Fetch emails
         env:
           GMAIL_EMAIL: ${{ secrets.GMAIL_EMAIL }}
