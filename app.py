@@ -25,7 +25,7 @@ EVENTS_FILE = "events.json"
 RAW_EMAILS_FILE = "raw_emails.json"
 
 st.set_page_config(
-    page_title="Rishan's School Strategist",
+    page_title="Los Alamitos Smart Calendar",
     page_icon="🎒",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -447,7 +447,7 @@ def ask_assistant(question, events, emails):
         for e in emails[:20]
     ])
 
-    prompt = f"""You are a helpful assistant for a family's school calendar app called "Rishan's School Strategist".
+    prompt = f"""You are a helpful assistant for a school calendar app called "Los Alamitos Smart Calendar".
 
 Answer the user's question based on this school data:
 
@@ -646,7 +646,7 @@ def event_nudge(event, days_away):
     # Spirit days
     if "spirit" in n:
         clothing = name.split(":")[-1].strip() if ":" in name else desc
-        return f"Rishan should {clothing.lower()} {when}!".replace("  ", " ").strip("!") + "!"
+        return f"Don't forget to {clothing.lower()} {when}!".replace("  ", " ").strip("!") + "!"
 
     # Dances
     if "father" in n and "daughter" in n:
@@ -680,13 +680,13 @@ def event_nudge(event, days_away):
         extra = f": {desc}" if desc and desc.lower() != n else ""
         return f"Guest author assembly {when}{extra}."
     if "book fair" in n:
-        return f"Book fair {when} \u2014 send Rishan with some spending money!"
+        return f"Book fair {when} \u2014 send your kid with some spending money!"
     if "variety show" in n:
         return f"Variety show {when} \u2014 come watch the performances!"
     if "bubblefest" in n:
         return f"Bubblefest {when} \u2014 fun science show! Volunteers may be needed."
     if "open house" in n:
-        return f"Open house {when} \u2014 visit Rishan\u2019s classroom and meet the teacher."
+        return f"Open house {when} \u2014 visit your child\u2019s classroom and meet the teacher."
     if "tour" in n:
         return f"School tour {when}. Register if you\u2019re interested."
     if "yearbook" in n:
@@ -696,7 +696,7 @@ def event_nudge(event, days_away):
     if "meeting" in n or "council" in n:
         return f"Meeting {when}. Open to parents who want to attend."
     if "galentine" in n:
-        return f"Galentine\u2019s Night Out {when} \u2014 free workout + bubbles at F45 Branham Park! Text LAMOMS to 408.549.7760 (max 30 spots)."
+        return f"Galentine\u2019s Night Out {when} \u2014 check the PTA page for details and to RSVP!"
     if "concert" in n or "orchestra" in n:
         return f"Fundraising concert {when} \u2014 don\u2019t miss the live performance!"
 
@@ -844,7 +844,7 @@ def main():
     # ── 1. Header Bar ──
     _html(f"""\
         <div class="header-bar">
-            <span class="app-name">Rishan's School Strategist</span>
+            <span class="app-name">Los Alamitos Smart Calendar</span>
             <span class="header-date">{today.strftime('%A, %B %d, %Y')}</span>
         </div>
     """)
