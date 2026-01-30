@@ -493,25 +493,32 @@ function App() {
             </div>
           </div>
 
-          {/* Week Strip */}
-          <div className="flex gap-2 overflow-x-auto pb-2 mb-4">
+          {/* Week Strip - Grid layout to fit all days without scrolling */}
+          <div className="grid grid-cols-5 gap-1 sm:gap-2 mb-4">
             {weekDates.map((date, i) => {
               const isSelected = selectedDay === i || (selectedDay === 'today' && date.toDateString() === today.toDateString())
               const dateEvents = getEventsForDate(date)
               const hasEvents = dateEvents.some(e => e.type === 'event' || e.type === 'deadline')
+              const isToday = date.toDateString() === today.toDateString()
 
               return (
                 <button
                   key={i}
                   onClick={() => setSelectedDay(i)}
-                  className={`flex-shrink-0 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  className={`flex flex-col items-center py-2 px-1 sm:px-3 rounded-lg text-xs sm:text-sm font-medium transition-colors ${
                     isSelected
                       ? 'bg-indigo-600 text-white'
-                      : 'bg-white text-gray-700 hover:bg-gray-100'
-                  } shadow-sm`}
+                      : isToday
+                        ? 'bg-indigo-100 text-indigo-700 hover:bg-indigo-200'
+                        : 'bg-white text-gray-700 hover:bg-gray-100'
+                  } shadow-sm relative`}
                 >
-                  {dayNames[i]} {date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
-                  {hasEvents && <span className="ml-1 text-yellow-400">•</span>}
+                  <span className="text-[10px] sm:text-xs uppercase tracking-wide opacity-75">{dayNames[i]}</span>
+                  <span className="text-base sm:text-lg font-bold">{date.getDate()}</span>
+                  <span className="text-[10px] sm:text-xs opacity-75 hidden sm:block">{date.toLocaleDateString('en-US', { month: 'short' })}</span>
+                  {hasEvents && (
+                    <span className={`absolute top-1 right-1 w-1.5 h-1.5 rounded-full ${isSelected ? 'bg-yellow-300' : 'bg-indigo-500'}`}></span>
+                  )}
                 </button>
               )
             })}
