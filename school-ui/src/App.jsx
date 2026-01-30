@@ -92,18 +92,28 @@ function App() {
   }
 
   useEffect(() => {
-    fetch('/events.json')
+    // Try API first, fallback to local file for development
+    fetch(`${API_URL}/api/events`)
       .then(res => {
-        if (!res.ok) throw new Error('Failed to fetch events')
+        if (!res.ok) throw new Error('API not available')
         return res.json()
       })
       .then(data => {
         setEvents(data)
         setLoading(false)
       })
-      .catch(err => {
-        setError(err.message)
-        setLoading(false)
+      .catch(() => {
+        // Fallback to local file
+        fetch('/events.json')
+          .then(res => res.json())
+          .then(data => {
+            setEvents(data)
+            setLoading(false)
+          })
+          .catch(err => {
+            setError(err.message)
+            setLoading(false)
+          })
       })
   }, [])
 
