@@ -54,6 +54,33 @@ def ask_assistant():
     today = datetime.now().strftime("%Y-%m-%d")
     today_display = datetime.now().strftime("%A, %B %d, %Y")
 
+    # Pre-search: Find food items mentioned in the question
+    question_lower = question.lower()
+    food_keywords = ['pizza', 'burger', 'chicken', 'taco', 'nacho', 'pasta', 'sandwich',
+                     'hotdog', 'hot dog', 'quesadilla', 'burrito', 'drumstick', 'nugget',
+                     'waffle', 'pancake', 'bagel', 'french toast', 'cereal', 'yogurt']
+
+    found_foods = [kw for kw in food_keywords if kw in question_lower]
+
+    # Search menus for mentioned foods
+    search_results = ""
+    if found_foods:
+        all_menus = [e for e in events if e.get("type") in ["breakfast_menu", "lunch_menu"] and e.get("date", "") >= today]
+        all_menus = sorted(all_menus, key=lambda x: x.get("date", ""))
+
+        matches = []
+        for menu in all_menus:
+            desc = (menu.get("description") or "").lower()
+            name = (menu.get("name") or "").lower()
+            for food in found_foods:
+                if food in desc or food in name:
+                    meal_type = "Breakfast" if menu.get("type") == "breakfast_menu" else "Lunch"
+                    matches.append(f"- {menu['date']} ({meal_type}): {menu.get('description', '')}")
+                    break
+
+        if matches:
+            search_results = f"\n\nSEARCH RESULTS FOR '{', '.join(found_foods).upper()}':\n" + "\n".join(matches[:10])
+
     # Separate events by type for clearer context
     upcoming_events = [
         e for e in events
@@ -96,6 +123,7 @@ def ask_assistant():
     prompt = f"""You are a helpful assistant for Los Alamitos Elementary School parents. You help them understand school events, menus, and schedules.
 
 Today is {today_display}.
+{search_results}
 
 UPCOMING EVENTS AND DEADLINES:
 {events_text}
@@ -107,12 +135,8 @@ LUNCH MENUS (next 2 weeks):
 {lunch_text}
 
 INSTRUCTIONS:
+- If there are SEARCH RESULTS above, use those to answer - they show ALL dates when the food is available
 - Answer questions directly and concisely
-- IMPORTANT: When asked about a specific food (like pizza, chicken, tacos), search the FULL description text for each day - multiple meal options are listed together separated by commas
-- For example, "Nachos, Bean & Cheese, Cheese Pizza" means pizza IS available that day even though the main item is nachos
-- List ALL dates when the requested food appears, starting with the soonest
-- For "what's happening" questions, summarize key upcoming events
-- If something isn't in the data, say you don't have that information
 - Be friendly and helpful
 
 Question: {question}"""
