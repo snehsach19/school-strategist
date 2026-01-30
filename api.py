@@ -12,9 +12,8 @@ load_dotenv()
 
 app = Flask(__name__)
 
-# Configure CORS for production
-FRONTEND_URL = os.getenv("FRONTEND_URL", "*")
-CORS(app, origins=[FRONTEND_URL] if FRONTEND_URL != "*" else "*")
+# Configure CORS for production - allow all origins for simplicity
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
