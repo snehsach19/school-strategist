@@ -108,11 +108,12 @@ LUNCH MENUS (next 2 weeks):
 
 INSTRUCTIONS:
 - Answer questions directly and concisely
-- For menu questions, list the specific items for the date asked about
+- IMPORTANT: When asked about a specific food (like pizza, chicken, tacos), search the FULL description text for each day - multiple meal options are listed together separated by commas
+- For example, "Nachos, Bean & Cheese, Cheese Pizza" means pizza IS available that day even though the main item is nachos
+- List ALL dates when the requested food appears, starting with the soonest
 - For "what's happening" questions, summarize key upcoming events
 - If something isn't in the data, say you don't have that information
 - Be friendly and helpful
-- Keep answers brief - 2-3 sentences for simple questions, more for complex ones
 
 Question: {question}"""
 
