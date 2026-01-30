@@ -421,7 +421,7 @@ function App() {
           <div className="flex gap-2">
             <input
               type="text"
-              placeholder="e.g., When is the next dance? What's for lunch on Friday?"
+              placeholder="e.g., When is pizza coming up?"
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && askAssistant()}
