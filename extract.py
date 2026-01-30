@@ -28,7 +28,11 @@ def load_raw_emails():
 
 
 def load_current_menus():
-    """Load current and next month's menu files (breakfast and lunch)."""
+    """Load current and next month's menu files (breakfast and lunch).
+
+    Filters out allergen/protein files that don't have daily schedules.
+    Only loads 'BrightBites' calendar files with actual day-by-day menus.
+    """
     now = datetime.now()
     current_suffix = f"{now.strftime('%b').upper()}_{now.year}"
 
@@ -47,8 +51,15 @@ def load_current_menus():
             for filepath in DATA_DIR.glob(pattern):
                 with open(filepath) as f:
                     data = json.load(f)
-                    data["_filename"] = filepath.name
-                    menus.append(data)
+
+                # Skip allergen/protein files - they don't have daily schedules
+                original_filename = data.get("original_filename", "")
+                if "allergen" in original_filename.lower() or "protein" in original_filename.lower():
+                    print(f"  Skipping allergen file: {filepath.name}")
+                    continue
+
+                data["_filename"] = filepath.name
+                menus.append(data)
 
     if not menus:
         print(f"WARNING: No menu files found in {DATA_DIR}. Run scrape_web.py first.")
@@ -139,40 +150,80 @@ Return ONLY valid JSON array, no other text."""
 
 
 def extract_menus(menus):
-    """Extract daily menu items from menu files."""
+    """Extract daily menu items from menu files.
+
+    Process each menu file separately to ensure correct month assignment.
+    """
     client = Anthropic()
 
-    menu_section = ""
-    for menu in menus:
-        meal_type = menu.get("meal_type", "menu").upper()
-        menu_section += f"\n\n## {meal_type} MENU ({menu['month']}):\n{menu['text']}"
+    all_items = []
 
-    prompt = f"""Extract daily menu items from these school menus.
+    for menu in menus:
+        meal_type = menu.get("meal_type", "menu")
+        month_str = menu.get("month", "")
+
+        # Parse month/year from the menu's month field (e.g., "February 2026")
+        try:
+            month_date = datetime.strptime(month_str, "%B %Y")
+            year = month_date.year
+            month = month_date.month
+        except ValueError:
+            # Fallback to current month if parsing fails
+            now = datetime.now()
+            year = now.year
+            month = now.month
+
+        prompt = f"""Extract daily menu items from this school {meal_type} menu for {month_str}.
 
 Return a JSON array with these fields:
-- "name": Menu item name
-- "date": Date in YYYY-MM-DD format (use the month from each menu section header)
-- "type": "breakfast_menu" or "lunch_menu"
+- "name": First menu item name for that day
+- "date": Date in YYYY-MM-DD format
+- "type": "{meal_type}_menu"
 - "priority": "low"
-- "description": All meal options for that day
+- "description": All meal options listed for that day
 
-IMPORTANT: Each menu section has its own month in the header (e.g., "February 2026" or "January 2026").
-Use the CORRECT month for each menu's dates:
-- For "January 2026" menus: Day 5 = 2026-01-05, Day 6 = 2026-01-06, etc.
-- For "February 2026" menus: Day 5 = 2026-02-05, Day 6 = 2026-02-06, etc.
+The menu is for {month_str}. Use these dates:
+- Day 2 = {year}-{month:02d}-02
+- Day 3 = {year}-{month:02d}-03
+- Day 5 = {year}-{month:02d}-05
+- Day 6 = {year}-{month:02d}-06
+- Day 9 = {year}-{month:02d}-09
+- Day 10 = {year}-{month:02d}-10
+- etc.
 
 Skip days marked "NO SCHOOL".
-{menu_section}
+
+Menu content:
+{menu['text']}
 
 Return ONLY valid JSON array, no other text."""
 
-    response = client.messages.create(
-        model="claude-3-haiku-20240307",
-        max_tokens=4096,
-        messages=[{"role": "user", "content": prompt}]
-    )
+        response = client.messages.create(
+            model="claude-3-haiku-20240307",
+            max_tokens=4096,
+            messages=[{"role": "user", "content": prompt}]
+        )
 
-    return response.content[0].text
+        result = response.content[0].text
+
+        # Parse the result and add to all_items
+        try:
+            items = json.loads(result)
+            all_items.extend(items)
+            print(f"    {menu['_filename']}: {len(items)} items")
+        except json.JSONDecodeError:
+            # Try to extract JSON from the response
+            import re
+            match = re.search(r'\[.*\]', result, re.DOTALL)
+            if match:
+                try:
+                    items = json.loads(match.group())
+                    all_items.extend(items)
+                    print(f"    {menu['_filename']}: {len(items)} items (extracted)")
+                except json.JSONDecodeError:
+                    print(f"    {menu['_filename']}: Failed to parse")
+
+    return json.dumps(all_items)
 
 
 def load_district_calendar():

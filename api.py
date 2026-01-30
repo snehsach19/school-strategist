@@ -50,57 +50,77 @@ def ask_assistant():
         return jsonify({"error": "No question provided"}), 400
 
     events = load_events()
-    emails = load_emails()
 
     # Build context
     today = datetime.now().strftime("%Y-%m-%d")
     today_display = datetime.now().strftime("%A, %B %d, %Y")
 
-    # Upcoming events summary
-    upcoming = [
+    # Separate events by type for clearer context
+    upcoming_events = [
         e for e in events
         if e.get("type") in ["event", "deadline"] and e.get("date", "") >= today
     ]
-    upcoming = sorted(upcoming, key=lambda x: x.get("date", ""))[:30]
+    upcoming_events = sorted(upcoming_events, key=lambda x: x.get("date", ""))[:25]
 
-    # Upcoming menus (breakfast and lunch)
-    upcoming_menus = [
+    # Get menus for the next 2 weeks
+    breakfast_menus = [
         e for e in events
-        if e.get("type") in ["breakfast_menu", "lunch_menu"] and e.get("date", "") >= today
+        if e.get("type") == "breakfast_menu" and e.get("date", "") >= today
     ]
-    upcoming_menus = sorted(upcoming_menus, key=lambda x: x.get("date", ""))[:40]
+    breakfast_menus = sorted(breakfast_menus, key=lambda x: x.get("date", ""))[:14]
 
-    events_context = json.dumps(upcoming, indent=2)
-    menus_context = json.dumps(upcoming_menus, indent=2)
+    lunch_menus = [
+        e for e in events
+        if e.get("type") == "lunch_menu" and e.get("date", "") >= today
+    ]
+    lunch_menus = sorted(lunch_menus, key=lambda x: x.get("date", ""))[:14]
 
-    # Recent email subjects for context
-    email_summary = "\n".join([
-        f"- {e.get('subject', 'No subject')} ({e.get('date', 'No date')})"
-        for e in emails[:20]
-    ])
+    # Format events in a readable way
+    def format_event(e):
+        date = e.get("date", "TBD")
+        name = e.get("name", "Unnamed")
+        desc = e.get("description", "")
+        date_display = e.get("date_display", date)
+        if desc:
+            return f"- {date_display}: {name} - {desc}"
+        return f"- {date_display}: {name}"
 
-    prompt = f"""You are a helpful assistant for a school calendar app called "Los Alamitos Elementary Smart Calendar".
+    def format_menu(e):
+        date = e.get("date", "")
+        desc = e.get("description", "")
+        return f"- {date}: {desc}"
+
+    events_text = "\n".join(format_event(e) for e in upcoming_events) or "No upcoming events found."
+    breakfast_text = "\n".join(format_menu(e) for e in breakfast_menus) or "No breakfast menus available."
+    lunch_text = "\n".join(format_menu(e) for e in lunch_menus) or "No lunch menus available."
+
+    prompt = f"""You are a helpful assistant for Los Alamitos Elementary School parents. You help them understand school events, menus, and schedules.
 
 Today is {today_display}.
 
-Here are the upcoming school events:
-{events_context}
+UPCOMING EVENTS AND DEADLINES:
+{events_text}
 
-Here are the upcoming school menus (breakfast and lunch):
-{menus_context}
+BREAKFAST MENUS (next 2 weeks):
+{breakfast_text}
 
-Recent email subjects from ParentSquare:
-{email_summary}
+LUNCH MENUS (next 2 weeks):
+{lunch_text}
 
-Answer the user's question concisely and helpfully. If you're not sure about something, say so.
-Focus on being practical and giving actionable information.
+INSTRUCTIONS:
+- Answer questions directly and concisely
+- For menu questions, list the specific items for the date asked about
+- For "what's happening" questions, summarize key upcoming events
+- If something isn't in the data, say you don't have that information
+- Be friendly and helpful
+- Keep answers brief - 2-3 sentences for simple questions, more for complex ones
 
-User's question: {question}"""
+Question: {question}"""
 
     try:
         response = client.messages.create(
-            model="claude-3-haiku-20240307",
-            max_tokens=500,
+            model="claude-3-5-haiku-20241022",
+            max_tokens=800,
             messages=[{"role": "user", "content": prompt}]
         )
         answer = response.content[0].text
