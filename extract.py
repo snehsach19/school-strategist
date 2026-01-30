@@ -142,28 +142,24 @@ def extract_menus(menus):
     """Extract daily menu items from menu files."""
     client = Anthropic()
 
-    now = datetime.now()
-    menu_year = now.year
-    menu_month = now.month
-
     menu_section = ""
     for menu in menus:
         meal_type = menu.get("meal_type", "menu").upper()
         menu_section += f"\n\n## {meal_type} MENU ({menu['month']}):\n{menu['text']}"
 
-    prompt = f"""Extract daily menu items from this school menu.
+    prompt = f"""Extract daily menu items from these school menus.
 
 Return a JSON array with these fields:
 - "name": Menu item name
-- "date": Date in YYYY-MM-DD format
+- "date": Date in YYYY-MM-DD format (use the month from each menu section header)
 - "type": "breakfast_menu" or "lunch_menu"
 - "priority": "low"
 - "description": All meal options for that day
 
-The menu is for {now.strftime('%B')} {menu_year}:
-- Day 5 = {menu_year}-{menu_month:02d}-05
-- Day 6 = {menu_year}-{menu_month:02d}-06
-- etc.
+IMPORTANT: Each menu section has its own month in the header (e.g., "February 2026" or "January 2026").
+Use the CORRECT month for each menu's dates:
+- For "January 2026" menus: Day 5 = 2026-01-05, Day 6 = 2026-01-06, etc.
+- For "February 2026" menus: Day 5 = 2026-02-05, Day 6 = 2026-02-06, etc.
 
 Skip days marked "NO SCHOOL".
 {menu_section}
