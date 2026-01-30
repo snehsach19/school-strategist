@@ -54,32 +54,40 @@ def ask_assistant():
     today = datetime.now().strftime("%Y-%m-%d")
     today_display = datetime.now().strftime("%A, %B %d, %Y")
 
-    # Pre-search: Find food items mentioned in the question
+    # Pre-search: Extract meaningful words from question and search menus
     question_lower = question.lower()
-    food_keywords = ['pizza', 'burger', 'chicken', 'taco', 'nacho', 'pasta', 'sandwich',
-                     'hotdog', 'hot dog', 'quesadilla', 'burrito', 'drumstick', 'nugget',
-                     'waffle', 'pancake', 'bagel', 'french toast', 'cereal', 'yogurt']
 
-    found_foods = [kw for kw in food_keywords if kw in question_lower]
+    # Common words to ignore when searching
+    stop_words = {'when', 'is', 'the', 'a', 'an', 'are', 'there', 'what', 'how', 'do', 'does',
+                  'we', 'have', 'any', 'next', 'coming', 'up', 'for', 'lunch', 'breakfast',
+                  'menu', 'school', 'day', 'week', 'today', 'tomorrow', 'this', 'that', 'it',
+                  'can', 'i', 'my', 'kid', 'child', 'serve', 'served', 'serving', 'get', 'will', 'be'}
 
-    # Search menus for mentioned foods
+    # Extract search words (4+ chars, not in stop words)
+    search_words = [w.strip('?.,!') for w in question_lower.split()
+                    if len(w) >= 4 and w.strip('?.,!') not in stop_words]
+
+    # Search menus for any matching words
     search_results = ""
-    if found_foods:
+    if search_words:
         all_menus = [e for e in events if e.get("type") in ["breakfast_menu", "lunch_menu"] and e.get("date", "") >= today]
         all_menus = sorted(all_menus, key=lambda x: x.get("date", ""))
 
         matches = []
+        matched_words = set()
         for menu in all_menus:
             desc = (menu.get("description") or "").lower()
             name = (menu.get("name") or "").lower()
-            for food in found_foods:
-                if food in desc or food in name:
+            menu_text = f"{name} {desc}"
+            for word in search_words:
+                if word in menu_text:
+                    matched_words.add(word)
                     meal_type = "Breakfast" if menu.get("type") == "breakfast_menu" else "Lunch"
                     matches.append(f"- {menu['date']} ({meal_type}): {menu.get('description', '')}")
                     break
 
         if matches:
-            search_results = f"\n\nSEARCH RESULTS FOR '{', '.join(found_foods).upper()}':\n" + "\n".join(matches[:10])
+            search_results = f"\n\nSEARCH RESULTS FOR '{', '.join(matched_words).upper()}':\n" + "\n".join(matches[:15])
 
     # Separate events by type for clearer context
     upcoming_events = [
