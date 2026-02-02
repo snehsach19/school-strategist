@@ -81,11 +81,115 @@ def load_pta_page():
     return text, images
 
 
+def extract_newsletter_images(emails):
+    """Extract image URLs from newsletter emails, prioritizing recent ones."""
+    import re
+    image_urls = []
+
+    # Sort emails by date descending to get most recent first
+    sorted_emails = sorted(emails, key=lambda x: x.get('date', ''), reverse=True)
+
+    # Look for newsletter emails
+    for email in sorted_emails:
+        subject = email.get('subject', '').lower()
+        text = email.get('text', '')
+        email_date = email.get('date', '')
+
+        # Focus on newsletters
+        if 'newsletter' in subject:
+            # Find markdown image links: ![](url) or ![alt](url)
+            pattern = r'!\[.*?\]\((https?://[^\)]+\.(?:png|jpg|jpeg|gif))\)'
+            urls = re.findall(pattern, text, re.IGNORECASE)
+
+            for url in urls:
+                # Skip small/icon images
+                if 'button' in url.lower() or 'icon' in url.lower():
+                    continue
+                image_urls.append({
+                    'url': url,
+                    'source': email.get('subject', 'Newsletter'),
+                    'date': email_date
+                })
+
+    return image_urls
+
+
+def analyze_newsletter_image(client, image_url):
+    """Use vision to extract events and dates from a newsletter image."""
+    import base64
+    import requests as req
+
+    try:
+        response = req.get(image_url, timeout=15)
+        if response.status_code != 200:
+            return None
+
+        image_data = base64.standard_b64encode(response.content).decode("utf-8")
+
+        content_type = response.headers.get("content-type", "image/jpeg")
+        if "png" in content_type or image_url.endswith(".png"):
+            media_type = "image/png"
+        else:
+            media_type = "image/jpeg"
+
+        result = client.messages.create(
+            model="claude-3-haiku-20240307",
+            max_tokens=1000,
+            messages=[{
+                "role": "user",
+                "content": [
+                    {
+                        "type": "image",
+                        "source": {
+                            "type": "base64",
+                            "media_type": media_type,
+                            "data": image_data,
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "text": """This is a classroom newsletter image. Extract ALL dates and events mentioned.
+
+Look for sections like "Dates to Remember", "Upcoming Events", "Important Dates", or any calendar information.
+
+For each event found, provide:
+- Event name
+- Date (if mentioned)
+- Any details
+
+Format as a simple list like:
+- Feb 14: Valentine's Day Party
+- Feb 20: No School - Presidents Day
+- March 1: Read Across America
+
+If no events/dates are visible, reply with "No events found"."""
+                    }
+                ]
+            }]
+        )
+        return result.content[0].text.strip()
+    except Exception as e:
+        print(f"    Error analyzing newsletter image: {e}")
+        return None
+
+
 def extract_events_from_emails(emails):
     """Extract events/deadlines from emails (separate from menus)."""
     client = Anthropic()
 
     now = datetime.now()
+
+    # Extract and analyze newsletter images first
+    newsletter_images = extract_newsletter_images(emails)
+    newsletter_content = ""
+
+    if newsletter_images:
+        print(f"  Analyzing {len(newsletter_images)} newsletter images with vision...")
+        for img in newsletter_images[:8]:  # Limit to 8 most recent images
+            content = analyze_newsletter_image(client, img['url'])
+            if content and "no events found" not in content.lower():
+                newsletter_content += f"\n\nFROM NEWSLETTER IMAGE ({img['source']}):\n{content}"
+                print(f"    Extracted events from: {img['source'][:50]}")
 
     # Use only the most recent emails (they have the most current calendar)
     # Sort by date descending and take recent ones
@@ -137,6 +241,9 @@ BE THOROUGH - extract every single event you find in the calendar sections.
 
 ## EMAILS:
 {combined_emails}
+
+## NEWSLETTER IMAGES CONTENT (extracted via vision):
+{newsletter_content if newsletter_content else "No newsletter images found."}
 
 Return ONLY valid JSON array, no other text."""
 
