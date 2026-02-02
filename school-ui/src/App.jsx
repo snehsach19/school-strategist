@@ -200,6 +200,33 @@ function App() {
   // Should show meals based on filter
   const showMeals = filter === 'all' || filter === 'meals'
 
+  // Parent Action Items - events in next 14 days that require parent action
+  const parentActionItems = useMemo(() => {
+    const twoWeeksFromNow = new Date(today)
+    twoWeeksFromNow.setDate(twoWeeksFromNow.getDate() + 14)
+    const twoWeeksStr = twoWeeksFromNow.toISOString().split('T')[0]
+
+    // Action keywords that indicate parent needs to do something
+    const actionKeywords = ['bring', 'send', 'wear', 'prepare', 'buy', 'make', 'order', 'sign up', 'register', 'rsvp', 'submit', 'return', 'pack', 'label']
+
+    return events
+      .filter(e => {
+        if (e.type !== 'event' && e.type !== 'deadline') return false
+        if (!e.date || e.date < todayStr || e.date > twoWeeksStr) return false
+
+        const desc = (e.description || '').toLowerCase()
+        const hasAction = actionKeywords.some(kw => desc.includes(kw))
+        return hasAction
+      })
+      .map(e => {
+        const eventDate = new Date(e.date + 'T00:00:00')
+        const daysUntil = Math.ceil((eventDate - today) / (1000 * 60 * 60 * 24))
+        return { ...e, daysUntil }
+      })
+      .sort((a, b) => a.date.localeCompare(b.date))
+      .slice(0, 5)
+  }, [events, todayStr, today])
+
   // Upcoming events with filter
   const upcomingEvents = useMemo(() => {
     let filtered = events.filter(e => e.date >= todayStr)
@@ -441,6 +468,30 @@ function App() {
             </div>
           )}
         </div>
+
+        {/* Parent Action Items */}
+        {parentActionItems.length > 0 && (
+          <div className="mb-6 bg-amber-50 border border-amber-200 rounded-xl p-4">
+            <h2 className="text-sm font-semibold text-amber-800 mb-3 flex items-center gap-2">
+              <span>📋</span> Parent To-Do
+            </h2>
+            <div className="space-y-2">
+              {parentActionItems.map((item, i) => (
+                <div key={i} className="bg-white rounded-lg p-3 shadow-sm">
+                  <div className="flex justify-between items-start gap-2">
+                    <div className="flex-1">
+                      <div className="font-medium text-gray-800 text-sm">{item.name}</div>
+                      <div className="text-sm text-gray-600 mt-1">{item.description}</div>
+                    </div>
+                    <div className="text-xs font-medium px-2 py-1 rounded-full bg-amber-100 text-amber-700 whitespace-nowrap">
+                      {item.daysUntil === 0 ? 'Today' : item.daysUntil === 1 ? 'Tomorrow' : `${item.daysUntil} days`}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Filter Tabs */}
         <div className="flex gap-2 mb-6 overflow-x-auto pb-1">
