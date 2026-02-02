@@ -148,21 +148,21 @@ def analyze_newsletter_image(client, image_url):
                     },
                     {
                         "type": "text",
-                        "text": """This is a classroom newsletter image. Extract ALL dates and events mentioned.
+                        "text": """This is a classroom newsletter for parents. Extract ALL dates, events, and PARENT ACTION ITEMS.
 
 Look for sections like "Dates to Remember", "Upcoming Events", "Important Dates", or any calendar information.
 
 For each event found, provide:
 - Event name
 - Date (if mentioned)
-- Any details
+- WHAT PARENTS NEED TO DO (this is critical!) - e.g., "bring Valentine's cards", "send $5 for field trip", "wear pajamas", "bring a book to exchange"
 
-Format as a simple list like:
-- Feb 14: Valentine's Day Party
+Format as:
+- Feb 13: Valentine's Day Celebration - PARENTS: Bring Valentine's cards for 24 students, don't write "To" names on cards
 - Feb 20: No School - Presidents Day
-- March 1: Read Across America
+- Jan 30: Spirit Day - PARENTS: Send child in sports-themed shirt
 
-If no events/dates are visible, reply with "No events found"."""
+Focus on actionable information parents need to prepare for. If no events/dates are visible, reply with "No events found"."""
                     }
                 ]
             }]
@@ -213,7 +213,7 @@ Return a JSON array with these fields:
 - "date": Date in YYYY-MM-DD format (null if unclear)
 - "type": "event" or "deadline"
 - "priority": "high" for dances/major events, "medium" for meetings, "low" for minor items
-- "description": Brief description
+- "description": IMPORTANT - Include what PARENTS NEED TO DO. For classroom events, include specific instructions like "Bring 22 Valentine's cards with only your child's name (leave To: blank)" or "Wear sports shirt". Don't just say "classroom party" - include the actionable details from the newsletter.
 - "location": Location/venue if mentioned (e.g., "Cafeteria", "Library", "MPR", "Gym") - null if not specified
 - "url": Registration or sign-up URL if mentioned (null if none)
 - "image_url": Flyer or event image URL if found near the event mention (look for .jpg, .png, .jpeg URLs from s3.amazonaws.com or cdn.filestackcontent.com) - null if none
