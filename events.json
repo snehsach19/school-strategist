@@ -5,31 +5,31 @@
     "type": "event",
     "priority": "medium",
     "description": "TK Tour for new families",
-    "location": null,
-    "url": "https://forms.gle/zoio4ufN4ieSyif2A",
+    "location": "Los Alamitos Elementary",
+    "url": null,
     "image_url": null
   },
   {
-    "name": "Father Daughter Dance",
+    "name": "Father/Daughter Dance",
     "date": "2026-02-06",
-    "time": "6:00 PM",
+    "time": "6:00 PM - 8:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "Father Daughter Dance",
-    "location": null,
-    "url": null,
+    "description": "Denim and Diamonds themed dance for father/daughter. Light snacks and refreshments provided. Tickets $20 per guest, must be purchased in advance on PTA website.",
+    "location": "Cafeteria",
+    "url": "https://losalamitospta.membershiptoolkit.com/",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-17-26_at_8_27___AM.png",
     "source": "pta_website"
   },
   {
-    "name": "Mother Son Dance",
+    "name": "Mother/Son Dance",
     "date": "2026-02-07",
-    "time": "6:00 PM",
+    "time": "6:00 PM - 8:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "Mother Son Dance",
-    "location": null,
-    "url": null,
+    "description": "Denim and Diamonds themed dance for mother/son. Light snacks and refreshments provided. Tickets $20 per guest, must be purchased in advance on PTA website.",
+    "location": "Cafeteria",
+    "url": "https://losalamitospta.membershiptoolkit.com/",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-17-26_at_8_25___AM.png",
     "source": "pta_website"
   },
@@ -48,38 +48,30 @@
     "date": "2026-02-12",
     "type": "event",
     "priority": "medium",
-    "description": "Lunar New Year and Valentine's staff luncheon",
+    "description": "Staff luncheon to celebrate Lunar New Year and Valentine's Day",
     "location": null,
     "url": "https://docs.google.com/spreadsheets/d/1NYRPRkJI7HSKJ9JZM8WXHUfVOtD6td-E/edit?usp=sharing&ouid=117567966560865569669&rtpof=true&sd=true",
     "image_url": null
   },
   {
-    "name": "Deadline to submit Middle School Choice",
+    "name": "Middle School Selection Process",
     "date": "2026-02-13",
+    "time": null,
     "type": "deadline",
-    "priority": "high",
-    "description": "Deadline to submit middle school choice",
+    "priority": "medium",
+    "description": "5th grade families must submit middle school choice requests online through the Parent Portal from 1/20 to 2/13.",
     "location": null,
-    "url": null,
-    "image_url": null
+    "url": "https://www.sjusd.org/resources/parent-resources/parent-portal",
+    "image_url": null,
+    "source": "pta_website"
   },
   {
-    "name": "PTA General Meeting",
-    "date": "2026-02-23",
+    "name": "PTA Math Kangaroo",
+    "date": "2026-02-19",
     "type": "event",
     "priority": "medium",
-    "description": "PTA General Meeting",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Spring Pictures",
-    "date": "2026-02-26",
-    "type": "event",
-    "priority": "low",
-    "description": "Free dress day for spring pictures",
-    "location": null,
+    "description": "PTA Math Kangaroo competition",
+    "location": "Library",
     "url": null,
     "image_url": null
   },
@@ -88,39 +80,19 @@
     "date": "2026-03-20",
     "time": "4:00 PM",
     "type": "event",
-    "priority": "high",
-    "description": "Los Alamitos Variety Show - volunteers needed for MCs, stage hands, AV support, and concessions. Audition videos due by 3/6, dress rehearsal on 3/19.",
+    "priority": "medium",
+    "description": "Student talent show. Volunteers needed for stage hands and concession organization. Audition videos due by 3/1, dress rehearsal on 3/19, show on 3/20.",
     "location": "The Stage at Los Alamitos",
-    "url": "https://forms.gle/xq98kKtC5j4",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-18-26_at_8_45___AM.png",
+    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_07___PM.png",
     "source": "pta_website"
   },
   {
-    "name": "ELA - CAT/PT Testing",
-    "date": "2026-02-20",
-    "type": "deadline",
-    "priority": "high",
-    "description": "ELA - CAT/PT Testing for 3rd - 5th Grade",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Math CAT/PT Testing",
-    "date": "2026-02-27",
-    "type": "deadline",
-    "priority": "high",
-    "description": "Math CAT/PT Testing for 3rd - 5th Grade",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "PTA Multicultural Faire",
-    "date": "2026-04-24",
+    "name": "PTA Hicklebee's Book Fair",
+    "date": "2026-03-23",
     "type": "event",
-    "priority": "high",
-    "description": "PTA Multicultural Faire",
+    "priority": "medium",
+    "description": "PTA Hicklebee's Book Fair",
     "location": null,
     "url": null,
     "image_url": null
@@ -136,25 +108,115 @@
     "image_url": null
   },
   {
-    "name": "Last Day to Order Yearbook",
+    "name": "ELA - CAT/PT Testing for 3rd - 5th Grade",
+    "date": "2026-04-20",
+    "type": "deadline",
+    "priority": "high",
+    "description": "ELA - CAT/PT testing for 3rd-5th grade students",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Math CAT/PT Testing for 3rd - 5th Grade",
+    "date": "2026-04-27",
+    "type": "deadline",
+    "priority": "high",
+    "description": "Math CAT/PT testing for 3rd-5th grade students",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "PTA Last Day to Order Yearbook",
     "date": "2026-04-20",
     "type": "deadline",
     "priority": "medium",
-    "description": "Last day to order yearbook",
+    "description": "Last day to order 2025-2026 yearbook",
     "location": null,
     "url": "https://www.betteryearbook.com/product/los-alamitos-yearbooks/",
     "image_url": null
   },
   {
-    "name": "Math Kangaroo Competition",
-    "date": "2026-03-19",
-    "time": "2:30 PM - 3:45 PM",
+    "name": "PTA Multicultural Faire",
+    "date": "2026-04-24",
+    "type": "event",
+    "priority": "high",
+    "description": "PTA Multicultural Faire event",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Galentine's Night Out at F45 Branham Park",
+    "date": "2026-02-12",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "45 minutes of strength training workout followed by bubbles. Free event, maximum of 30 people. Sign up by texting 'LAMOMS' to 408.549.7760.",
+    "location": "F45 Branham Park",
+    "url": "tel:408.549.7760",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-17-26_at_8_49___AM.png",
+    "source": "pta_website"
+  },
+  {
+    "name": "Family Fun Night - Five Guys",
+    "date": "2026-02-12",
+    "time": null,
     "type": "event",
     "priority": "medium",
-    "description": "Math competition for students, registration required with invitation code: CASAN_J0017001@2026math",
-    "location": "Library",
-    "url": "https://mathkangaroo.org/register/",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_12-14-25_at_12_03___PM.jpeg",
+    "description": "Mention Los Alamitos and 25% of proceeds will be donated to the PTA.",
+    "location": "Five Guys, 5353 Almaden Expy",
+    "url": null,
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_21___PM.png",
+    "source": "pta_website"
+  },
+  {
+    "name": "Reading Lab Volunteers Needed",
+    "date": null,
+    "time": "12:45 PM - 2:00 PM",
+    "type": "volunteer",
+    "priority": "medium",
+    "description": "Volunteers needed once per week (Tues, Wed, Thurs) to tutor students in reading skills. Training provided.",
+    "location": null,
+    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
+    "source": "pta_website"
+  },
+  {
+    "name": "Yearbook Cover Contest (5th Graders Only)",
+    "date": "2026-02-23",
+    "time": null,
+    "type": "deadline",
+    "priority": "medium",
+    "description": "5th graders can submit drawings for the yearbook cover. Entries due by 2/23. Theme: Under the Sea.",
+    "location": null,
+    "url": "mailto:LosAlamitosPTA@gmail.com",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-18-26_at_8_57___AM.png",
+    "source": "pta_website"
+  },
+  {
+    "name": "Yearbook Orders",
+    "date": "2026-04-20",
+    "time": null,
+    "type": "deadline",
+    "priority": "medium",
+    "description": "Last day to order the 2025-26 school yearbook. 5th grade parents should submit baby photos by 3/1.",
+    "location": null,
+    "url": "https://www.betteryearbook.com/",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
+    "source": "pta_website"
+  },
+  {
+    "name": "Spirit Day: Valentine's Colors",
+    "date": "2026-02-13",
+    "time": null,
+    "type": "event",
+    "priority": "low",
+    "description": "Students encouraged to wear Valentine's colors.",
+    "location": null,
+    "url": null,
+    "image_url": null,
     "source": "pta_website"
   },
   {
@@ -166,164 +228,6 @@
     "description": "Elementary schools out 2 hours early",
     "url": null,
     "source": "student_calendar"
-  },
-  {
-    "name": "Future Chefs Tasting",
-    "date": "2026-03-10",
-    "type": "event",
-    "priority": "high",
-    "description": "Future Chefs Tasting at Gunderson High School",
-    "location": "Gunderson High School",
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "SPIRIT DAY: Crazy Hat / Hair Day",
-    "date": "2026-03-02",
-    "type": "event",
-    "priority": "low",
-    "description": "SPIRIT DAY: Crazy Hat / Hair Day",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "SPIRIT DAY: Wear Green",
-    "date": "2026-03-17",
-    "type": "event",
-    "priority": "low",
-    "description": "SPIRIT DAY: Wear Green",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Hicklebee's Book Fair",
-    "date": "2026-03-23",
-    "type": "event",
-    "priority": "medium",
-    "description": "PTA Hicklebee's Book Fair",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Open House",
-    "date": "2026-01-31",
-    "type": "event",
-    "priority": "medium",
-    "description": "Open House",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "PTA Meeting",
-    "date": "2026-01-26",
-    "time": "8:15 AM",
-    "type": "event",
-    "priority": "medium",
-    "description": "General PTA Meeting",
-    "location": "Cafeteria",
-    "url": null,
-    "image_url": null,
-    "source": "pta_website"
-  },
-  {
-    "name": "Spelling Bee Finals",
-    "date": "2026-01-27",
-    "time": "6:00 PM",
-    "type": "event",
-    "priority": "medium",
-    "description": "Spelling Bee Finals",
-    "location": null,
-    "url": null,
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-17-26_at_7_57___AM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "Bubblefest",
-    "date": "2026-01-30",
-    "time": "9:00 AM",
-    "type": "event",
-    "priority": "high",
-    "description": "Bubblefest event",
-    "location": "Cafeteria",
-    "url": "https://signup.com/go/AHeWeDU",
-    "image_url": null,
-    "source": "pta_website"
-  },
-  {
-    "name": "Galentine's Night Out",
-    "date": "2026-02-12",
-    "time": null,
-    "type": "event",
-    "priority": "high",
-    "description": "45 minutes of strength training workout followed by bubbles at F45 Branham Park",
-    "location": "F45 Branham Park",
-    "url": "text \"LAMOMS\" to 408.549.7760",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-17-26_at_8_49___AM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "Yearbook Cover Contest",
-    "date": "2026-02-23",
-    "time": null,
-    "type": "deadline",
-    "priority": "medium",
-    "description": "5th grade students can enter their drawings for the yearbook cover contest",
-    "location": null,
-    "url": null,
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-18-26_at_8_57___AM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "Yearbook Orders",
-    "date": "2026-04-20",
-    "time": null,
-    "type": "deadline",
-    "priority": "medium",
-    "description": "Last day to order the 2025-26 yearbook. 5th grade parents need to submit baby photos by 3/1.",
-    "location": null,
-    "url": "https://www.betteryearbook.com/",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
-    "source": "pta_website"
-  },
-  {
-    "name": "Reading Lab Volunteers Needed",
-    "date": null,
-    "time": "12:45 PM - 2:00 PM",
-    "type": "volunteer",
-    "priority": "medium",
-    "description": "Volunteers needed for the Reading Lab tutoring program, Tuesdays, Wednesdays, or Thursdays",
-    "location": null,
-    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
-    "source": "pta_website"
-  },
-  {
-    "name": "Four Seasons Fundraising Concert",
-    "date": "2026-01-30",
-    "time": "7:30 PM",
-    "type": "event",
-    "priority": "high",
-    "description": "Fundraising concert featuring the Castillero Middle School Orchestras, with guest performer Mads Tolling",
-    "location": "Venture Church",
-    "url": null,
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-18-26_at_11_38___AM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "Author Assembly: Shawn Harris",
-    "date": "2026-01-27",
-    "time": null,
-    "type": "event",
-    "priority": "medium",
-    "description": "The PTA is hosting author Shawn Harris for an assembly. TK-2 will focus on 'Let's Be Bees' and 3-5 will focus on 'The First Cat in Space' series. Deadline to order signed books is 1/19.",
-    "location": null,
-    "url": "hicklebees.com/shawnharris-losalamitos",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-17-26_at_8_31___AM.png",
-    "source": "pta_website"
   },
   {
     "name": "Elementary schools out 2 hours early",
@@ -344,6 +248,26 @@
     "description": "All schools out 2 hours early",
     "url": null,
     "source": "student_calendar"
+  },
+  {
+    "name": "River Glen K-8 TWIBI Orientation (Tour only)",
+    "date": "2026-02-05",
+    "time": "9:30 AM - 10:30 AM",
+    "type": "event",
+    "priority": "medium",
+    "description": "River Glen School, 1088 Broadway Ave, San Jose, CA 95125, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "River Glen K-8 TWIBI Orientation (Tour only)",
+    "date": "2026-02-26",
+    "time": "9:30 AM - 10:30 AM",
+    "type": "event",
+    "priority": "medium",
+    "description": "River Glen School, 1088 Broadway Ave, San Jose, CA 95125, USA",
+    "url": null,
+    "source": "district_calendar"
   },
   {
     "name": "Croissant with Cheese",
@@ -610,6 +534,13 @@
     "type": "lunch_menu",
     "priority": "low",
     "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
+  },
+  {
+    "name": "French Toast Sticks with Turkey Sausage Link",
+    "date": "2026-02-02",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich"
   },
   {
     "name": "Chicken Burger",
@@ -714,22 +645,12 @@
     "date": "2026-02-16",
     "time": null,
     "type": "event",
-    "priority": "high",
-    "description": "All Day",
+    "priority": "low",
+    "description": "No school, winter recess from 2/16 to 2/20.",
+    "location": null,
     "url": null,
-    "source": "district_calendar"
-  },
-  {
-    "name": "Spring recess (No School)",
-    "date": "2026-04-06",
-    "time": null,
-    "type": "event",
-    "priority": "high",
-    "description": "Spring recess",
-    "url": null,
-    "source": "student_calendar",
-    "end_date": "2026-04-10",
-    "date_display": "Apr 06-10"
+    "image_url": null,
+    "source": "pta_website"
   },
   {
     "name": "Winter recess (No School)",
@@ -744,18 +665,23 @@
     "date_display": "Feb 17-20"
   },
   {
-    "name": "Breakfast In a Bun (Egg & Cheese)",
-    "date": "2026-02-04",
-    "type": "breakfast_menu",
-    "priority": "low",
-    "description": "Breakfast In a Bun (Egg & Cheese), Cereal & Graham Crackers"
+    "name": "Spring recess (No School)",
+    "date": "2026-04-06",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "Spring recess",
+    "url": null,
+    "source": "student_calendar",
+    "end_date": "2026-04-10",
+    "date_display": "Apr 06-10"
   },
   {
-    "name": "Breakfast In a Bun (Egg & Cheese)",
+    "name": "Breakfast In a  Bun (Egg & Cheese)",
     "date": "2026-02-04",
     "type": "breakfast_menu",
     "priority": "low",
-    "description": "Breakfast In a Bun (Egg & Cheese), Cereal & Graham Crackers"
+    "description": "Breakfast In a  Bun (Egg & Cheese), Cereal & Graham Crackers"
   },
   {
     "name": "Breakfast Pizza Bagel",
@@ -786,11 +712,11 @@
     "description": "Breakfast in a Bun (Egg & Cheese), Cereal & Graham Crackers"
   },
   {
-    "name": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link",
-    "date": "2026-02-02",
-    "type": "lunch_menu",
+    "name": "Breakfast In a Bun (Egg & Cheese)",
+    "date": "2026-02-04",
+    "type": "breakfast_menu",
     "priority": "low",
-    "description": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich"
+    "description": "Breakfast In a Bun (Egg & Cheese), Cereal & Graham Crackers"
   },
   {
     "name": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link",
