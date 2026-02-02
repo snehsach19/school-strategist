@@ -404,18 +404,18 @@ function App() {
                 href={calUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-gray-500 hover:text-gray-700"
+                className="text-xs px-2 py-1 rounded-full bg-blue-100 text-blue-700 hover:bg-blue-200 font-medium"
               >
-                + Calendar
+                + my calendar
               </a>
               {isInTodo(event) ? (
-                <span className="text-sm text-green-600">✓ Added</span>
+                <span className="text-xs px-2 py-1 rounded-full bg-green-100 text-green-700 font-medium">✓ added</span>
               ) : (
                 <button
                   onClick={() => addToTodo(event)}
-                  className="text-sm text-amber-600 hover:text-amber-700"
+                  className="text-xs px-2 py-1 rounded-full bg-amber-100 text-amber-700 hover:bg-amber-200 font-medium"
                 >
-                  Add to my To-Do
+                  + my todo
                 </button>
               )}
               {event.image_url && (
