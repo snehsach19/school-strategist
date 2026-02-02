@@ -68,6 +68,35 @@ function App() {
   const [question, setQuestion] = useState('')
   const [aiAnswer, setAiAnswer] = useState('')
   const [aiLoading, setAiLoading] = useState(false)
+  const [customTodos, setCustomTodos] = useState(() => {
+    // Load from localStorage on init
+    const saved = localStorage.getItem('parentTodos')
+    return saved ? JSON.parse(saved) : []
+  })
+
+  // Save custom todos to localStorage whenever they change
+  useEffect(() => {
+    localStorage.setItem('parentTodos', JSON.stringify(customTodos))
+  }, [customTodos])
+
+  const addToTodo = (event) => {
+    // Don't add duplicates
+    if (customTodos.some(t => t.name === event.name && t.date === event.date)) return
+    setCustomTodos([...customTodos, {
+      name: event.name,
+      date: event.date,
+      description: event.description,
+      addedAt: new Date().toISOString()
+    }])
+  }
+
+  const removeFromTodo = (index) => {
+    setCustomTodos(customTodos.filter((_, i) => i !== index))
+  }
+
+  const isInTodo = (event) => {
+    return customTodos.some(t => t.name === event.name && t.date === event.date)
+  }
 
   const askAssistant = async () => {
     if (!question.trim()) return
@@ -377,8 +406,18 @@ function App() {
                 rel="noopener noreferrer"
                 className="text-sm text-gray-500 hover:text-gray-700"
               >
-                + Add to Calendar
+                + Calendar
               </a>
+              {isInTodo(event) ? (
+                <span className="text-sm text-green-600">✓ In To-Do</span>
+              ) : (
+                <button
+                  onClick={() => addToTodo(event)}
+                  className="text-sm text-amber-600 hover:text-amber-700"
+                >
+                  + To-Do
+                </button>
+              )}
               {event.image_url && (
                 <button
                   onClick={() => setShowFlyer(!showFlyer)}
@@ -468,30 +507,6 @@ function App() {
             </div>
           )}
         </div>
-
-        {/* Parent Action Items */}
-        {parentActionItems.length > 0 && (
-          <div className="mb-6 bg-amber-50 border border-amber-200 rounded-xl p-4">
-            <h2 className="text-sm font-semibold text-amber-800 mb-3 flex items-center gap-2">
-              <span>📋</span> Parent To-Do
-            </h2>
-            <div className="space-y-2">
-              {parentActionItems.map((item, i) => (
-                <div key={i} className="bg-white rounded-lg p-3 shadow-sm">
-                  <div className="flex justify-between items-start gap-2">
-                    <div className="flex-1">
-                      <div className="font-medium text-gray-800 text-sm">{item.name}</div>
-                      <div className="text-sm text-gray-600 mt-1">{item.description}</div>
-                    </div>
-                    <div className="text-xs font-medium px-2 py-1 rounded-full bg-amber-100 text-amber-700 whitespace-nowrap">
-                      {item.daysUntil === 0 ? 'Today' : item.daysUntil === 1 ? 'Tomorrow' : `${item.daysUntil} days`}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
 
         {/* Filter Tabs */}
         <div className="flex gap-2 mb-6 overflow-x-auto pb-1">
@@ -627,6 +642,62 @@ function App() {
             )}
           </div>
         </section>
+
+        {/* Parent To-Do Section */}
+        {(parentActionItems.length > 0 || customTodos.length > 0) && (
+          <section className="mb-8">
+            <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
+              <h2 className="text-base font-semibold text-amber-800 mb-3 flex items-center gap-2">
+                <span>📋</span> Parent To-Do
+              </h2>
+              <div className="space-y-2">
+                {/* Auto-detected action items */}
+                {parentActionItems.map((item, i) => (
+                  <div key={`auto-${i}`} className="bg-white rounded-lg p-3 shadow-sm">
+                    <div className="flex justify-between items-start gap-2">
+                      <div className="flex-1">
+                        <div className="font-medium text-gray-800 text-sm">{item.name}</div>
+                        <div className="text-sm text-gray-600 mt-1">{item.description}</div>
+                      </div>
+                      <div className="text-xs font-medium px-2 py-1 rounded-full bg-amber-100 text-amber-700 whitespace-nowrap">
+                        {item.daysUntil === 0 ? 'Today' : item.daysUntil === 1 ? 'Tomorrow' : `${item.daysUntil} days`}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+                {/* Custom todos added by user */}
+                {customTodos.map((item, i) => {
+                  const eventDate = item.date ? new Date(item.date + 'T00:00:00') : null
+                  const daysUntil = eventDate ? Math.ceil((eventDate - today) / (1000 * 60 * 60 * 24)) : null
+                  return (
+                    <div key={`custom-${i}`} className="bg-white rounded-lg p-3 shadow-sm border-l-4 border-indigo-400">
+                      <div className="flex justify-between items-start gap-2">
+                        <div className="flex-1">
+                          <div className="font-medium text-gray-800 text-sm">{item.name}</div>
+                          {item.description && <div className="text-sm text-gray-600 mt-1">{item.description}</div>}
+                        </div>
+                        <div className="flex items-center gap-2">
+                          {daysUntil !== null && (
+                            <div className="text-xs font-medium px-2 py-1 rounded-full bg-indigo-100 text-indigo-700 whitespace-nowrap">
+                              {daysUntil <= 0 ? 'Past' : daysUntil === 1 ? 'Tomorrow' : `${daysUntil} days`}
+                            </div>
+                          )}
+                          <button
+                            onClick={() => removeFromTodo(i)}
+                            className="text-gray-400 hover:text-red-500 text-lg leading-none"
+                            title="Remove from to-do"
+                          >
+                            ×
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Upcoming Events */}
         <section className="mb-8">
