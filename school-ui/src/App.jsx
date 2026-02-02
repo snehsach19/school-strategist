@@ -409,13 +409,13 @@ function App() {
                 + Calendar
               </a>
               {isInTodo(event) ? (
-                <span className="text-sm text-green-600">✓ In To-Do</span>
+                <span className="text-sm text-green-600">✓ Added</span>
               ) : (
                 <button
                   onClick={() => addToTodo(event)}
                   className="text-sm text-amber-600 hover:text-amber-700"
                 >
-                  + To-Do
+                  Add to my To-Do
                 </button>
               )}
               {event.image_url && (
