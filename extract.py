@@ -220,10 +220,12 @@ Return a JSON array with these fields:
 
 EXTRACT events relevant to ELEMENTARY SCHOOL students and parents:
 - ALL PTA events (dances, meetings, fundraisers, etc.)
+- ALL classroom events (Valentine's Day parties, celebrations, spirit days, etc.)
 - School holidays and no-school days
 - Minimum days / early dismissal
 - Tours, info nights, workshops for elementary
 - Any deadlines or due dates relevant to elementary students
+- Events from the NEWSLETTER IMAGES section below (these are extracted from teacher newsletters)
 
 DO NOT EXTRACT:
 - Middle school information nights or events
