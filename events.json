@@ -1,22 +1,10 @@
 [
   {
-    "name": "Spirit Day: Valentine's Colors",
-    "date": "2026-02-13",
-    "time": null,
-    "type": "event",
-    "priority": "low",
-    "description": null,
-    "location": null,
-    "url": null,
-    "image_url": null,
-    "source": "pta_website"
-  },
-  {
-    "name": "Pajama and Popcorn Party",
+    "name": "Valentine's Day celebration",
     "date": "2026-02-13",
     "type": "event",
     "priority": "medium",
-    "description": "PARENTS: Please make sure that they wear school appropriate shoes for recess time!",
+    "description": "PARENTS: Please make sure to bring 1 Valentine's card for all 22 friends in the class and leave the 'To' section of the card blank. Wear PJs to school!",
     "location": null,
     "url": null,
     "image_url": null
@@ -27,9 +15,9 @@
     "time": "6:00 PM - 8:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "Denim and Diamonds theme. Tickets are $20 per guest, must be bought in advance on the PTA website.",
+    "description": "Denim and Diamonds themed dance for Los Alamitos students and their fathers/special adult guests.",
     "location": "Cafeteria",
-    "url": "https://losalamitospta.membershiptoolkit.com/",
+    "url": "https://losalamitospta.membershiptoolkit.com",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-17-26_at_8_27___AM.png",
     "source": "pta_website"
   },
@@ -39,14 +27,14 @@
     "time": "6:00 PM - 8:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "Denim and Diamonds theme. Tickets are $20 per guest, must be bought in advance on the PTA website.",
+    "description": "Denim and Diamonds themed dance for Los Alamitos students and their mothers/special adult guests.",
     "location": "Cafeteria",
-    "url": "https://losalamitospta.membershiptoolkit.com/",
+    "url": "https://losalamitospta.membershiptoolkit.com",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-17-26_at_8_25___AM.png",
     "source": "pta_website"
   },
   {
-    "name": "Spirit Day: Wear a Sports Shirt",
+    "name": "Spirit Day: Wear sports-themed shirt",
     "date": "2026-01-30",
     "type": "event",
     "priority": "low",
@@ -66,31 +54,21 @@
     "image_url": null
   },
   {
-    "name": "Label New Items",
+    "name": "Label new items (clothes, jackets, etc.)",
     "date": null,
     "type": "deadline",
     "priority": "low",
-    "description": "PARENTS: Please make sure to label these new items with their name for easier reunification! Many kids have been coming to school this week with gloves! Please make sure they can identify them if they brought them! I currently have two sets at school and no one knows who they belong to!",
+    "description": "PARENTS: Please make sure to label any new items your child has with their name for easier reunification. Many kids have been coming to school with gloves but no one knows who they belong to.",
     "location": null,
     "url": null,
     "image_url": null
   },
   {
-    "name": "Pajama day spirit day",
-    "date": "2026-02-13",
-    "type": "event",
-    "priority": "medium",
-    "description": "PARENTS: Send child to school in pajamas.",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Pajama Day Spirit Day",
+    "name": "Spirit Day: Pajama Day",
     "date": "2025-12-19",
     "type": "event",
-    "priority": "medium",
-    "description": "PARENTS: Send child in pajamas",
+    "priority": "low",
+    "description": null,
     "location": null,
     "url": null,
     "image_url": null
@@ -101,7 +79,7 @@
     "time": null,
     "type": "event",
     "priority": "high",
-    "description": "45 minutes of strength training workout followed by bubbles. This is a free event with a maximum of 30 people.",
+    "description": "45 minutes of strength training workout followed by bubbles. Free event with a maximum of 30 people.",
     "location": "F45 Branham Park",
     "url": "tel:408.549.7760",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-17-26_at_8_49___AM.png",
@@ -120,24 +98,12 @@
     "source": "pta_website"
   },
   {
-    "name": "Family Fun Night - Five Guys",
-    "date": "2026-02-13",
-    "time": null,
-    "type": "event",
-    "priority": "medium",
-    "description": "Mention Los Alamitos and 25% of proceeds will be donated to the PTA.",
-    "location": "Five Guys, 5353 Almaden Expy",
-    "url": null,
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_21___PM.png",
-    "source": "pta_website"
-  },
-  {
     "name": "Yearbook Cover Contest (5th Graders Only)",
     "date": "2026-02-23",
     "time": null,
     "type": "deadline",
     "priority": "medium",
-    "description": "Entries due by February 23, 2026. The theme is 'Under the Sea'.",
+    "description": "Entries due for the yearbook cover contest. Theme is 'Under the Sea'.",
     "location": null,
     "url": "mailto:LosAlamitosPTA@gmail.com",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-18-26_at_8_57___AM.png",
@@ -149,10 +115,34 @@
     "time": "4:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "We need volunteers for stage hands, concession organizer, and a digital keyboard. Audition videos due by March 1st, dress rehearsal on March 19th, and the show on March 20th.",
+    "description": "Volunteers needed for stage hands and concession organizer. Audition videos due by March 1st, dress rehearsal on March 19th, and show on March 20th.",
     "location": "The Stage at Los Alamitos",
-    "url": "https://forms.gle/xxxx",
+    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_07___PM.png",
+    "source": "pta_website"
+  },
+  {
+    "name": "Shawn Harris Author Assembly",
+    "date": null,
+    "time": null,
+    "type": "event",
+    "priority": "medium",
+    "description": "Students had a blast at the Shawn Harris author assembly.",
+    "location": null,
+    "url": null,
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_27___PM.png",
+    "source": "pta_website"
+  },
+  {
+    "name": "Reading Lab Volunteers Needed",
+    "date": null,
+    "time": "12:45 PM - 2:00 PM",
+    "type": "volunteer",
+    "priority": "medium",
+    "description": "Volunteers needed once a week (Tuesday, Wednesday, or Thursday) to help with the reading lab tutoring program.",
+    "location": null,
+    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
     "source": "pta_website"
   },
   {
@@ -177,18 +167,6 @@
     "location": null,
     "url": "https://www.sjusd.org/resources/parent-resources/parent-portal",
     "image_url": null,
-    "source": "pta_website"
-  },
-  {
-    "name": "Reading Lab Volunteers Needed",
-    "date": null,
-    "time": "12:45 PM - 2:00 PM",
-    "type": "volunteer",
-    "priority": "medium",
-    "description": "Volunteers are needed to tutor students in the Reading Lab program on Tuesdays, Wednesdays, or Thursdays during the school year.",
-    "location": null,
-    "url": "https://forms.gle/FqpLea77SxjtJTR9",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
     "source": "pta_website"
   },
   {
@@ -222,22 +200,22 @@
     "source": "student_calendar"
   },
   {
-    "name": "Secondary schools out 2 hours early",
-    "date": "2026-05-26",
-    "time": null,
+    "name": "River Glen K-8 TWIBI Orientation (Tour only)",
+    "date": "2026-02-05",
+    "time": "9:30 AM - 10:30 AM",
     "type": "event",
     "priority": "medium",
-    "description": null,
+    "description": "River Glen School, 1088 Broadway Ave, San Jose, CA 95125, USA",
     "url": null,
     "source": "district_calendar"
   },
   {
-    "name": "Secondary schools out 2 hours early",
-    "date": "2026-05-27",
-    "time": null,
+    "name": "River Glen K-8 TWIBI Orientation (Tour only)",
+    "date": "2026-02-26",
+    "time": "9:30 AM - 10:30 AM",
     "type": "event",
     "priority": "medium",
-    "description": null,
+    "description": "River Glen School, 1088 Broadway Ave, San Jose, CA 95125, USA",
     "url": null,
     "source": "district_calendar"
   },
@@ -508,6 +486,13 @@
     "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
   },
   {
+    "name": "French Toast Sticks with Turkey Sausage Link",
+    "date": "2026-02-02",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich"
+  },
+  {
     "name": "Chicken Burger",
     "date": "2026-02-03",
     "type": "lunch_menu",
@@ -606,26 +591,24 @@
     "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
   },
   {
-    "name": "Holiday Party",
+    "name": "Holiday Book Exchange",
     "date": "2025-12-19",
     "type": "event",
     "priority": "medium",
-    "description": "PARENTS: Attend the holiday party",
-    "location": "9:00-10:15AM",
+    "description": "PARENTS: Please bring in a new or gently used wrapped book (gender neutral if possible and secular) by 12/17 to share the joy of reading with their classmates.",
+    "location": null,
     "url": null,
     "image_url": null
   },
   {
-    "name": "Winter Recess",
+    "name": "Winter recess (No School)",
     "date": "2026-02-16",
     "time": null,
     "type": "event",
-    "priority": "medium",
-    "description": null,
-    "location": null,
+    "priority": "high",
+    "description": "Winter recess",
     "url": null,
-    "image_url": null,
-    "source": "pta_website",
+    "source": "student_calendar",
     "end_date": "2026-02-20",
     "date_display": "Feb 16-20"
   },
@@ -682,13 +665,6 @@
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Breakfast in a Bun (Egg & Cheese), Cereal & Graham Crackers"
-  },
-  {
-    "name": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link",
-    "date": "2026-02-02",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich"
   },
   {
     "name": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link",
