@@ -1,24 +1,14 @@
 [
   {
-    "name": "Valentine's Day celebration",
-    "date": "2026-02-13",
-    "type": "event",
-    "priority": "medium",
-    "description": "PARENTS: Please make sure to bring 1 Valentine's card for all 22 friends in the class and leave the 'To' section of the card blank. Wear PJs to school!",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
     "name": "Father/Daughter Dance",
     "date": "2026-02-06",
     "time": "6:00 PM - 8:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "Denim and Diamonds themed dance for Los Alamitos students and their fathers/special adult guests.",
+    "description": "The theme of this year's dances is Denim and Diamonds! Bust out your best denim, bling, and/or western attire and dance the night away!",
     "location": "Cafeteria",
-    "url": "https://losalamitospta.membershiptoolkit.com",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-17-26_at_8_27___AM.png",
+    "url": "https://losalamitospta.membershiptoolkit.com/",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-17-26_at_8_25___AM.png",
     "source": "pta_website"
   },
   {
@@ -27,18 +17,28 @@
     "time": "6:00 PM - 8:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "Denim and Diamonds themed dance for Los Alamitos students and their mothers/special adult guests.",
+    "description": "The theme of this year's dances is Denim and Diamonds! Bust out your best denim, bling, and/or western attire and dance the night away!",
     "location": "Cafeteria",
-    "url": "https://losalamitospta.membershiptoolkit.com",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-17-26_at_8_25___AM.png",
+    "url": "https://losalamitospta.membershiptoolkit.com/",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-17-26_at_8_27___AM.png",
     "source": "pta_website"
   },
   {
-    "name": "Spirit Day: Wear sports-themed shirt",
+    "name": "Valentine's Day Celebration",
+    "date": "2026-02-13",
+    "type": "event",
+    "priority": "medium",
+    "description": "PARENTS: Bring 1 Valentine's card for all 22 friends in the class, leave 'To' section of the card blank. Wear PJs to school.",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Sports Shirt Spirit Day",
     "date": "2026-01-30",
     "type": "event",
     "priority": "low",
-    "description": "PARENTS: Send child in sports-themed shirt",
+    "description": "PARENTS: Send child to school wearing a sports-themed shirt.",
     "location": null,
     "url": null,
     "image_url": null
@@ -47,27 +47,37 @@
     "name": "100th Day of School",
     "date": "2026-01-22",
     "type": "event",
-    "priority": "medium",
+    "priority": "low",
     "description": null,
     "location": null,
     "url": null,
     "image_url": null
   },
   {
-    "name": "Label new items (clothes, jackets, etc.)",
-    "date": null,
+    "name": "Elementary schools out 2 hours early",
+    "date": "2026-03-12",
+    "time": null,
+    "type": "event",
+    "priority": "medium",
+    "description": "Elementary schools out 2 hours early",
+    "url": null,
+    "source": "student_calendar"
+  },
+  {
+    "name": "ELA CAT/PT Testing (Grades 3-5)",
+    "date": "2026-04-20",
     "type": "deadline",
-    "priority": "low",
-    "description": "PARENTS: Please make sure to label any new items your child has with their name for easier reunification. Many kids have been coming to school with gloves but no one knows who they belong to.",
+    "priority": "high",
+    "description": null,
     "location": null,
     "url": null,
     "image_url": null
   },
   {
-    "name": "Spirit Day: Pajama Day",
-    "date": "2025-12-19",
-    "type": "event",
-    "priority": "low",
+    "name": "Math CAT/PT Testing (Grades 3-5)",
+    "date": "2026-04-27",
+    "type": "deadline",
+    "priority": "high",
     "description": null,
     "location": null,
     "url": null,
@@ -79,22 +89,34 @@
     "time": null,
     "type": "event",
     "priority": "high",
-    "description": "45 minutes of strength training workout followed by bubbles. Free event with a maximum of 30 people.",
-    "location": "F45 Branham Park",
+    "description": "45 minutes of strength training work out followed by bubbles. This is a free event with a maximum of 30 people, so sign up now!",
+    "location": null,
     "url": "tel:408.549.7760",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-17-26_at_8_49___AM.png",
     "source": "pta_website"
   },
   {
-    "name": "Family Fun Night - Five Guys",
+    "name": "Family Fun Night- Five Guys",
     "date": "2026-02-12",
     "time": null,
     "type": "event",
     "priority": "medium",
-    "description": "Mention Los Alamitos and 25% of proceeds will be donated to the PTA.",
+    "description": "Mention Los Alamitos and 25% of proceeds will be donated to the PTA!",
     "location": "Five Guys, 5353 Almaden Expy",
     "url": null,
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_21___PM.png",
+    "image_url": null,
+    "source": "pta_website"
+  },
+  {
+    "name": "Family Fun Night- Five Guys",
+    "date": "2026-02-13",
+    "time": null,
+    "type": "event",
+    "priority": "medium",
+    "description": "Mention Los Alamitos and 25% of proceeds will be donated to the PTA!",
+    "location": "Five Guys, 5353 Almaden Expy",
+    "url": null,
+    "image_url": null,
     "source": "pta_website"
   },
   {
@@ -103,7 +125,7 @@
     "time": null,
     "type": "deadline",
     "priority": "medium",
-    "description": "Entries due for the yearbook cover contest. Theme is 'Under the Sea'.",
+    "description": "Entries due by February 23, 2026. Theme: Under the Sea. Must include 'Los Alamitos' and '2025-2026'.",
     "location": null,
     "url": "mailto:LosAlamitosPTA@gmail.com",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-18-26_at_8_57___AM.png",
@@ -115,34 +137,10 @@
     "time": "4:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "Volunteers needed for stage hands and concession organizer. Audition videos due by March 1st, dress rehearsal on March 19th, and show on March 20th.",
+    "description": "Volunteer opportunities include Stage Hands and Concession Organizer. To apply to perform, submit audition videos by March 1st, 2026. Dress Rehearsal is on March 19th, 2026 at 4:00 pm.",
     "location": "The Stage at Los Alamitos",
-    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
+    "url": "https://forms.gle/VUKuYt3wTaZBgAuK9",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_07___PM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "Shawn Harris Author Assembly",
-    "date": null,
-    "time": null,
-    "type": "event",
-    "priority": "medium",
-    "description": "Students had a blast at the Shawn Harris author assembly.",
-    "location": null,
-    "url": null,
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_27___PM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "Reading Lab Volunteers Needed",
-    "date": null,
-    "time": "12:45 PM - 2:00 PM",
-    "type": "volunteer",
-    "priority": "medium",
-    "description": "Volunteers needed once a week (Tuesday, Wednesday, or Thursday) to help with the reading lab tutoring program.",
-    "location": null,
-    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
     "source": "pta_website"
   },
   {
@@ -151,7 +149,7 @@
     "time": null,
     "type": "deadline",
     "priority": "medium",
-    "description": "Last day to order the 2025-26 yearbook. 5th grade parents need to submit baby photos by March 1st.",
+    "description": "Last day to order the 2025-26 Yearbook. 5th grade parents, send in your child's baby photos by March 1st.",
     "location": null,
     "url": "https://www.betteryearbook.com/",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
@@ -170,14 +168,16 @@
     "source": "pta_website"
   },
   {
-    "name": "Elementary schools out 2 hours early",
-    "date": "2026-03-12",
-    "time": null,
-    "type": "event",
+    "name": "Reading Lab Volunteers Needed",
+    "date": null,
+    "time": "12:45 PM - 2:00 PM",
+    "type": "volunteer",
     "priority": "medium",
-    "description": "Elementary schools out 2 hours early",
-    "url": null,
-    "source": "student_calendar"
+    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. Volunteers are needed on Tuesdays, Wednesdays, or Thursdays.",
+    "location": null,
+    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
+    "source": "pta_website"
   },
   {
     "name": "Elementary schools out 2 hours early",
@@ -200,26 +200,6 @@
     "source": "student_calendar"
   },
   {
-    "name": "River Glen K-8 TWIBI Orientation (Tour only)",
-    "date": "2026-02-05",
-    "time": "9:30 AM - 10:30 AM",
-    "type": "event",
-    "priority": "medium",
-    "description": "River Glen School, 1088 Broadway Ave, San Jose, CA 95125, USA",
-    "url": null,
-    "source": "district_calendar"
-  },
-  {
-    "name": "River Glen K-8 TWIBI Orientation (Tour only)",
-    "date": "2026-02-26",
-    "time": "9:30 AM - 10:30 AM",
-    "type": "event",
-    "priority": "medium",
-    "description": "River Glen School, 1088 Broadway Ave, San Jose, CA 95125, USA",
-    "url": null,
-    "source": "district_calendar"
-  },
-  {
     "name": "Croissant with Cheese",
     "date": "2026-02-02",
     "type": "breakfast_menu",
@@ -386,104 +366,6 @@
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Concha, Cereal & Graham Crackers"
-  },
-  {
-    "name": "Chicken Burger",
-    "date": "2026-02-03",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart"
-  },
-  {
-    "name": "Beef Rib B Que Sandwich",
-    "date": "2026-02-04",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Beef Rib B Que Sandwich, Veggie Burger, Peach Yogurt Parfait with Granola and String Cheese"
-  },
-  {
-    "name": "Turkey & Gravy with Mashed Potatoes",
-    "date": "2026-02-05",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Turkey & Gravy with Mashed Potatoes, Italian Dunkers"
-  },
-  {
-    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos",
-    "date": "2026-02-06",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
-  },
-  {
-    "name": "Chicken Corndog",
-    "date": "2026-02-09",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Chicken Corndog, Alfredo Pasta"
-  },
-  {
-    "name": "Pepperoni Pizza",
-    "date": "2026-02-10",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Pepperoni Pizza, Bean & Cheese Enchirito"
-  },
-  {
-    "name": "Breaded Chicken Drumstick with Rice",
-    "date": "2026-02-11",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Breaded Chicken Drumstick with Rice, Italian Cheese & Garlic Pull-Apart"
-  },
-  {
-    "name": "Turkey Tacos",
-    "date": "2026-02-12",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Turkey Tacos, Cheese Quesadilla"
-  },
-  {
-    "name": "Grilled Cheese Sandwich",
-    "date": "2026-02-13",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Grilled Cheese Sandwich, Popcorn Chicken Bowl with Mashed Potatoes"
-  },
-  {
-    "name": "Beefy Macaroni Pasta",
-    "date": "2026-02-23",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Beefy Macaroni Pasta, Grilled Cheese Sandwich"
-  },
-  {
-    "name": "Chicken Burger",
-    "date": "2026-02-24",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart"
-  },
-  {
-    "name": "Beef Rib B Que Sandwich",
-    "date": "2026-02-25",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Beef Rib B Que Sandwich, Veggie Burger, Italian Cheese & Garlic Pull Apart"
-  },
-  {
-    "name": "Chicken Tikka Masala with Rice",
-    "date": "2026-02-26",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Chicken Tikka Masala with Rice, Italian Dunkers"
-  },
-  {
-    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos",
-    "date": "2026-02-27",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
   },
   {
     "name": "French Toast Sticks with Turkey Sausage Link",
@@ -591,14 +473,112 @@
     "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
   },
   {
-    "name": "Holiday Book Exchange",
-    "date": "2025-12-19",
+    "name": "Chicken Burger",
+    "date": "2026-02-03",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart"
+  },
+  {
+    "name": "Beef Rib B Que Sandwich",
+    "date": "2026-02-04",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Beef Rib B Que Sandwich, Veggie Burger, Peach Yogurt Parfait with Granola and String Cheese"
+  },
+  {
+    "name": "Turkey & Gravy with Mashed Potatoes",
+    "date": "2026-02-05",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Turkey & Gravy with Mashed Potatoes, Italian Dunkers"
+  },
+  {
+    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos",
+    "date": "2026-02-06",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
+  },
+  {
+    "name": "Chicken Corndog",
+    "date": "2026-02-09",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Chicken Corndog, Alfredo Pasta"
+  },
+  {
+    "name": "Pepperoni Pizza",
+    "date": "2026-02-10",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Pepperoni Pizza, Bean & Cheese Enchirito"
+  },
+  {
+    "name": "Breaded Chicken Drumstick with Rice",
+    "date": "2026-02-11",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Breaded Chicken Drumstick with Rice, Italian Cheese & Garlic Pull-Apart"
+  },
+  {
+    "name": "Turkey Tacos",
+    "date": "2026-02-12",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Turkey Tacos, Cheese Quesadilla"
+  },
+  {
+    "name": "Grilled Cheese Sandwich",
+    "date": "2026-02-13",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Grilled Cheese Sandwich, Popcorn Chicken Bowl with Mashed Potatoes"
+  },
+  {
+    "name": "Beefy Macaroni Pasta",
+    "date": "2026-02-23",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Beefy Macaroni Pasta, Grilled Cheese Sandwich"
+  },
+  {
+    "name": "Chicken Burger",
+    "date": "2026-02-24",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart"
+  },
+  {
+    "name": "Beef Rib B Que Sandwich",
+    "date": "2026-02-25",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Beef Rib B Que Sandwich, Veggie Burger, Italian Cheese & Garlic Pull Apart"
+  },
+  {
+    "name": "Chicken Tikka Masala with Rice",
+    "date": "2026-02-26",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Chicken Tikka Masala with Rice, Italian Dunkers"
+  },
+  {
+    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos",
+    "date": "2026-02-27",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
+  },
+  {
+    "name": "Spring Recess",
+    "date": "2026-04-06",
+    "time": null,
     "type": "event",
-    "priority": "medium",
-    "description": "PARENTS: Please bring in a new or gently used wrapped book (gender neutral if possible and secular) by 12/17 to share the joy of reading with their classmates.",
-    "location": null,
+    "priority": "high",
+    "description": "All Day",
     "url": null,
-    "image_url": null
+    "source": "district_calendar"
   },
   {
     "name": "Winter recess (No School)",
@@ -614,7 +594,7 @@
   },
   {
     "name": "Spring recess (No School)",
-    "date": "2026-04-06",
+    "date": "2026-04-07",
     "time": null,
     "type": "event",
     "priority": "high",
@@ -622,7 +602,7 @@
     "url": null,
     "source": "student_calendar",
     "end_date": "2026-04-10",
-    "date_display": "Apr 06-10"
+    "date_display": "Apr 07-10"
   },
   {
     "name": "Breakfast In a Bun (Egg & Cheese)",
