@@ -1,10 +1,10 @@
 [
   {
-    "name": "Valentine's Day Celebration",
+    "name": "Valentine's Day celebration",
     "date": "2026-02-13",
     "type": "event",
-    "priority": "medium",
-    "description": "PARENTS: Make sure to bring 1 Valentine's card for all 22 friends in the class and leave the 'To' section of the card blank.",
+    "priority": "high",
+    "description": "PARENTS: Please make sure to bring 1 for all 22 friends in our class and to leave \"To\" section of the card blank for easier pass out! Our bags were unexpectedly on the smaller side this year, so please keep goodies and prizes small this year! Wear PJs to school!",
     "location": null,
     "url": null,
     "image_url": null
@@ -14,67 +14,47 @@
     "date": "2026-02-06",
     "type": "event",
     "priority": "high",
-    "description": "PARENTS: Attend the Father Daughter Dance.",
+    "description": "PARENTS: No additional information provided.",
     "location": "Cafeteria",
-    "url": null,
-    "image_url": null
+    "url": "https://losalamitospta.membershiptoolkit.com/home",
+    "image_url": "https://s3.amazonaws.com/ps-feeds-production/inline_images_1768341407793-IMG_6903.JPG"
   },
   {
     "name": "Mother Son Dance",
     "date": "2026-02-07",
     "type": "event",
     "priority": "high",
-    "description": "PARENTS: Attend the Mother Son Dance.",
+    "description": "PARENTS: No additional information provided.",
     "location": "Cafeteria",
-    "url": null,
-    "image_url": null
+    "url": "https://losalamitospta.membershiptoolkit.com/home",
+    "image_url": "https://s3.amazonaws.com/ps-feeds-production/inline_images_1768341407793-IMG_6903.JPG"
   },
   {
     "name": "100th Day of School",
     "date": "2026-01-22",
     "type": "event",
     "priority": "medium",
-    "description": null,
+    "description": "PARENTS: No additional information provided.",
     "location": null,
     "url": null,
     "image_url": null
   },
   {
-    "name": "Wear a Sports Shirt Spirit Day",
+    "name": "Wear a sports-themed shirt Spirit Day",
     "date": "2026-01-30",
     "type": "event",
     "priority": "medium",
-    "description": "PARENTS: Wear a sports-themed shirt",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Label New Items",
-    "date": null,
-    "type": "deadline",
-    "priority": "low",
-    "description": "PARENTS: Please make sure to label new sweaters, clothes, and jackets with your child's name.",
+    "description": "PARENTS: Send your child in a sports-themed shirt.",
     "location": null,
     "url": null,
     "image_url": null
   },
   {
     "name": "Pajama Day Spirit Day",
-    "date": "2025-12-19",
+    "date": "2026-12-19",
     "type": "event",
     "priority": "medium",
-    "description": null,
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Holiday Book Exchange",
-    "date": null,
-    "type": "deadline",
-    "priority": "low",
-    "description": "PARENTS: Bring a new or gently used wrapped book (gender neutral if possible and secular) by 12/17 to share the joy of reading with their classmates.",
+    "description": "PARENTS: No additional information provided.",
     "location": null,
     "url": null,
     "image_url": null
@@ -87,17 +67,17 @@
     "priority": "medium",
     "description": "Let's treat our staff to a delicious luncheon to celebrate the upcoming Lunar New Year and Valentine's Day.",
     "location": null,
-    "url": "https://losalamitospta.membershiptoolkit.com/event/sign_up_here",
+    "url": "https://losalamitospta.membershiptoolkit.com/sign_up/event/15997",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_2-8-26_at_7_42___AM.png",
     "source": "pta_website"
   },
   {
     "name": "Galentine's Night Out at F45 Branham Park",
     "date": "2026-02-12",
-    "time": "45 minutes",
+    "time": "6:00 PM - 6:45 PM",
     "type": "event",
     "priority": "high",
-    "description": "45 minutes of strength training work out followed by bubbles",
+    "description": "45 minutes of strength training work out followed by bubbles. Each F45 workout is a unique program that incorporates cardio, resistance-based strength training, or a hybrid of both, all geared toward everyday life.",
     "location": "F45 Branham Park",
     "url": "tel:408.549.7760",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-17-26_at_8_49___AM.png",
@@ -108,7 +88,7 @@
     "date": "2026-02-12",
     "time": null,
     "type": "event",
-    "priority": "high",
+    "priority": "medium",
     "description": "Mention Los Alamitos and 25% of proceeds will be donated to the PTA!!",
     "location": "Five Guys, 5353 Almaden Expy",
     "url": null,
@@ -121,7 +101,7 @@
     "time": null,
     "type": "deadline",
     "priority": "medium",
-    "description": "2 winners will be selected to be displayed on the front and back cover, by the Yearbook committee panel.",
+    "description": "Los Alamitos PTA is inviting all Los Alamitos 5th graders to enter their drawings for the Yearbook cover contest. 2 winners will be selected to be displayed on the front and back cover.",
     "location": null,
     "url": "mailto:LosAlamitosPTA@gmail.com",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-18-26_at_8_57___AM.png",
@@ -130,22 +110,22 @@
   {
     "name": "Variety Show \u2013 Volunteers & Important Info",
     "date": "2026-03-20",
-    "time": "4:00pm",
+    "time": "4:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "We're gearing up for our upcoming Variety Show and need parent volunteers to help make it a success!",
+    "description": "Volunteer opportunities include Stage Hands to assist performers and Concession Organizer to coordinate snacks and sales. Audition videos are due by 3/1, dress rehearsal is on 3/19, and the show is on 3/20.",
     "location": "The Stage at Los Alamitos",
-    "url": "https://losalamitospta.membershiptoolkit.com/variety_show_sign_up",
+    "url": "https://forms.gle/3PKpbHK3eB1fJyW57",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_07___PM.png",
     "source": "pta_website"
   },
   {
     "name": "Reading Lab Volunteers Needed",
     "date": null,
-    "time": "12:45pm - 2:00pm",
+    "time": "12:45 PM - 2:00 PM",
     "type": "volunteer",
     "priority": "medium",
-    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. We are looking for volunteers who can come in once per week.",
+    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. Volunteers are needed once per week (Tues, Wed, or Thurs) during the school year.",
     "location": null,
     "url": "https://forms.gle/FqpLea77SxjtwJTR9",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
@@ -157,7 +137,7 @@
     "time": null,
     "type": "deadline",
     "priority": "medium",
-    "description": "Last day to order: 4/20 \u2014 but don't wait until the last minute! We won't have extras on hand if you forget to order. 5th grade parents \u2014 start gathering those adorable baby photos for the 5th Grade Baby Pages! They are due by March 1st!",
+    "description": "Last day to order the 2025-26 Yearbook. 5th grade parents need to submit baby photos by 3/1 for the 5th Grade Baby Pages.",
     "location": null,
     "url": "https://www.betteryearbook.com/",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
@@ -169,22 +149,22 @@
     "time": null,
     "type": "deadline",
     "priority": "medium",
-    "description": "Families will submit school choice requests online through the School Choice section of Parent Portal, which will be open from January 20 through February 13, 2026.",
+    "description": "Families will submit school choice requests online through the School Choice section of Parent Portal, which will be open from 1/20 through 2/13.",
     "location": null,
     "url": "https://www.sjusd.org/resources/parent-resources/parent-portal",
     "image_url": null,
     "source": "pta_website"
   },
   {
-    "name": "PTA General Meeting",
-    "date": "2026-02-23",
-    "time": "8:15am",
+    "name": "Sponsor Spotlight - Amato Pizzeria",
+    "date": null,
+    "time": null,
     "type": "event",
-    "priority": "medium",
-    "description": null,
+    "priority": "low",
+    "description": "Amato Pizzeria serves up delicious pies with quality ingredients and old-school love. It's the perfect spot for family dinner night \u2014 and support for a local favorite.",
     "location": null,
-    "url": null,
-    "image_url": null,
+    "url": "https://amatopizzeria.com/",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_2-8-26_at_7_48___AM.png",
     "source": "pta_website"
   },
   {
@@ -218,6 +198,26 @@
     "source": "student_calendar"
   },
   {
+    "name": "River Glen K-8 TWIBI Orientation (Tour only)",
+    "date": "2026-02-05",
+    "time": "9:30 AM - 10:30 AM",
+    "type": "event",
+    "priority": "medium",
+    "description": "River Glen School, 1088 Broadway Ave, San Jose, CA 95125, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "River Glen K-8 TWIBI Orientation (Tour only)",
+    "date": "2026-02-26",
+    "time": "9:30 AM - 10:30 AM",
+    "type": "event",
+    "priority": "medium",
+    "description": "River Glen School, 1088 Broadway Ave, San Jose, CA 95125, USA",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
     "name": "Croissant with Cheese",
     "date": "2026-02-02",
     "type": "breakfast_menu",
@@ -384,6 +384,13 @@
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Concha, Cereal & Graham Crackers"
+  },
+  {
+    "name": "French Toast Sticks with Turkey Sausage Link",
+    "date": "2026-02-02",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich"
   },
   {
     "name": "Chicken Burger",
@@ -590,10 +597,10 @@
   },
   {
     "name": "Holiday Party",
-    "date": "2025-12-19",
+    "date": "2026-12-19",
     "type": "event",
     "priority": "medium",
-    "description": "PARENTS: Bring a new or gently used wrapped book (gender neutral if possible and secular) by 12/17 to share the joy of reading with their classmates.",
+    "description": "PARENTS: Holiday Book Exchange - Bring in a new or gently used wrapped book (gender neutral if possible and secular) by 12/17 to share the joy of reading with their classmates.",
     "location": "Classroom",
     "url": null,
     "image_url": null
@@ -663,12 +670,5 @@
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Breakfast in a Bun (Egg & Cheese), Cereal & Graham Crackers"
-  },
-  {
-    "name": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link",
-    "date": "2026-02-02",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich"
   }
 ]
