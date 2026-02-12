@@ -98,15 +98,28 @@ function App() {
     return customTodos.some(t => t.name === event.name && t.date === event.date)
   }
 
-  const askAssistant = async () => {
-    if (!question.trim()) return
+  const suggestedQuestions = [
+    "When is the next no-school day?",
+    "What's for lunch tomorrow?",
+    "Any district news this week?",
+    "Summarize the latest email",
+  ]
+
+  const askAssistant = async (overrideQuestion) => {
+    const q = (overrideQuestion || question).trim()
+    if (!q) return
+    if (!overrideQuestion) {
+      // Only set question if not already set by chip tap
+    } else {
+      setQuestion(q)
+    }
     setAiLoading(true)
     setAiAnswer('')
     try {
       const res = await fetch(`${API_URL}/api/ask`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question: question.trim() })
+        body: JSON.stringify({ question: q })
       })
       const data = await res.json()
       if (data.error) {
@@ -501,6 +514,19 @@ function App() {
               {aiLoading ? '...' : 'Ask'}
             </button>
           </div>
+          {!aiAnswer && !aiLoading && (
+            <div className="flex flex-wrap gap-2 mt-3">
+              {suggestedQuestions.map((q, i) => (
+                <button
+                  key={i}
+                  onClick={() => askAssistant(q)}
+                  className="text-xs px-3 py-1.5 rounded-full bg-indigo-50 text-indigo-700 hover:bg-indigo-100 font-medium transition-colors"
+                >
+                  {q}
+                </button>
+              ))}
+            </div>
+          )}
           {aiAnswer && (
             <div className="mt-3 p-3 bg-gray-50 rounded-lg text-sm text-gray-700 whitespace-pre-wrap">
               {aiAnswer}
