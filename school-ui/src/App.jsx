@@ -228,9 +228,29 @@ function App() {
       .slice(0, 5)
   }, [events, todayStr, today])
 
-  // Upcoming events with filter
+  // Today's events with filter
+  const todayEvents = useMemo(() => {
+    let filtered = events.filter(e => e.date === todayStr)
+
+    if (filter === 'all') {
+      filtered = filtered.filter(e => e.type === 'event' || e.type === 'deadline')
+    } else if (filter === 'events') {
+      filtered = filtered.filter(e => e.type === 'event' || e.type === 'deadline')
+    } else if (filter === 'meals') {
+      filtered = filtered.filter(e => e.type === 'lunch_menu' || e.type === 'breakfast_menu')
+    } else if (filter === 'noschool') {
+      filtered = filtered.filter(e => {
+        const n = (e.name || '').toLowerCase()
+        return n.includes('no school') || n.includes('recess') || n.includes('holiday')
+      })
+    }
+
+    return filtered.sort((a, b) => (a.name || '').localeCompare(b.name || ''))
+  }, [events, todayStr, filter])
+
+  // Upcoming events (future only) with filter
   const upcomingEvents = useMemo(() => {
-    let filtered = events.filter(e => e.date >= todayStr)
+    let filtered = events.filter(e => e.date > todayStr)
 
     if (filter === 'all') {
       filtered = filtered.filter(e => e.type === 'event' || e.type === 'deadline')
@@ -640,6 +660,25 @@ function App() {
             </div>
           </section>
         )}
+
+        {/* Today's Events */}
+        <section className="mb-8">
+          <h2 className="text-lg font-semibold text-gray-800 mb-3">
+            {filter === 'meals' ? "Today's Meals" :
+             filter === 'noschool' ? 'No School Today?' : "Today's Events"}
+          </h2>
+          <div className="space-y-3">
+            {todayEvents.length === 0 ? (
+              <div className="bg-white rounded-xl shadow-sm p-5 text-gray-400 text-sm">
+                {filter === 'noschool' ? 'School is in session today' : 'No events today'}
+              </div>
+            ) : (
+              todayEvents.map((ev, i) => (
+                <EventCard key={i} event={ev} />
+              ))
+            )}
+          </div>
+        </section>
 
         {/* Upcoming Events */}
         <section className="mb-8">
