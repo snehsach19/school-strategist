@@ -485,23 +485,22 @@ function App() {
             <span className="text-xl">🤖</span>
             <span className="font-medium text-gray-700">Ask Assistant</span>
           </div>
-          <div className="flex gap-2">
+          <form className="flex gap-2" onSubmit={(e) => { e.preventDefault(); askAssistant(); }}>
             <input
               type="text"
               placeholder="e.g., When is pizza coming up?"
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
-              onKeyDown={(e) => e.key === 'Enter' && askAssistant()}
-              className="flex-1 px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+              className="flex-1 px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-base"
             />
             <button
-              onClick={askAssistant}
+              type="submit"
               disabled={aiLoading || !question.trim()}
-              className="px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="px-5 py-2 min-w-[48px] min-h-[48px] bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             >
               {aiLoading ? '...' : 'Ask'}
             </button>
-          </div>
+          </form>
           {aiAnswer && (
             <div className="mt-3 p-3 bg-gray-50 rounded-lg text-sm text-gray-700 whitespace-pre-wrap">
               {aiAnswer.split(/(\[[^\]]+\]\([^)]+\))/).map((part, i) => {
