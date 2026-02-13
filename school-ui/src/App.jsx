@@ -98,21 +98,9 @@ function App() {
     return customTodos.some(t => t.name === event.name && t.date === event.date)
   }
 
-  const suggestedQuestions = [
-    "When is the next no-school day?",
-    "What's for lunch tomorrow?",
-    "Any district news this week?",
-    "Summarize the latest email",
-  ]
-
-  const askAssistant = async (overrideQuestion) => {
-    const q = (overrideQuestion || question).trim()
+  const askAssistant = async () => {
+    const q = question.trim()
     if (!q) return
-    if (!overrideQuestion) {
-      // Only set question if not already set by chip tap
-    } else {
-      setQuestion(q)
-    }
     setAiLoading(true)
     setAiAnswer('')
     try {
@@ -514,22 +502,20 @@ function App() {
               {aiLoading ? '...' : 'Ask'}
             </button>
           </div>
-          {!aiAnswer && !aiLoading && (
-            <div className="flex flex-wrap gap-2 mt-3">
-              {suggestedQuestions.map((q, i) => (
-                <button
-                  key={i}
-                  onClick={() => askAssistant(q)}
-                  className="text-xs px-3 py-1.5 rounded-full bg-indigo-50 text-indigo-700 hover:bg-indigo-100 font-medium transition-colors"
-                >
-                  {q}
-                </button>
-              ))}
-            </div>
-          )}
           {aiAnswer && (
             <div className="mt-3 p-3 bg-gray-50 rounded-lg text-sm text-gray-700 whitespace-pre-wrap">
-              {aiAnswer}
+              {aiAnswer.split(/(\[[^\]]+\]\([^)]+\))/).map((part, i) => {
+                const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
+                if (linkMatch) {
+                  return (
+                    <a key={i} href={linkMatch[2]} target="_blank" rel="noopener noreferrer"
+                       className="text-indigo-600 hover:text-indigo-800 underline font-medium">
+                      {linkMatch[1]}
+                    </a>
+                  )
+                }
+                return part
+              })}
             </div>
           )}
         </div>

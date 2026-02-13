@@ -160,6 +160,10 @@ BREAKFAST MENUS:
 LUNCH MENUS:
 {lunch_text}
 
+IMPORTANT: When your answer mentions a specific event or date, ALWAYS include a Google Calendar link at the end so parents can add it. Format:
+[+ Add to Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=EVENT+NAME&dates=YYYYMMDD/YYYYMMDD)
+Use URL-encoded event name (+ for spaces). For single-day events, end date = next day. For multi-day, use actual start/end.
+
 Question: {question}"""
 
     try:
