@@ -228,27 +228,8 @@ function App() {
       .slice(0, 5)
   }, [events, todayStr, today])
 
-  // Today's events with filter
-  const todayEvents = useMemo(() => {
-    let filtered = events.filter(e => e.date === todayStr)
+  // Upcoming events (future only, today is shown in the week strip)
 
-    if (filter === 'all') {
-      filtered = filtered.filter(e => e.type === 'event' || e.type === 'deadline')
-    } else if (filter === 'events') {
-      filtered = filtered.filter(e => e.type === 'event' || e.type === 'deadline')
-    } else if (filter === 'meals') {
-      filtered = filtered.filter(e => e.type === 'lunch_menu' || e.type === 'breakfast_menu')
-    } else if (filter === 'noschool') {
-      filtered = filtered.filter(e => {
-        const n = (e.name || '').toLowerCase()
-        return n.includes('no school') || n.includes('recess') || n.includes('holiday')
-      })
-    }
-
-    return filtered.sort((a, b) => (a.name || '').localeCompare(b.name || ''))
-  }, [events, todayStr, filter])
-
-  // Upcoming events (future only) with filter
   const upcomingEvents = useMemo(() => {
     let filtered = events.filter(e => e.date > todayStr)
 
@@ -635,14 +616,15 @@ function App() {
           </div>
         </section>
 
-        {/* Parent To-Do Section — auto-detected action items only */}
+        {/* Parent To-Do Section — collapsed by default */}
         {parentActionItems.length > 0 && (
           <section className="mb-8">
-            <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
-              <h2 className="text-base font-semibold text-amber-800 mb-3 flex items-center gap-2">
+            <details className="bg-amber-50 border border-amber-200 rounded-xl">
+              <summary className="p-4 cursor-pointer font-semibold text-amber-800 hover:bg-amber-100 rounded-xl flex items-center gap-2">
                 <span>📋</span> Parent To-Do
-              </h2>
-              <div className="space-y-2">
+                <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-amber-200 text-amber-700">{parentActionItems.length}</span>
+              </summary>
+              <div className="px-4 pb-4 space-y-2">
                 {parentActionItems.map((item, i) => (
                   <div key={i} className="bg-white rounded-lg p-3 shadow-sm">
                     <div className="flex justify-between items-start gap-2">
@@ -657,28 +639,9 @@ function App() {
                   </div>
                 ))}
               </div>
-            </div>
+            </details>
           </section>
         )}
-
-        {/* Today's Events */}
-        <section className="mb-8">
-          <h2 className="text-lg font-semibold text-gray-800 mb-3">
-            {filter === 'meals' ? "Today's Meals" :
-             filter === 'noschool' ? 'No School Today?' : "Today's Events"}
-          </h2>
-          <div className="space-y-3">
-            {todayEvents.length === 0 ? (
-              <div className="bg-white rounded-xl shadow-sm p-5 text-gray-400 text-sm">
-                {filter === 'noschool' ? 'School is in session today' : 'No events today'}
-              </div>
-            ) : (
-              todayEvents.map((ev, i) => (
-                <EventCard key={i} event={ev} />
-              ))
-            )}
-          </div>
-        </section>
 
         {/* Upcoming Events */}
         <section className="mb-8">
