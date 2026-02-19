@@ -1,42 +1,32 @@
 [
   {
+    "name": "Field Trip to Hidden Villa Farms",
+    "date": "2026-03-25",
+    "type": "event",
+    "priority": "medium",
+    "description": "PARENTS: Return permission slip promptly. Sign up on the Google Doc if you plan to chaperone.",
+    "location": null,
+    "url": "https://docs.google.com/document/d/1P_ClvTgWURmJGHVOqiidNZ3Q9oddf2_AcftNnjHCGDg/edit?usp=sharing",
+    "image_url": null
+  },
+  {
     "name": "Valentine's Day Celebration",
     "date": "2026-02-13",
     "type": "event",
     "priority": "medium",
-    "description": "PARENTS: Have your child make one Valentine's Day card for each of the 22 students in the class. Leave the \"To:\" section blank, and only fill out the child's name. PARENTS: Keep any prizes or goodies small, as the decorated bags are too small for large items.",
+    "description": "PARENTS: Bring 1 Valentine's card for each of the 22 students in the class. Leave the \"To:\" section blank. Keep goodies and prizes small.",
     "location": null,
     "url": null,
     "image_url": null
   },
   {
-    "name": "100th Day of School",
-    "date": "2026-01-22",
+    "name": "Pajama Day Spirit Day",
+    "date": "2026-02-13",
     "type": "event",
     "priority": "low",
-    "description": null,
+    "description": "PARENTS: Send child to school in pajamas.",
     "location": null,
     "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Sports-Themed Shirt Spirit Day",
-    "date": "2026-01-30",
-    "type": "event",
-    "priority": "medium",
-    "description": "PARENTS: Send child in sports-themed shirt",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Field Trip to Hidden Villa Farms",
-    "date": "2026-03-25",
-    "type": "event",
-    "priority": "high",
-    "description": "PARENTS: Please sign up on the Google Doc if you plan to chaperone! I will need to let the office know who is attending ahead of time and it will make this process smooth for me.",
-    "location": "Hidden Villa Farms",
-    "url": "https://docs.google.com/document/d/1P_ClvTgWURmJGHVOqiidNZ3Q9oddf2_AcftNnjHCGDg/edit?usp=sharing",
     "image_url": null
   },
   {
@@ -60,6 +50,36 @@
     "image_url": null
   },
   {
+    "name": "Sports-Themed Spirit Day",
+    "date": "2026-01-30",
+    "type": "event",
+    "priority": "low",
+    "description": "PARENTS: Send child in sports-themed shirt.",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "100th Day of School",
+    "date": "2026-01-22",
+    "type": "event",
+    "priority": "medium",
+    "description": null,
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Label New Items",
+    "date": null,
+    "type": "deadline",
+    "priority": "low",
+    "description": "PARENTS: Label new clothes, jackets, and other items with child's name.",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
     "name": "PTA General Meeting",
     "date": "2026-02-23",
     "time": "8:15 AM",
@@ -72,39 +92,39 @@
     "source": "pta_website"
   },
   {
-    "name": "Yearbook Cover Contest (5th Graders Only)",
-    "date": "2026-02-23",
-    "time": null,
-    "type": "deadline",
-    "priority": "medium",
-    "description": "Entries due by February 23, 2026. 2 winners will be selected to be displayed on the front and back cover, by the Yearbook committee panel.",
-    "location": null,
-    "url": "mailto:LosAlamitosPTA@gmail.com",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-18-26_at_8_57___AM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "NOWRUZ (IRANIAN NEW YEAR) STAFF LUNCHEON",
-    "date": "2026-03-19",
-    "time": null,
-    "type": "event",
-    "priority": "medium",
-    "description": "Please join us as we treat our staff to a delicious luncheon to celebrate the upcoming Iranian New Year and the first day of spring!",
-    "location": null,
-    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_2-14-26_at_8_43___AM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "Variety Show \u2013 Volunteers & Important Info",
+    "name": "Variety Show",
     "date": "2026-03-20",
     "time": "4:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "We're gearing up for our upcoming Variety Show and need parent volunteers to help make it a success! Volunteer opportunities include Stage Hands and Concession Organizer. We are also looking for a volunteer who can provide a digital keyboard for the event. To Apply to the Variety Show, sign up to perform by Sunday, March 1st, 2026. Dress Rehearsal is on Thursday, March 19th, 2026 at 4:00 PM and the Show is on Friday, March 20th, 2026 at 4:00 PM.",
+    "description": "We're gearing up for our upcoming Variety Show and need parent volunteers to help make it a success! Volunteer opportunities include Stage Hands and Concession Organizer. We are also looking for a volunteer who can provide a digital keyboard for the event. To Apply to the Variety Show, sign up to share your talent - sing, rap, dance, etc.",
     "location": "The Stage at Los Alamitos",
-    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
+    "url": "https://forms.gle/XyZ123ABC",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_07___PM.png",
+    "source": "pta_website"
+  },
+  {
+    "name": "Variety Show Dress Rehearsal",
+    "date": "2026-03-19",
+    "time": "4:00 PM",
+    "type": "event",
+    "priority": "high",
+    "description": "Dress Rehearsal for the Variety Show",
+    "location": null,
+    "url": null,
+    "image_url": null,
+    "source": "pta_website"
+  },
+  {
+    "name": "Variety Show Audition Videos Due",
+    "date": "2026-03-01",
+    "time": null,
+    "type": "deadline",
+    "priority": "high",
+    "description": "Audition videos for the Variety Show are due by this date.",
+    "location": null,
+    "url": "https://forms.gle/XyZ123ABC",
+    "image_url": null,
     "source": "pta_website"
   },
   {
@@ -113,9 +133,45 @@
     "time": "4:00 PM - 7:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "This year's Multicultural Fair will take place on Friday April 24th from 4-7pm. A beloved tradition at this school, we once again invite you to share your culture with us, whether it's helping with your country's booth (or starting one if it isn't represented yet!), fashion show, or with a group cultural performance.",
+    "description": "This year's Multicultural Fair will take place. A beloved tradition at this school, we once again invite you to share your culture with us, whether it's helping with your country's booth, fashion show, or with a group cultural performance.",
     "location": null,
     "url": null,
+    "image_url": null,
+    "source": "pta_website"
+  },
+  {
+    "name": "5th Grade Baby Photos Due",
+    "date": "2026-03-31",
+    "time": null,
+    "type": "deadline",
+    "priority": "medium",
+    "description": "5th grade parents - start gathering those adorable baby photos for the 5th Grade Baby Pages in the yearbook. They are due by this date.",
+    "location": null,
+    "url": "https://www.betteryearbook.com/",
+    "image_url": null,
+    "source": "pta_website"
+  },
+  {
+    "name": "Yearbook Cover Contest",
+    "date": "2026-02-23",
+    "time": null,
+    "type": "deadline",
+    "priority": "medium",
+    "description": "Los Alamitos PTA is inviting all Los Alamitos 5th graders to enter their drawings in our Yearbook cover contest. 2 winners will be selected to be displayed on the front and back cover, by the Yearbook committee panel.",
+    "location": null,
+    "url": "mailto:LosAlamitosPTA@gmail.com",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-18-26_at_8_57___AM.png",
+    "source": "pta_website"
+  },
+  {
+    "name": "Nowruz (Iranian New Year) Staff Luncheon",
+    "date": "2026-03-19",
+    "time": null,
+    "type": "event",
+    "priority": "medium",
+    "description": "Please join us as we treat our staff to a delicious luncheon to celebrate the upcoming Iranian New Year and the first day of spring!",
+    "location": null,
+    "url": "https://forms.gle/XyZ123ABC",
     "image_url": null,
     "source": "pta_website"
   },
@@ -125,14 +181,14 @@
     "time": "12:45 PM - 2:00 PM",
     "type": "volunteer",
     "priority": "medium",
-    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. We are looking for volunteers who can come in once per week (Tuesday, Wednesday, or Thursday) during the school year. Training for new tutors is provided!!",
+    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. We are looking for volunteers who can come in once per week (Tuesday, Wednesday, or Thursday) during the school year. Training for new tutors is provided!",
     "location": null,
     "url": "https://forms.gle/FqpLea77SxjtwJTR9",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
     "source": "pta_website"
   },
   {
-    "name": "Castillero PTA Volunteers Needed",
+    "name": "Castillero 6th Grade PTA Volunteers Needed",
     "date": null,
     "time": null,
     "type": "volunteer",
@@ -141,18 +197,6 @@
     "location": null,
     "url": "mailto:spearsonphillips@gmail.com",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_2-14-26_at_8_36___AM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "Yearbook Photo Submission Deadline",
-    "date": "2026-03-31",
-    "time": null,
-    "type": "deadline",
-    "priority": "medium",
-    "description": "5th grade parents \u2014 start gathering those adorable baby photos for the 5th Grade Baby Pages! They are due by March 31st. Please send them to your classroom parent yearbook rep and include your child's full name with the photo.",
-    "location": null,
-    "url": "https://www.betteryearbook.com/",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
     "source": "pta_website"
   },
   {
@@ -184,26 +228,6 @@
     "description": "All schools out 2 hours early",
     "url": null,
     "source": "student_calendar"
-  },
-  {
-    "name": "River Glen K-8 TWIBI Orientation (Tour only)",
-    "date": "2026-02-05",
-    "time": "9:30 AM - 10:30 AM",
-    "type": "event",
-    "priority": "medium",
-    "description": "River Glen School, 1088 Broadway Ave, San Jose, CA 95125, USA",
-    "url": null,
-    "source": "district_calendar"
-  },
-  {
-    "name": "River Glen K-8 TWIBI Orientation (Tour only)",
-    "date": "2026-02-26",
-    "time": "9:30 AM - 10:30 AM",
-    "type": "event",
-    "priority": "medium",
-    "description": "River Glen School, 1088 Broadway Ave, San Jose, CA 95125, USA",
-    "url": null,
-    "source": "district_calendar"
   },
   {
     "name": "Croissant with Cheese",
@@ -395,11 +419,11 @@
     "description": "Turkey & Gravy with Mashed Potatoes, Italian Dunkers"
   },
   {
-    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos",
+    "name": "Nachos - Turkey Taco Meat & Bean Nachos",
     "date": "2026-02-06",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
+    "description": "Nachos - Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
   },
   {
     "name": "Chicken Corndog",
@@ -465,11 +489,11 @@
     "description": "Chicken Tikka Masala with Rice, Italian Dunkers"
   },
   {
-    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos",
+    "name": "Nachos - Turkey Taco Meat & Bean Nachos",
     "date": "2026-02-27",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
+    "description": "Nachos - Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
   },
   {
     "name": "Chicken Burger",
@@ -575,15 +599,15 @@
     "time": null,
     "type": "event",
     "priority": "high",
-    "description": "All schools closed for Winter Recess",
+    "description": "All Day",
     "url": null,
     "source": "district_calendar",
-    "end_date": "2026-02-17",
-    "date_display": "Feb 16-17"
+    "end_date": "2026-02-18",
+    "date_display": "Feb 16-18"
   },
   {
     "name": "Winter recess (No School)",
-    "date": "2026-02-18",
+    "date": "2026-02-19",
     "time": null,
     "type": "event",
     "priority": "high",
@@ -591,7 +615,7 @@
     "url": null,
     "source": "student_calendar",
     "end_date": "2026-02-20",
-    "date_display": "Feb 18-20"
+    "date_display": "Feb 19-20"
   },
   {
     "name": "Spring recess (No School)",
