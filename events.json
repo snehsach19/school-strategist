@@ -4,9 +4,9 @@
     "date": "2026-03-25",
     "type": "event",
     "priority": "medium",
-    "description": "PARENTS: Return permission slip promptly. Sign up on the Google Doc if you plan to chaperone.",
-    "location": null,
-    "url": "https://docs.google.com/document/d/1P_ClvTgWURmJGHVOqiidNZ3Q9oddf2_AcftNnjHCGDg/edit?usp=sharing",
+    "description": "Explore animal habitats, how animals adapt to their environment to survive and how they help it thrive. Parents: Return permission slip promptly. Sign up to chaperone on the Google Doc.",
+    "location": "Hidden Villa Farms",
+    "url": null,
     "image_url": null
   },
   {
@@ -14,18 +14,8 @@
     "date": "2026-02-13",
     "type": "event",
     "priority": "medium",
-    "description": "PARENTS: Bring 1 Valentine's card for each of the 22 students in the class. Leave the \"To:\" section blank. Keep goodies and prizes small.",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Pajama Day Spirit Day",
-    "date": "2026-02-13",
-    "type": "event",
-    "priority": "low",
-    "description": "PARENTS: Send child to school in pajamas.",
-    "location": null,
+    "description": "Parents: Bring 1 Valentine's card for all 22 friends in the class and leave the 'To:' section blank.",
+    "location": "Classroom",
     "url": null,
     "image_url": null
   },
@@ -50,16 +40,6 @@
     "image_url": null
   },
   {
-    "name": "Sports-Themed Spirit Day",
-    "date": "2026-01-30",
-    "type": "event",
-    "priority": "low",
-    "description": "PARENTS: Send child in sports-themed shirt.",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
     "name": "100th Day of School",
     "date": "2026-01-22",
     "type": "event",
@@ -70,11 +50,21 @@
     "image_url": null
   },
   {
+    "name": "Sports-Themed Shirt Spirit Day",
+    "date": "2026-01-30",
+    "type": "event",
+    "priority": "low",
+    "description": "Parents: Send child in sports-themed shirt.",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
     "name": "Label New Items",
     "date": null,
     "type": "deadline",
     "priority": "low",
-    "description": "PARENTS: Label new clothes, jackets, and other items with child's name.",
+    "description": "Parents: Please label new sweaters, clothes, and jackets with child's name. Also label any gloves/items brought to school.",
     "location": null,
     "url": null,
     "image_url": null
@@ -92,67 +82,7 @@
     "source": "pta_website"
   },
   {
-    "name": "Variety Show",
-    "date": "2026-03-20",
-    "time": "4:00 PM",
-    "type": "event",
-    "priority": "high",
-    "description": "We're gearing up for our upcoming Variety Show and need parent volunteers to help make it a success! Volunteer opportunities include Stage Hands and Concession Organizer. We are also looking for a volunteer who can provide a digital keyboard for the event. To Apply to the Variety Show, sign up to share your talent - sing, rap, dance, etc.",
-    "location": "The Stage at Los Alamitos",
-    "url": "https://forms.gle/XyZ123ABC",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_07___PM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "Variety Show Dress Rehearsal",
-    "date": "2026-03-19",
-    "time": "4:00 PM",
-    "type": "event",
-    "priority": "high",
-    "description": "Dress Rehearsal for the Variety Show",
-    "location": null,
-    "url": null,
-    "image_url": null,
-    "source": "pta_website"
-  },
-  {
-    "name": "Variety Show Audition Videos Due",
-    "date": "2026-03-01",
-    "time": null,
-    "type": "deadline",
-    "priority": "high",
-    "description": "Audition videos for the Variety Show are due by this date.",
-    "location": null,
-    "url": "https://forms.gle/XyZ123ABC",
-    "image_url": null,
-    "source": "pta_website"
-  },
-  {
-    "name": "Multicultural Fair",
-    "date": "2026-04-24",
-    "time": "4:00 PM - 7:00 PM",
-    "type": "event",
-    "priority": "high",
-    "description": "This year's Multicultural Fair will take place. A beloved tradition at this school, we once again invite you to share your culture with us, whether it's helping with your country's booth, fashion show, or with a group cultural performance.",
-    "location": null,
-    "url": null,
-    "image_url": null,
-    "source": "pta_website"
-  },
-  {
-    "name": "5th Grade Baby Photos Due",
-    "date": "2026-03-31",
-    "time": null,
-    "type": "deadline",
-    "priority": "medium",
-    "description": "5th grade parents - start gathering those adorable baby photos for the 5th Grade Baby Pages in the yearbook. They are due by this date.",
-    "location": null,
-    "url": "https://www.betteryearbook.com/",
-    "image_url": null,
-    "source": "pta_website"
-  },
-  {
-    "name": "Yearbook Cover Contest",
+    "name": "Yearbook Cover Contest (5th Graders Only)",
     "date": "2026-02-23",
     "time": null,
     "type": "deadline",
@@ -164,39 +94,75 @@
     "source": "pta_website"
   },
   {
-    "name": "Nowruz (Iranian New Year) Staff Luncheon",
+    "name": "NOWRUZ (IRANIAN NEW YEAR) STAFF LUNCHEON",
     "date": "2026-03-19",
     "time": null,
     "type": "event",
     "priority": "medium",
     "description": "Please join us as we treat our staff to a delicious luncheon to celebrate the upcoming Iranian New Year and the first day of spring!",
     "location": null,
-    "url": "https://forms.gle/XyZ123ABC",
+    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_2-14-26_at_8_43___AM.png",
+    "source": "pta_website"
+  },
+  {
+    "name": "Variety Show \u2013 Volunteers & Important Info",
+    "date": "2026-03-20",
+    "time": "4:00 PM",
+    "type": "event",
+    "priority": "high",
+    "description": "We're gearing up for our upcoming Variety Show and need parent volunteers to help make it a success! Volunteer opportunities include Stage Hands and Concession Organizer. We are also looking for a volunteer who can provide a digital keyboard for the event. To Apply to the Variety Show, sign up with the link provided to showcase your talent.",
+    "location": "The Stage at Los Alamitos",
+    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_07___PM.png",
+    "source": "pta_website"
+  },
+  {
+    "name": "Multicultural Fair",
+    "date": "2026-04-24",
+    "time": "4:00 PM - 7:00 PM",
+    "type": "event",
+    "priority": "high",
+    "description": "This year's Multicultural Fair, a beloved tradition at this school, invites you to share your culture with us, whether it's helping with your country's booth, fashion show, or with a group cultural performance.",
+    "location": null,
+    "url": null,
     "image_url": null,
     "source": "pta_website"
   },
   {
-    "name": "Reading Lab Volunteers Needed",
+    "name": "Incoming 2025/26 Castillero 6th grade parents!",
+    "date": null,
+    "time": null,
+    "type": "opportunity",
+    "priority": "medium",
+    "description": "Castillero PTA is looking for incoming 6th grade parents to serve on the board. Castillero PTA funds and/ or runs events and programs like school dances, carnival, spirit wear, teacher and staff appreciation, and teacher grants.",
+    "location": null,
+    "url": "mailto:spearsonphillips@gmail.com",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_2-14-26_at_8_36___AM.png",
+    "source": "pta_website"
+  },
+  {
+    "name": "Reading Lab Volunteers Needed!",
     "date": null,
     "time": "12:45 PM - 2:00 PM",
-    "type": "volunteer",
+    "type": "opportunity",
     "priority": "medium",
-    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. We are looking for volunteers who can come in once per week (Tuesday, Wednesday, or Thursday) during the school year. Training for new tutors is provided!",
+    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. We are looking for volunteers who can come in once per week (Tuesday, Wednesday, or Thursday) during the school year. Training for new tutors is provided!!",
     "location": null,
     "url": "https://forms.gle/FqpLea77SxjtwJTR9",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
     "source": "pta_website"
   },
   {
-    "name": "Castillero 6th Grade PTA Volunteers Needed",
-    "date": null,
+    "name": "Yearbook",
+    "date": "2026-04-20",
     "time": null,
-    "type": "volunteer",
+    "type": "deadline",
     "priority": "medium",
-    "description": "Castillero PTA is looking for incoming 6th grade parents to serve on the board. Castillero PTA funds and/ or runs events and programs like school dances, carnival, spirit wear, teacher and staff appreciation, and teacher grants.",
+    "description": "We are looking for photos from PTA events this year! If you have photos from various events, please upload them to the Google Drive Folders provided. Order your 2025\u201326 Yearbook today and save all the memories. Last day to order is 4/20.",
     "location": null,
-    "url": "mailto:spearsonphillips@gmail.com",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_2-14-26_at_8_36___AM.png",
+    "url": "https://www.betteryearbook.com/",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
     "source": "pta_website"
   },
   {
@@ -419,11 +385,11 @@
     "description": "Turkey & Gravy with Mashed Potatoes, Italian Dunkers"
   },
   {
-    "name": "Nachos - Turkey Taco Meat & Bean Nachos",
+    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos",
     "date": "2026-02-06",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Nachos - Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
+    "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
   },
   {
     "name": "Chicken Corndog",
@@ -489,11 +455,11 @@
     "description": "Chicken Tikka Masala with Rice, Italian Dunkers"
   },
   {
-    "name": "Nachos - Turkey Taco Meat & Bean Nachos",
+    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos",
     "date": "2026-02-27",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Nachos - Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
+    "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
   },
   {
     "name": "Chicken Burger",
@@ -599,23 +565,21 @@
     "time": null,
     "type": "event",
     "priority": "high",
-    "description": "All Day",
+    "description": "All schools closed",
     "url": null,
     "source": "district_calendar",
-    "end_date": "2026-02-18",
-    "date_display": "Feb 16-18"
+    "end_date": "2026-02-19",
+    "date_display": "Feb 16-19"
   },
   {
     "name": "Winter recess (No School)",
-    "date": "2026-02-19",
+    "date": "2026-02-20",
     "time": null,
     "type": "event",
     "priority": "high",
     "description": "Winter recess",
     "url": null,
-    "source": "student_calendar",
-    "end_date": "2026-02-20",
-    "date_display": "Feb 19-20"
+    "source": "student_calendar"
   },
   {
     "name": "Spring recess (No School)",
