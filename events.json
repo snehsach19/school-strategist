@@ -4,9 +4,19 @@
     "date": "2026-03-25",
     "type": "event",
     "priority": "medium",
-    "description": "PARENTS: Please sign up on the Google Doc if you plan to chaperone! I will need to let the office know who is attending ahead of time and it will make this process smooth for me.",
+    "description": "Our class will be heading on a field trip to Hidden Villa Farms on 3/25. PARENTS: Please sign up on the Google Doc if you plan to chaperone. Let the office know who is attending ahead of time.",
     "location": "Hidden Villa Farms",
     "url": "https://docs.google.com/document/d/1P_ClvTgWURmJGHVOqiidNZ3Q9oddf2_AcftNnjHCGDg/edit?usp=sharing",
+    "image_url": null
+  },
+  {
+    "name": "Tissue and Hand Sanitizer Donation",
+    "date": null,
+    "type": "deadline",
+    "priority": "low",
+    "description": "The school is running low on tissues and hand sanitizer. PARENTS: If you are willing, the school could use some donations of these supplies.",
+    "location": null,
+    "url": null,
     "image_url": null
   },
   {
@@ -14,7 +24,7 @@
     "date": "2026-02-13",
     "type": "event",
     "priority": "high",
-    "description": "PARENTS: Bring 1 Valentine's card for all 22 friends in the class, leave 'To' section of the card blank. Wear pajamas to school!",
+    "description": "PARENTS: Please make sure to bring 1 Valentine's card for all 22 friends in the class and to leave the 'To' section of the card blank for easier pass out. Our bags were unexpectedly on the smaller side this year, so please keep goodies and prizes small this year. Wear PJs to school!",
     "location": "Classroom",
     "url": null,
     "image_url": null
@@ -24,8 +34,8 @@
     "date": "2026-02-06",
     "type": "event",
     "priority": "high",
-    "description": "PARENTS: Attend with your daughter.",
-    "location": "School",
+    "description": null,
+    "location": null,
     "url": null,
     "image_url": null
   },
@@ -34,8 +44,8 @@
     "date": "2026-02-07",
     "type": "event",
     "priority": "high",
-    "description": "PARENTS: Attend with your son.",
-    "location": "School",
+    "description": null,
+    "location": null,
     "url": null,
     "image_url": null
   },
@@ -44,7 +54,7 @@
     "date": "2026-01-30",
     "type": "event",
     "priority": "medium",
-    "description": "PARENTS: Send child in sports-themed shirt.",
+    "description": "PARENTS: Wear a sports-themed shirt for Spirit Day!",
     "location": null,
     "url": null,
     "image_url": null
@@ -55,6 +65,16 @@
     "type": "event",
     "priority": "medium",
     "description": null,
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Label New Items",
+    "date": null,
+    "type": "deadline",
+    "priority": "low",
+    "description": "PARENTS: Please make sure to label any new sweaters, clothes, and jackets that your child has. Also, label any gloves or other items your child has brought to school.",
     "location": null,
     "url": null,
     "image_url": null
@@ -77,7 +97,7 @@
     "time": null,
     "type": "deadline",
     "priority": "medium",
-    "description": "Entries due by February 23, 2026. Los Alamitos PTA is inviting all Los Alamitos 5th graders to enter their drawings in our Yearbook cover contest. 2 winners will be selected to be displayed on the front and back cover, by the Yearbook committee panel.",
+    "description": "Los Alamitos PTA is inviting all Los Alamitos 5th graders to enter their drawings in our Yearbook cover contest. 2 winners will be selected to be displayed on the front and back cover, by the Yearbook committee panel.",
     "location": null,
     "url": "mailto:LosAlamitosPTA@gmail.com",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-18-26_at_8_57___AM.png",
@@ -91,8 +111,8 @@
     "priority": "medium",
     "description": "Please join us as we treat our staff to a delicious luncheon on Thursday, March 19th, to celebrate the upcoming Iranian New Year and the first day of spring!",
     "location": null,
-    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
-    "image_url": null,
+    "url": "HERE",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_2-14-26_at_8_43___AM.png",
     "source": "pta_website"
   },
   {
@@ -101,33 +121,9 @@
     "time": "4:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "We're gearing up for our upcoming Variety Show on Friday, March 20th and need parent volunteers to help make it a success! Volunteer opportunities include: Stage Hands - to assist performers, Concession Organizer - to coordinate snacks and sales. We are also looking for a volunteer who can provide a digital keyboard for the event.",
+    "description": "We're gearing up for our upcoming Variety Show on Friday, March 20th and need parent volunteers to help make it a success! Volunteer opportunities include: Stage Hands - to assist performers, Concession Organizer - to coordinate snacks and sales. In addition, we are also looking for a volunteer who can provide a digital keyboard for the event. Audition Videos: Due by Sunday, March 1st, 2026, Dress Rehearsal: Thursday, March 19th, 2026 @ 4:00pm, Show: Friday, March 20th, 2026 @ 4:00pm",
     "location": "The Stage at Los Alamitos",
-    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_07___PM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "Variety Show Audition Videos",
-    "date": "2026-03-01",
-    "time": null,
-    "type": "deadline",
-    "priority": "high",
-    "description": "Do you have a talent to share? Sing, Rap, Dance, Lip Sync, Magic, Musical Instrument, Cheer Performance, Skit, Monologue, Jump Rope, Yo Yo, Puppet show, Comedy Routine, Impressions, Mime, Martial Arts demo, Poetry, Baton twirling. Come show us what you've got! Audition Videos: Due by Sunday, March 1st, 2026",
-    "location": null,
-    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_07___PM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "Variety Show Dress Rehearsal",
-    "date": "2026-03-19",
-    "time": "4:00 PM",
-    "type": "event",
-    "priority": "high",
-    "description": "Dress Rehearsal: Thursday, March 19th, 2026 @ 4:00pm",
-    "location": "The Stage at Los Alamitos",
-    "url": null,
+    "url": "HERE",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_07___PM.png",
     "source": "pta_website"
   },
@@ -149,7 +145,7 @@
     "time": null,
     "type": "event",
     "priority": "medium",
-    "description": "Castillero PTA is looking for incoming 6th grade parents to serve on the board. Castillero PTA funds and/ or runs events and programs like school dances, carnival, spirit wear, teacher and staff appreciation, and teacher grants. If you are interested in getting involved, please contact Stephanie Pearson-Phillips, (spearsonphillips@gmail.com or (650) 454-4389).",
+    "description": "Castillero PTA is looking for incoming 6th grade parents to serve on the board. Castillero PTA funds and/ or runs events and programs like school dances, carnival, spirit wear, teacher and staff appreciation, and teacher grants.",
     "location": null,
     "url": "mailto:spearsonphillips@gmail.com",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_2-14-26_at_8_36___AM.png",
@@ -161,43 +157,19 @@
     "time": "12:45 PM - 2:00 PM",
     "type": "volunteer",
     "priority": "medium",
-    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. We are looking for volunteers who can come in once per week (Tuesday, Wednesday, or Thursday) from 12:45pm - 2:00pm during the school year. Training for new tutors is provided!! Helping these new & growing readers is super fun and rewarding!",
+    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. We are looking for volunteers who can come in once per week (Tuesday, Wednesday, or Thursday) from 12:45pm - 2:00pm during the school year. Training for new tutors is provided!!",
     "location": null,
     "url": "https://forms.gle/FqpLea77SxjtwJTR9",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
     "source": "pta_website"
   },
   {
-    "name": "Yearbook - 5th Grade Baby Photos",
+    "name": "Yearbook Update",
     "date": "2026-03-31",
     "time": null,
     "type": "deadline",
     "priority": "medium",
-    "description": "5th grade parents \u2014 start gathering those adorable baby photos for the 5th Grade Baby Pages! They are due by March 31st! Please send them to your classroom parent yearbook rep and include your child's full name with the photo.",
-    "location": null,
-    "url": "https://www.betteryearbook.com/",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
-    "source": "pta_website"
-  },
-  {
-    "name": "Yearbook - Photo Submission",
-    "date": null,
-    "time": null,
-    "type": "volunteer",
-    "priority": "medium",
-    "description": "We are looking for photos from PTA events this year! If you have photos from the following events and would like them to be shared in the yearbook, please upload to these Google Drive Folders: Spirit Days, Dandy Day, Bubblefest, Science-o-rama, Dances. PLEASE only upload 1-2 photos per event!",
-    "location": null,
-    "url": "https://www.betteryearbook.com/",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
-    "source": "pta_website"
-  },
-  {
-    "name": "Yearbook - Last Day to Order",
-    "date": "2026-04-20",
-    "time": null,
-    "type": "deadline",
-    "priority": "medium",
-    "description": "Order your 2025\u201326 Yearbook today and save all the memories. Last day to order: 4/20 \u2014 but don't wait until the last minute! We won't have extras on hand if you forget to order.",
+    "description": "We are looking for photos from PTA events this year! If you have photos from the following events and would like them to be shared in the yearbook, please upload to these Google Drive Folders! 5th grade parents \u2014 start gathering those adorable baby photos for the 5th Grade Baby Pages! They are due by March 31st!",
     "location": null,
     "url": "https://www.betteryearbook.com/",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
@@ -232,6 +204,16 @@
     "description": "All schools out 2 hours early",
     "url": null,
     "source": "student_calendar"
+  },
+  {
+    "name": "River Glen K-8 TWIBI Orientation (Tour only)",
+    "date": "2026-02-26",
+    "time": "9:30 AM - 10:30 AM",
+    "type": "event",
+    "priority": "medium",
+    "description": "River Glen School, 1088 Broadway Ave, San Jose, CA 95125, USA",
+    "url": null,
+    "source": "district_calendar"
   },
   {
     "name": "Croissant with Cheese",
@@ -498,6 +480,13 @@
     "type": "lunch_menu",
     "priority": "low",
     "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
+  },
+  {
+    "name": "French Toast Sticks with Turkey Sausage Link",
+    "date": "2026-02-02",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Breakfast For Lunch:  French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich"
   },
   {
     "name": "Chicken Burger",
@@ -662,13 +651,6 @@
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Breakfast in a Bun (Egg & Cheese), Cereal & Graham Crackers"
-  },
-  {
-    "name": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link",
-    "date": "2026-02-02",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich"
   },
   {
     "name": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link",
