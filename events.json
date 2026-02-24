@@ -1,20 +1,138 @@
 [
   {
-    "name": "Hidden Villa Farms Field Trip",
+    "name": "Assembly with Wildmind Wildlife",
+    "date": "2026-03-31",
+    "type": "event",
+    "priority": "medium",
+    "description": "Parents need to fill out the digital permission slip at the link provided to allow their child to attend the assembly.",
+    "location": "Cafeteria",
+    "url": "https://forms.gle/wVqqd68Wwm7oWJxn8",
+    "image_url": null
+  },
+  {
+    "name": "Field trip to Hidden Villa Farms",
     "date": "2026-03-25",
     "type": "event",
     "priority": "medium",
-    "description": "Our class will be heading on a field trip to Hidden Villa Farms on 3/25. PARENTS: Please sign up on the Google Doc if you plan to chaperone. Let the office know who is attending ahead of time.",
-    "location": "Hidden Villa Farms",
+    "description": "Parents need to return the permission slip promptly. Parents who want to chaperone need to sign up on the Google Doc provided.",
+    "location": null,
     "url": "https://docs.google.com/document/d/1P_ClvTgWURmJGHVOqiidNZ3Q9oddf2_AcftNnjHCGDg/edit?usp=sharing",
     "image_url": null
   },
   {
-    "name": "Tissue and Hand Sanitizer Donation",
-    "date": null,
-    "type": "deadline",
+    "name": "PTA Variety Show",
+    "date": "2026-03-20",
+    "type": "event",
+    "priority": "medium",
+    "description": "Parents can volunteer as stage hands or concession organizers. Students can audition to perform.",
+    "location": "The Stage at Los Alamitos",
+    "url": "https://urldefense.com/v3/__https://docs.google.com/forms/d/e/1FAIpQLSeOQ8B05xg32DG1jTB2gJX0F8zgtexAvtH1Py6YQxvkBjLgsg/viewform__;!!GBgIFwM!Yx_XBzShH3Fg2h12BEidpx_pWAmKVlvmspdDNTusUkWPIisEGj7uGBzJLyCtZH3lxOb_HUratS0vrI3bKRM$",
+    "image_url": null
+  },
+  {
+    "name": "PTA Math Kangaroo",
+    "date": "2026-02-19",
+    "type": "event",
     "priority": "low",
-    "description": "The school is running low on tissues and hand sanitizer. PARENTS: If you are willing, the school could use some donations of these supplies.",
+    "description": null,
+    "location": "Library",
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Variety Show Application",
+    "date": "2026-03-01",
+    "time": null,
+    "type": "deadline",
+    "priority": "high",
+    "description": "Do you have a talent to share? Sing, Rap, Dance, Lip Sync, Magic, Musical Instrument, Cheer Performance, Skit, Monologue, Jump Rope, Yo Yo, Puppet show, Comedy Routine, Impressions, Mime, Martial Arts demo, Poetry, Baton twirling. Come show us what you've got! Audition Videos Due by Sunday, March 1st, 2026.",
+    "location": null,
+    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_07___PM.png",
+    "source": "pta_website"
+  },
+  {
+    "name": "Variety Show Dress Rehearsal",
+    "date": "2026-03-19",
+    "time": "4:00 PM",
+    "type": "event",
+    "priority": "high",
+    "description": "Dress Rehearsal for the Variety Show",
+    "location": "The Stage at Los Alamitos",
+    "url": null,
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_07___PM.png",
+    "source": "pta_website"
+  },
+  {
+    "name": "ELA - CAT/PT Testing for 3rd - 5th Grade",
+    "date": "2026-02-20",
+    "type": "deadline",
+    "priority": "high",
+    "description": "Parents may submit a written request to excuse their child from the CAASPP assessments.",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Math CAT/PT Testing for 3rd - 5th Grade",
+    "date": "2026-03-27",
+    "type": "deadline",
+    "priority": "high",
+    "description": "Parents may submit a written request to excuse their child from the CAASPP assessments.",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Multicultural Fair",
+    "date": "2026-04-24",
+    "time": "4:00 PM - 7:00 PM",
+    "type": "event",
+    "priority": "high",
+    "description": "This year's Multicultural Fair will take place on Friday April 24th from 4-7pm. A beloved tradition at this school, we once again invite you to share your culture with us, whether it's helping with your country's booth (or starting one if it isn't represented yet!), fashion show, or with a group cultural performance.",
+    "location": null,
+    "url": null,
+    "image_url": null,
+    "source": "pta_website"
+  },
+  {
+    "name": "PTA Last Day to Order Yearbook",
+    "date": "2026-04-20",
+    "type": "deadline",
+    "priority": "medium",
+    "description": null,
+    "location": null,
+    "url": "https://www.betteryearbook.com/product/los-alamitos-yearbooks/",
+    "image_url": null
+  },
+  {
+    "name": "Yearbook Cover Contest (5th Graders Only)",
+    "date": "2026-02-23",
+    "time": null,
+    "type": "deadline",
+    "priority": "medium",
+    "description": "Los Alamitos PTA is inviting all Los Alamitos 5th graders to enter their drawings in our Yearbook cover contest. 2 winners will be selected to be displayed on the front and back cover, by the Yearbook committee panel. Entries due by February 23, 2026.",
+    "location": null,
+    "url": "mailto:LosAlamitosPTA@gmail.com",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-18-26_at_8_57___AM.png",
+    "source": "pta_website"
+  },
+  {
+    "name": "PTA Book Fair",
+    "date": "2026-02-23",
+    "type": "event",
+    "priority": "medium",
+    "description": null,
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Kindergarten Pajama Day",
+    "date": "2026-02-13",
+    "type": "event",
+    "priority": "medium",
+    "description": "Kindergarten students can wear their pajamas to school.",
     "location": null,
     "url": null,
     "image_url": null
@@ -23,9 +141,9 @@
     "name": "Valentine's Day Celebration",
     "date": "2026-02-13",
     "type": "event",
-    "priority": "high",
-    "description": "PARENTS: Please make sure to bring 1 Valentine's card for all 22 friends in the class and to leave the 'To' section of the card blank for easier pass out. Our bags were unexpectedly on the smaller side this year, so please keep goodies and prizes small this year. Wear PJs to school!",
-    "location": "Classroom",
+    "priority": "medium",
+    "description": "Parents need to bring 1 Valentine's card for each of the 22 students in the class, leaving the 'To:' section blank.",
+    "location": null,
     "url": null,
     "image_url": null
   },
@@ -50,11 +168,11 @@
     "image_url": null
   },
   {
-    "name": "Sports Spirit Day",
+    "name": "Spirit Day - Wear Sports Shirt",
     "date": "2026-01-30",
     "type": "event",
     "priority": "medium",
-    "description": "PARENTS: Wear a sports-themed shirt for Spirit Day!",
+    "description": "Parents should send their child in a sports-themed shirt.",
     "location": null,
     "url": null,
     "image_url": null
@@ -68,112 +186,6 @@
     "location": null,
     "url": null,
     "image_url": null
-  },
-  {
-    "name": "Label New Items",
-    "date": null,
-    "type": "deadline",
-    "priority": "low",
-    "description": "PARENTS: Please make sure to label any new sweaters, clothes, and jackets that your child has. Also, label any gloves or other items your child has brought to school.",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "PTA General Meeting",
-    "date": "2026-02-23",
-    "time": "8:15 AM",
-    "type": "event",
-    "priority": "medium",
-    "description": "Join us for our next PTA meeting!",
-    "location": "Cafeteria",
-    "url": null,
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-28-25_at_7_16___AM.jpeg",
-    "source": "pta_website"
-  },
-  {
-    "name": "Yearbook Cover Contest (5th Graders Only)",
-    "date": "2026-02-23",
-    "time": null,
-    "type": "deadline",
-    "priority": "medium",
-    "description": "Los Alamitos PTA is inviting all Los Alamitos 5th graders to enter their drawings in our Yearbook cover contest. 2 winners will be selected to be displayed on the front and back cover, by the Yearbook committee panel.",
-    "location": null,
-    "url": "mailto:LosAlamitosPTA@gmail.com",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-18-26_at_8_57___AM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "NOWRUZ (IRANIAN NEW YEAR) STAFF LUNCHEON",
-    "date": "2026-03-19",
-    "time": null,
-    "type": "event",
-    "priority": "medium",
-    "description": "Please join us as we treat our staff to a delicious luncheon on Thursday, March 19th, to celebrate the upcoming Iranian New Year and the first day of spring!",
-    "location": null,
-    "url": "HERE",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_2-14-26_at_8_43___AM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "Variety Show \u2013 Volunteers & Important Info",
-    "date": "2026-03-20",
-    "time": "4:00 PM",
-    "type": "event",
-    "priority": "high",
-    "description": "We're gearing up for our upcoming Variety Show on Friday, March 20th and need parent volunteers to help make it a success! Volunteer opportunities include: Stage Hands - to assist performers, Concession Organizer - to coordinate snacks and sales. In addition, we are also looking for a volunteer who can provide a digital keyboard for the event. Audition Videos: Due by Sunday, March 1st, 2026, Dress Rehearsal: Thursday, March 19th, 2026 @ 4:00pm, Show: Friday, March 20th, 2026 @ 4:00pm",
-    "location": "The Stage at Los Alamitos",
-    "url": "HERE",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_07___PM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "Multicultural Fair",
-    "date": "2026-04-24",
-    "time": "4:00 PM - 7:00 PM",
-    "type": "event",
-    "priority": "high",
-    "description": "This year's Multicultural Fair will take place on Friday April 24th from 4-7pm. A beloved tradition at this school, we once again invite you to share your culture with us, whether it's helping with your country's booth (or starting one if it isn't represented yet!), fashion show, or with a group cultural performance.",
-    "location": null,
-    "url": null,
-    "image_url": null,
-    "source": "pta_website"
-  },
-  {
-    "name": "Incoming 2025/26 Castillero 6th grade parents!",
-    "date": null,
-    "time": null,
-    "type": "event",
-    "priority": "medium",
-    "description": "Castillero PTA is looking for incoming 6th grade parents to serve on the board. Castillero PTA funds and/ or runs events and programs like school dances, carnival, spirit wear, teacher and staff appreciation, and teacher grants.",
-    "location": null,
-    "url": "mailto:spearsonphillips@gmail.com",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_2-14-26_at_8_36___AM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "Reading Lab Volunteers Needed!",
-    "date": null,
-    "time": "12:45 PM - 2:00 PM",
-    "type": "volunteer",
-    "priority": "medium",
-    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. We are looking for volunteers who can come in once per week (Tuesday, Wednesday, or Thursday) from 12:45pm - 2:00pm during the school year. Training for new tutors is provided!!",
-    "location": null,
-    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
-    "source": "pta_website"
-  },
-  {
-    "name": "Yearbook Update",
-    "date": "2026-03-31",
-    "time": null,
-    "type": "deadline",
-    "priority": "medium",
-    "description": "We are looking for photos from PTA events this year! If you have photos from the following events and would like them to be shared in the yearbook, please upload to these Google Drive Folders! 5th grade parents \u2014 start gathering those adorable baby photos for the 5th Grade Baby Pages! They are due by March 31st!",
-    "location": null,
-    "url": "https://www.betteryearbook.com/",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
-    "source": "pta_website"
   },
   {
     "name": "Elementary schools out 2 hours early",
@@ -196,6 +208,154 @@
     "source": "student_calendar"
   },
   {
+    "name": "Future Chefs Tasting",
+    "date": "2026-03-10",
+    "type": "event",
+    "priority": "low",
+    "description": "Event held at Gunderson High School at 4:00pm.",
+    "location": "Gunderson High School",
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "PTA General Meeting",
+    "date": "2026-02-23",
+    "time": "8:15 AM",
+    "type": "event",
+    "priority": "medium",
+    "description": "Join us for our next PTA meeting!",
+    "location": "Cafeteria",
+    "url": null,
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-28-25_at_7_16___AM.jpeg",
+    "source": "pta_website"
+  },
+  {
+    "name": "PTA Executive Meeting",
+    "date": "2026-02-16",
+    "type": "event",
+    "priority": "medium",
+    "description": null,
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "PTA Lunar New Year/Valentine's Staff Luncheon",
+    "date": "2026-02-12",
+    "type": "event",
+    "priority": "medium",
+    "description": "Parents can sign up to bring a dish.",
+    "location": null,
+    "url": "https://docs.google.com/spreadsheets/d/1NYRPRkJI7HSKJ9JZM8WXHUfVOtD6td-E/edit?usp=sharing&ouid=117567966560865569669&rtpof=true&sd=true",
+    "image_url": null
+  },
+  {
+    "name": "PTA Green Team Sign-Up",
+    "date": null,
+    "type": "deadline",
+    "priority": "low",
+    "description": "Parents can fill out the interest survey for their child to join the Green Team.",
+    "location": null,
+    "url": "http://email.membershiptoolkit.com/ls/click?upn=u001.dP20uh2xUDz7Ju9WhAzXUDlD-2BUSailuhS0ENMKZQMyVa06pcg7A1qp-2B-2FfXHUs1ZilH7o_rGGoVk50CQtIB1fPtO9IFzNIsMB8Uql-2BoBBy6JaKnaqCgtDVtYsILCg6JxRTZgAAHF484OtFhK35wA0Yo35pLXXlpHSF7lsORM7VRk5G-2B9NLzELO4sO64HSZ0X9kauC-2BNKiNG-2FStWB4jgn7-2Fu3W7bgpvDoMtsDkliseZmxYIjEwZpLA0Q1zY7zCuHHCpPnlT0bOJ3-2BBxm1erHrRlN1xDX21R3pmNQpkEFb1AbS8ccnjlRSlKJpF3T18e-2FMUBNy1cPN6s2ekCsTgxAPxbmCBTgXovp-2FiNI0GNoryCGSNYjzJLPNlNId37kFqn-2FJOkr6qLdI0gxq3l2ZNGLyAtkULgSxi6PjrWy5YpfDt3QTCQu6MwYAG6bv0OUOiRS-2Bs5Lpz9",
+    "image_url": null
+  },
+  {
+    "name": "Variety Show - Volunteers & Important Info",
+    "date": "2026-03-20",
+    "time": "4:00 PM",
+    "type": "event",
+    "priority": "high",
+    "description": "We're gearing up for our upcoming Variety Show and need parent volunteers to help make it a success! Volunteer opportunities include Stage Hands and Concession Organizer. We are also looking for a volunteer who can provide a digital keyboard for the event.",
+    "location": "The Stage at Los Alamitos",
+    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_07___PM.png",
+    "source": "pta_website"
+  },
+  {
+    "name": "Nowruz (Iranian New Year) Staff Luncheon",
+    "date": "2026-03-19",
+    "time": null,
+    "type": "event",
+    "priority": "medium",
+    "description": "Please join us as we treat our staff to a delicious luncheon to celebrate the upcoming Iranian New Year and the first day of spring!",
+    "location": null,
+    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
+    "image_url": null,
+    "source": "pta_website"
+  },
+  {
+    "name": "5th Grade Baby Photos for Yearbook",
+    "date": "2026-03-31",
+    "time": null,
+    "type": "deadline",
+    "priority": "medium",
+    "description": "5th grade parents \u2014 start gathering those adorable baby photos for the 5th Grade Baby Pages! They are due by March 31st! Please send them to your classroom parent yearbook rep and include your child's full name with the photo.",
+    "location": null,
+    "url": null,
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
+    "source": "pta_website"
+  },
+  {
+    "name": "Yearbook Orders",
+    "date": "2026-04-20",
+    "time": null,
+    "type": "deadline",
+    "priority": "medium",
+    "description": "Order your 2025\u201326 Yearbook today and save all the memories. Last day to order: 4/20 \u2014 but don't wait until the last minute! We won't have extras on hand if you forget to order.",
+    "location": null,
+    "url": "https://www.betteryearbook.com/",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
+    "source": "pta_website"
+  },
+  {
+    "name": "Reading Lab Volunteers Needed",
+    "date": null,
+    "time": "12:45 PM - 2:00 PM",
+    "type": "volunteer",
+    "priority": "medium",
+    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. We are looking for volunteers who can come in once per week (Tuesday, Wednesday, or Thursday) during the school year. Training for new tutors is provided!! Helping these new & growing readers is super fun and rewarding!",
+    "location": null,
+    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
+    "source": "pta_website"
+  },
+  {
+    "name": "Incoming 2025/26 Castillero 6th Grade Parents",
+    "date": null,
+    "time": null,
+    "type": "volunteer",
+    "priority": "medium",
+    "description": "Castillero PTA is looking for incoming 6th grade parents to serve on the board. Castillero PTA funds and/ or runs events and programs like school dances, carnival, spirit wear, teacher and staff appreciation, and teacher grants. If you are interested in getting involved, please contact Stephanie Pearson-Phillips.",
+    "location": null,
+    "url": "mailto:spearsonphillips@gmail.com",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_2-14-26_at_8_36___AM.png",
+    "source": "pta_website"
+  },
+  {
+    "name": "PTA Board Volunteer Positions for 2026-27",
+    "date": null,
+    "time": null,
+    "type": "volunteer",
+    "priority": "medium",
+    "description": "We are looking for members of our Los Alamitos community to join our PTA Executive Board for 2026-27 school year! More details about specific positions will be shared soon, but if you're interested in getting involved, please email us or connect with any of our current board members.",
+    "location": null,
+    "url": "mailto:losalamitospta@gmail.com",
+    "image_url": null,
+    "source": "pta_website"
+  },
+  {
+    "name": "Dance Volunteer Lead Positions for 2026-27",
+    "date": null,
+    "time": null,
+    "type": "volunteer",
+    "priority": "high",
+    "description": "Many of our lead volunteers this year were 5th-grade parents who will be moving on from Los Alamitos next year. As we plan ahead, we are looking for lead volunteers for the 2026\u201327 school year to help lead our dances. These events do require planning, including booking the DJ nearly a year in advance. The perk? If you choose to be a lead volunteer, you get to pick the dates, choose the theme, and truly work the planning around your schedule.",
+    "location": null,
+    "url": null,
+    "image_url": null,
+    "source": "pta_website"
+  },
+  {
     "name": "All schools out 2 hours early",
     "date": "2026-05-29",
     "time": null,
@@ -204,6 +364,26 @@
     "description": "All schools out 2 hours early",
     "url": null,
     "source": "student_calendar"
+  },
+  {
+    "name": "California Assessment of Student Performance and Progress (CAASPP) Webinar",
+    "date": "2026-02-24",
+    "time": "6:00 PM - 7:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": null,
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Seminario web sobre la Evaluaci\u00f3n del Rendimiento y Progreso Estudiantil de California (CAASPP)",
+    "date": "2026-02-25",
+    "time": "6:00 PM - 7:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": null,
+    "url": null,
+    "source": "district_calendar"
   },
   {
     "name": "River Glen K-8 TWIBI Orientation (Tour only)",
@@ -482,13 +662,6 @@
     "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
   },
   {
-    "name": "French Toast Sticks with Turkey Sausage Link",
-    "date": "2026-02-02",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Breakfast For Lunch:  French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich"
-  },
-  {
     "name": "Chicken Burger",
     "date": "2026-02-03",
     "type": "lunch_menu",
@@ -587,18 +760,6 @@
     "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
   },
   {
-    "name": "Winter Recess",
-    "date": "2026-02-16",
-    "time": null,
-    "type": "event",
-    "priority": "high",
-    "description": "All schools closed",
-    "url": null,
-    "source": "district_calendar",
-    "end_date": "2026-02-20",
-    "date_display": "Feb 16-20"
-  },
-  {
     "name": "Spring recess (No School)",
     "date": "2026-04-06",
     "time": null,
@@ -611,18 +772,23 @@
     "date_display": "Apr 06-10"
   },
   {
-    "name": "Breakfast In a Bun (Egg & Cheese)",
-    "date": "2026-02-04",
-    "type": "breakfast_menu",
-    "priority": "low",
-    "description": "Breakfast In a Bun (Egg & Cheese), Cereal & Graham Crackers"
+    "name": "Winter Recess",
+    "date": "2026-02-16",
+    "time": null,
+    "type": "event",
+    "priority": "high",
+    "description": "All Day",
+    "url": null,
+    "source": "district_calendar",
+    "end_date": "2026-02-20",
+    "date_display": "Feb 16-20"
   },
   {
-    "name": "Breakfast In a Bun (Egg & Cheese)",
+    "name": "Breakfast In a  Bun (Egg & Cheese)",
     "date": "2026-02-04",
     "type": "breakfast_menu",
     "priority": "low",
-    "description": "Breakfast In a Bun (Egg & Cheese), Cereal & Graham Crackers"
+    "description": "Breakfast In a  Bun (Egg & Cheese), Cereal & Graham Crackers"
   },
   {
     "name": "Breakfast Pizza Bagel",
@@ -651,6 +817,20 @@
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Breakfast in a Bun (Egg & Cheese), Cereal & Graham Crackers"
+  },
+  {
+    "name": "Breakfast In a Bun (Egg & Cheese)",
+    "date": "2026-02-04",
+    "type": "breakfast_menu",
+    "priority": "low",
+    "description": "Breakfast In a Bun (Egg & Cheese), Cereal & Graham Crackers"
+  },
+  {
+    "name": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link",
+    "date": "2026-02-02",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich"
   },
   {
     "name": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link",
