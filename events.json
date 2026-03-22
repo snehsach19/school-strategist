@@ -5,7 +5,7 @@
     "time": "4:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "Come watch your friends: Sing, Dance, Act and more!! Dress Rehearsal: Thursday, March 19th, 2026 @ 4:00pm",
+    "description": "Don't miss the Variety Show - come watch your friends sing, dance, and act!",
     "location": "The Stage at Los Alamitos",
     "url": "mailto:salpibuxton@gmail.com",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_07___PM.png",
@@ -17,7 +17,7 @@
     "time": "5:00 PM - 7:00 PM",
     "type": "event",
     "priority": "medium",
-    "description": "The Hicklebee's Book Fair is coming to Los Alamitos! We're excited to have a special Family Night on Tuesday, March 24th.",
+    "description": "Family Night at the Hicklebee's Book Fair",
     "location": "Library",
     "url": "https://www.signupgenius.com/go/70A094EAAA62DA4F49-61147967-hicklebee",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-7-26_at_3_30___PM.png",
@@ -29,7 +29,7 @@
     "time": "4:00 PM - 7:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "This year's Multicultural Fair will take place. A beloved tradition at this school, we once again invite you to share your culture with us, whether it's helping with your country's booth (or starting one if it isn't represented yet!), fashion show, or with a group cultural performance.",
+    "description": "This year's Multicultural Fair is a beloved tradition at Los Alamitos Elementary. Share your culture with us through a country booth, fashion show, or group cultural performance.",
     "location": null,
     "url": null,
     "image_url": "https://fonts.gstatic.com/s/e/notoemoji/17.0/1f389/32.png",
@@ -40,7 +40,7 @@
     "date": "2026-05-05",
     "type": "event",
     "priority": "medium",
-    "description": "PARENTS: Come see your child's artwork displayed.",
+    "description": "Come review the students' art work at the Art Vista Show.",
     "location": null,
     "url": null,
     "image_url": null
@@ -66,117 +66,185 @@
     "image_url": null
   },
   {
-    "name": "ELA Testing",
+    "name": "Yearbook Orders",
+    "date": "2026-04-20",
+    "time": null,
+    "type": "deadline",
+    "priority": "medium",
+    "description": "Last day to order the 2025-26 Yearbook - don't wait until the last minute! We won't have extras on hand if you forget to order.",
+    "location": null,
+    "url": "https://www.betteryearbook.com/",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
+    "source": "pta_website"
+  },
+  {
+    "name": "CAASPP ELA Testing",
     "date": "2026-04-20",
     "type": "deadline",
-    "priority": "high",
-    "description": "CAASPP ELA Testing for Grades 3-5",
+    "priority": "medium",
+    "description": "ELA - CAT/PT Testing for grades 3-5",
     "location": null,
     "url": null,
     "image_url": null
   },
   {
-    "name": "Math Testing",
+    "name": "CAASPP Math Testing",
     "date": "2026-04-27",
     "type": "deadline",
-    "priority": "high",
-    "description": "CAASPP Math Testing for Grades 3-5",
+    "priority": "medium",
+    "description": "Math CAT/PT Testing for grades 3-5",
     "location": null,
     "url": null,
     "image_url": null
   },
   {
-    "name": "Yearbook Order Deadline",
-    "date": "2026-04-20",
-    "type": "deadline",
-    "priority": "medium",
-    "description": "PARENTS: Order your 2025-26 Yearbook by this date. 5th grade parents - start gathering baby photos!",
-    "location": null,
-    "url": "https://www.betteryearbook.com/product/los-alamitos-yearbooks/",
+    "name": "PTA Math Kangaroo",
+    "date": "2026-03-19",
+    "type": "event",
+    "priority": "low",
+    "description": "2:30pm - 3:45pm in the Library",
+    "location": "Library",
+    "url": null,
     "image_url": null
   },
   {
-    "name": "Hidden Villa Farms Field Trip",
-    "date": "2026-03-25",
+    "name": "PTA Executive Meeting",
+    "date": "2026-03-16",
+    "type": "event",
+    "priority": "low",
+    "description": "7:30pm",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "PTA Executive Meeting",
+    "date": "2026-04-16",
+    "type": "event",
+    "priority": "low",
+    "description": "7:30pm",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "PTA Exec Meeting",
+    "date": "2026-05-18",
+    "type": "event",
+    "priority": "low",
+    "description": "6:30pm",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "School Site Council Meeting",
+    "date": "2026-04-13",
+    "type": "event",
+    "priority": "low",
+    "description": "2:30pm",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "School Site Council Meeting",
+    "date": "2026-05-11",
+    "type": "event",
+    "priority": "low",
+    "description": null,
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "PTA General Meeting",
+    "date": "2026-03-30",
+    "time": "8:15 AM",
     "type": "event",
     "priority": "medium",
-    "description": "PARENTS: Send student in sensible walking shoes (not rain boots), pack a disposable lunch and water bottle. Wear Dandy Day t-shirt.",
-    "location": "Hidden Villa Farms",
+    "description": "PTA General Meeting",
+    "location": null,
+    "url": null,
+    "image_url": null,
+    "source": "pta_website"
+  },
+  {
+    "name": "PTA General Meeting",
+    "date": "2026-04-27",
+    "type": "event",
+    "priority": "low",
+    "description": "8:10am",
+    "location": null,
     "url": null,
     "image_url": null
   },
   {
-    "name": "Wildlife Assembly",
+    "name": "Spirit Day - Wear Green",
+    "date": "2026-03-17",
+    "type": "event",
+    "priority": "low",
+    "description": null,
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Spirit Day - Dress as Favorite Book Character",
+    "date": "2026-03-27",
+    "type": "event",
+    "priority": "low",
+    "description": null,
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Spirit Day - Star Wars Shirt",
+    "date": "2026-05-04",
+    "type": "event",
+    "priority": "low",
+    "description": null,
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Spirit Day - Aloha Day",
+    "date": "2026-05-29",
+    "type": "event",
+    "priority": "low",
+    "description": "Last day of school, minimum day dismissal at 12:06pm",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Spring Pictures",
+    "date": "2026-03-26",
+    "type": "event",
+    "priority": "low",
+    "description": "Free Dress Day",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Open House",
     "date": "2026-03-31",
     "type": "event",
     "priority": "medium",
-    "description": "PARENTS: Submit virtual permission slip for your child to attend.",
-    "location": null,
-    "url": "https://forms.gle/wVqqd68Wwm7oWJxn8",
-    "image_url": null
-  },
-  {
-    "name": "Valentine's Day Party",
-    "date": "2026-02-13",
-    "type": "event",
-    "priority": "medium",
-    "description": "PARENTS: Bring 1 Valentine's card for each of the 22 students, leave the 'To:' section blank. Prizes and goodies should be small.",
+    "description": "5pm - 7pm",
     "location": null,
     "url": null,
     "image_url": null
   },
   {
-    "name": "Spirit Days",
-    "date": [
-      {
-        "date": "2026-03-17",
-        "description": "Wear Green"
-      },
-      {
-        "date": "2026-03-27",
-        "description": "Dress as your favorite book character"
-      },
-      {
-        "date": "2026-05-04",
-        "description": "Star Wars Shirt Day"
-      },
-      {
-        "date": "2026-05-29",
-        "description": "Aloha Day (Last Day of School)"
-      }
-    ],
+    "name": "Memorial Day",
+    "date": "2026-05-25",
     "type": "event",
     "priority": "low",
-    "description": "PARENTS: Send student in theme-appropriate attire",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Minimum Days",
-    "date": [
-      {
-        "date": "2026-03-12",
-        "description": "Dismissed at 12:06pm"
-      },
-      {
-        "date": "2026-03-13",
-        "description": "Dismissed at 12:06pm"
-      }
-    ],
-    "type": "event",
-    "priority": "medium",
-    "description": null,
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Teacher & Staff Appreciation Week",
-    "date": "2026-05-04",
-    "type": "event",
-    "priority": "medium",
-    "description": null,
+    "description": "No School",
     "location": null,
     "url": null,
     "image_url": null
@@ -186,7 +254,7 @@
     "date": "2026-05-29",
     "type": "event",
     "priority": "medium",
-    "description": "PARENTS: Do not schedule vacations during this time. Minimum Day, Dismissed at 12:06pm.",
+    "description": "Minimum Day, Dismissed at 12:06pm",
     "location": null,
     "url": null,
     "image_url": null
@@ -204,12 +272,24 @@
     "source": "pta_website"
   },
   {
+    "name": "Variety Show Dress Rehearsal",
+    "date": "2026-03-19",
+    "time": "4:00 PM",
+    "type": "event",
+    "priority": "high",
+    "description": "Dress Rehearsal for those participating in the Variety Show",
+    "location": "The Stage at Los Alamitos",
+    "url": null,
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_1-30-26_at_8_07___PM.png",
+    "source": "pta_website"
+  },
+  {
     "name": "Hicklebee's Book Fair",
     "date": "2026-03-25",
     "time": "8:30 AM - 3:00 PM",
     "type": "event",
     "priority": "medium",
-    "description": "The Hicklebee's Book Fair is coming to Los Alamitos!",
+    "description": "Hicklebee's Book Fair at Los Alamitos Elementary",
     "location": "Library",
     "url": "https://www.signupgenius.com/go/70A094EAAA62DA4F49-61147967-hicklebee",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-7-26_at_3_30___PM.png",
@@ -221,82 +301,70 @@
     "time": "8:30 AM - 3:00 PM",
     "type": "event",
     "priority": "medium",
-    "description": "The Hicklebee's Book Fair is coming to Los Alamitos!",
+    "description": "Hicklebee's Book Fair at Los Alamitos Elementary",
     "location": "Library",
     "url": "https://www.signupgenius.com/go/70A094EAAA62DA4F49-61147967-hicklebee",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-7-26_at_3_30___PM.png",
     "source": "pta_website"
   },
   {
-    "name": "Pioneer Crab Feed",
+    "name": "Pioneer High School Athletics 2026 Crab Feed",
     "date": "2026-03-21",
     "time": "5:00 PM - 11:00 PM",
     "type": "event",
     "priority": "high",
-    "description": "Come hungry (and thirsty!) to the Pioneer High School Athletics 2026 Crab Feed. It's an all-you-can-eat + all-you-can-drink night that keeps the fun (and the cracking!) going on.",
+    "description": "Come hungry (and thirsty!) to the all-you-can-eat + all-you-can-drink Pioneer High School Athletics 2026 Crab Feed. Reach out to Kevin Krail at kkrail@sjusd.org for more information.",
     "location": null,
     "url": "mailto:kkrail@sjusd.org",
-    "image_url": "https://fonts.gstatic.com/s/e/notoemoji/17.0/1f980/32.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "Castillero PTA Board",
-    "date": null,
-    "time": null,
-    "type": "opportunity",
-    "priority": "medium",
-    "description": "Castillero PTA is looking for incoming 6th grade parents to serve on the board. Castillero PTA funds and/ or runs events and programs like school dances, carnival, spirit wear, teacher and staff appreciation, and teacher grants.",
-    "location": null,
-    "url": "mailto:spearsonphillips@gmail.com",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_2-14-26_at_8_36___AM.png",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_2-27-26_at_10_35___PM.png",
     "source": "pta_website"
   },
   {
     "name": "Reading Lab Volunteers Needed",
     "date": null,
     "time": "12:45 PM - 2:00 PM",
-    "type": "opportunity",
+    "type": "volunteer",
     "priority": "medium",
-    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. We are looking for volunteers who can come in once per week (Tuesday, Wednesday, or Thursday).",
+    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. We are looking for volunteers who can come in once per week (Tuesday, Wednesday, or Thursday) during the school year. Training for new tutors is provided.",
     "location": null,
     "url": "https://forms.gle/FqpLea77SxjtwJTR9",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
     "source": "pta_website"
   },
   {
-    "name": "Yearbook Photos",
-    "date": "2026-03-15",
-    "time": null,
-    "type": "deadline",
-    "priority": "medium",
-    "description": "We are looking for photos from PTA events this year! If you have photos, please upload to the designated Google Drive Folders. Deadline is 3/15!",
-    "location": null,
-    "url": "https://www.betteryearbook.com/",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
-    "source": "pta_website"
-  },
-  {
-    "name": "5th Grade Baby Photos",
+    "name": "5th Grade Baby Photos Deadline",
     "date": "2026-03-31",
     "time": null,
     "type": "deadline",
     "priority": "medium",
-    "description": "5th grade parents \u2014 start gathering those adorable baby photos for the 5th Grade Baby Pages! They are due by March 31st!",
+    "description": "5th grade parents - start gathering those adorable baby photos for the 5th Grade Baby Pages! They are due by March 31st. Please send them to your classroom parent yearbook rep and include your child's full name with the photo.",
     "location": null,
     "url": "https://www.betteryearbook.com/",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
     "source": "pta_website"
   },
   {
-    "name": "PTA General Meeting",
-    "date": "2026-03-30",
-    "time": "8:15 AM",
-    "type": "event",
+    "name": "Yearbook Photo Deadline",
+    "date": "2026-03-15",
+    "time": null,
+    "type": "deadline",
     "priority": "medium",
-    "description": null,
+    "description": "We are looking for photos from PTA events this year! If you have photos from the following events and would like them to be shared in the yearbook, please upload to the provided Google Drive folders by March 15th.",
     "location": null,
-    "url": null,
-    "image_url": null,
+    "url": "https://www.betteryearbook.com/",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
+    "source": "pta_website"
+  },
+  {
+    "name": "Castillero PTA Board Members Needed",
+    "date": null,
+    "time": null,
+    "type": "volunteer",
+    "priority": "medium",
+    "description": "Castillero PTA is looking for incoming 6th grade parents to serve on the board. Castillero PTA funds and/or runs events and programs like school dances, carnival, spirit wear, teacher and staff appreciation, and teacher grants.",
+    "location": null,
+    "url": "mailto:spearsonphillips@gmail.com",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_2-14-26_at_8_36___AM.png",
     "source": "pta_website"
   },
   {
@@ -442,7 +510,7 @@
     "description": "Mini Chicken Maple Pancake Bites, Cereal & Graham Crackers"
   },
   {
-    "name": "French Toast Sticks",
+    "name": "French Toast Sticks with Turkey Sausage Link",
     "date": "2026-03-02",
     "type": "lunch_menu",
     "priority": "low",
@@ -456,7 +524,7 @@
     "description": "Pepperoni Pizza, Bean & Cheese Enchirito"
   },
   {
-    "name": "Popcorn Chicken Bowl",
+    "name": "Popcorn Chicken Bowl with Mashed Potatoes",
     "date": "2026-03-04",
     "type": "lunch_menu",
     "priority": "low",
@@ -470,11 +538,11 @@
     "description": "Turkey Tacos, Yogurt, Giant Cinnamon Goldfish & String Cheese"
   },
   {
-    "name": "Hot Dog - Turkey",
+    "name": "Hot Dog \u2013 Turkey",
     "date": "2026-03-06",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Hot Dog - Turkey, Bean & Cheese Burrito, Tuna Sandwich"
+    "description": "Hot Dog \u2013 Turkey, Bean & Cheese Burrito, Tuna Sandwich"
   },
   {
     "name": "Chicken Corndog",
@@ -491,25 +559,25 @@
     "description": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart"
   },
   {
-    "name": "Breaded Chicken Drumstick",
+    "name": "Breaded Chicken Drumstick served with a Dinner Roll",
     "date": "2026-03-11",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Breaded Chicken Drumstick served with a Dinner Roll, Grilled Cheese Sandwich"
   },
   {
-    "name": "Orange Chicken",
+    "name": "Orange Chicken with Rice",
     "date": "2026-03-12",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Orange Chicken with Rice, Italian Dunkers"
   },
   {
-    "name": "Nachos - Turkey Taco Meat & Bean Nachos",
+    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos",
     "date": "2026-03-13",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Nachos - Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
+    "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
   },
   {
     "name": "Beefy Macaroni Pasta",
@@ -526,7 +594,7 @@
     "description": "Pepperoni Pizza, Bean & Cheese Enchirito"
   },
   {
-    "name": "Butter Chicken",
+    "name": "Butter Chicken with Rice",
     "date": "2026-03-18",
     "type": "lunch_menu",
     "priority": "low",
@@ -540,11 +608,11 @@
     "description": "Turkey Tacos, Yogurt, Giant Cinnamon Goldfish & String Cheese"
   },
   {
-    "name": "Hot Dog - Turkey",
+    "name": "Hot Dog \u2013 Turkey",
     "date": "2026-03-20",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Hot Dog - Turkey, Bean & Cheese Burrito, Tuna Sandwich"
+    "description": "Hot Dog \u2013 Turkey, Bean & Cheese Burrito, Tuna Sandwich"
   },
   {
     "name": "Chicken Corndog",
@@ -561,7 +629,7 @@
     "description": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart"
   },
   {
-    "name": "Breaded Chicken Drumstick",
+    "name": "Breaded Chicken Drumstick served with Brown Rice",
     "date": "2026-03-25",
     "type": "lunch_menu",
     "priority": "low",
@@ -575,11 +643,11 @@
     "description": "Beef Rib B Que Sandwich, Italian Dunkers"
   },
   {
-    "name": "Nachos - Turkey Taco Meat & Bean Nachos",
+    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos",
     "date": "2026-03-27",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Nachos - Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Salad"
+    "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Salad"
   },
   {
     "name": "Italian Pasta Bake",
@@ -601,7 +669,7 @@
     "time": null,
     "type": "event",
     "priority": "high",
-    "description": "All schools closed for spring recess",
+    "description": "Spring recess for all schools",
     "url": null,
     "source": "district_calendar"
   },
