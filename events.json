@@ -5,44 +5,20 @@
     "time": "5:00 PM",
     "type": "event",
     "priority": "medium",
-    "description": null,
+    "description": "Open House",
     "location": null,
     "url": null,
     "image_url": null,
     "source": "pta_website"
   },
   {
-    "name": "Variety Show",
-    "date": "2026-03-20",
-    "type": "event",
-    "priority": "high",
-    "description": "Come watch your friends: Sing, Dance, Act and more!!",
-    "location": "The Stage at Los Alamitos",
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Hicklebee's Book Fair",
-    "date": "2026-03-24",
-    "type": "event",
-    "priority": "medium",
-    "description": "Volunteers are needed from Monday to Friday during the week of the book fair.",
-    "location": "Library",
-    "url": "https://www.signupgenius.com/go/70A094EAAA62DA4F49-61147967-hicklebee",
-    "image_url": null
-  },
-  {
-    "name": "Multicultural Fair",
+    "name": "Multi-Cultural Faire",
     "date": "2026-04-24",
     "type": "event",
     "priority": "high",
-    "description": "Share your culture with us, whether it's helping with your country's booth, fashion show, or with a group cultural performance.",
-    "location": null,
-    "url": [
-      "https://tinyurl.com/mcf-booth-fs",
-      "https://tinyurl.com/mcfperformance",
-      "https://tinyurl.com/mcf-writing-illus"
-    ],
+    "description": "A beloved tradition at this school, we once again invite you to share your culture with us, whether it's helping with your country's booth (or starting one if it isn't represented yet!), fashion show, or with a group cultural performance. Due to time constraints, solo and duo performances are encouraged to perform at the Los Alamitos Variety Show on March 20th.",
+    "location": "Campus",
+    "url": "https://tinyurl.com/mcf-booth-fs,https://tinyurl.com/mcfperformance,https://tinyurl.com/mcf-writing-illus",
     "image_url": "https://posts.parentsquare.com/inline_images_e45966655b8940ab_1774040691298-MCF+form+2026.jpg"
   },
   {
@@ -60,7 +36,7 @@
     "date": "2026-05-08",
     "type": "event",
     "priority": "medium",
-    "description": "4th Grade event",
+    "description": "4th Grade",
     "location": null,
     "url": null,
     "image_url": null
@@ -70,7 +46,7 @@
     "date": "2026-05-15",
     "type": "event",
     "priority": "medium",
-    "description": "5th Grade event",
+    "description": "5th Grade",
     "location": null,
     "url": null,
     "image_url": null
@@ -79,7 +55,7 @@
     "name": "Memorial Day",
     "date": "2026-05-25",
     "type": "event",
-    "priority": "medium",
+    "priority": "high",
     "description": "No School",
     "location": null,
     "url": null,
@@ -89,8 +65,8 @@
     "name": "Last Day of School",
     "date": "2026-05-29",
     "type": "event",
-    "priority": "medium",
-    "description": "Minimum Day, Dismissed at 12:06pm",
+    "priority": "high",
+    "description": "Minimum Day - Dismissed at 12:06pm, Aloha Wear Day",
     "location": null,
     "url": null,
     "image_url": null
@@ -116,23 +92,13 @@
     "image_url": null
   },
   {
-    "name": "Yearbook Order Deadline",
+    "name": "Last Day to Order Yearbook",
     "date": "2026-04-20",
     "type": "deadline",
     "priority": "medium",
-    "description": "Last day to order the 2025-26 yearbook",
+    "description": null,
     "location": null,
     "url": "https://www.betteryearbook.com/product/los-alamitos-yearbooks/",
-    "image_url": null
-  },
-  {
-    "name": "Buddy Spring Egg Hunt",
-    "date": "2026-04-01",
-    "type": "deadline",
-    "priority": "medium",
-    "description": "Bring 16 plastic eggs filled with non-candy items",
-    "location": null,
-    "url": null,
     "image_url": null
   },
   {
@@ -141,31 +107,31 @@
     "time": "8:15 AM",
     "type": "event",
     "priority": "medium",
-    "description": "Join us for our PTA meeting in the cafeteria.",
+    "description": "PTA General Meeting",
     "location": "Cafeteria",
     "url": null,
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-29-26_at_5_08___PM.png",
     "source": "pta_website"
   },
   {
-    "name": "Family Fun Night- The Kebab Shop",
+    "name": "Family Fun Night - The Kebab Shop",
     "date": "2026-04-22",
     "time": "All Day",
     "type": "event",
     "priority": "high",
-    "description": "Show this flyer when ordering in store or use code FUNDRAISER for online orders and 25% of sales will go the PTA!",
-    "location": "The Kebab Shop- 5110 Cherry Ave Ste 30",
+    "description": "Family Fun Night at The Kebab Shop - 25% of sales will go to the PTA",
+    "location": "The Kebab Shop - 5110 Cherry Ave Ste 30",
     "url": null,
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-29-26_at_5_51___PM.png",
+    "image_url": null,
     "source": "pta_website"
   },
   {
     "name": "Reading Lab Volunteers Needed",
     "date": null,
     "time": "12:45 PM - 2:00 PM",
-    "type": "volunteer",
+    "type": "deadline",
     "priority": "medium",
-    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. We are looking for volunteers who can come in once per week (Tuesday, Wednesday, or Thursday) during the school year. Training for new tutors is provided.",
+    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. Volunteers are needed on Tuesdays, Wednesdays, or Thursdays during the school year.",
     "location": null,
     "url": "https://forms.gle/FqpLea77SxjtwJTR9",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
@@ -175,9 +141,9 @@
     "name": "Castillero Athletic Booster Club",
     "date": null,
     "time": null,
-    "type": "volunteer",
+    "type": "deadline",
     "priority": "medium",
-    "description": "Attention 5th grade parents! Looking to get involved at Castillero? Consider joining the Castillero Athletic Booster Club (CABC) Board! The time commitment is very manageable and it is a great way to get involved at Castillero!",
+    "description": "Attention 5th grade parents! Looking to get involved at Castillero? Consider joining the Castillero Athletic Booster Club (CABC) Board!",
     "location": null,
     "url": null,
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-29-26_at_5_58___PM.png",
@@ -185,62 +151,14 @@
   },
   {
     "name": "Castillero Music Booster Club Fundraiser",
-    "date": null,
+    "date": "2026-04-17",
     "time": null,
-    "type": "fundraiser",
+    "type": "deadline",
     "priority": "high",
-    "description": "Support Our CMBC Program \u2013 Sweeten Easter & Mother's Day! We've partnered with See's Candies once again to bring you delicious, high-quality chocolates just in time for Easter and Mother's Day. All sales from this storefront will support instruments, sheet music, and performance opportunities for our students\u2014and we'd love your support!",
+    "description": "Support Our CMBC Program \u2013 Sweeten Easter & Mother's Day! Order See's Candies by 4/17/2026 to support the Castillero Music Booster Club program.",
     "location": null,
     "url": "https://www.yumraising.com/store/2026-late-spring-spring-for-sees-candies-e30d/CMBFun94781",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-29-26_at_6_03___PM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "5th Grade Baby Photos",
-    "date": "2026-03-31",
-    "time": null,
-    "type": "deadline",
-    "priority": "low",
-    "description": "5th grade parents - baby photos are due March 31st! Please send them to your classroom parent yearbook rep and include your child's full name with the photo.",
-    "location": null,
-    "url": "https://www.betteryearbook.com",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
-    "source": "pta_website"
-  },
-  {
-    "name": "Yearbook Update",
-    "date": null,
-    "time": null,
-    "type": "deadline",
-    "priority": "medium",
-    "description": "The draft of the yearbook will be finalized right after the Spring Break. If you are a parent yearbook POC, please finalize your pages by the end of this week! If you haven't purchased the yearbook, please purchase it before April 20th. No yearbooks will be sold once they are distributed.",
-    "location": null,
-    "url": "mailto:LosAlamitosElementaryYearbook@gmail.com",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
-    "source": "pta_website"
-  },
-  {
-    "name": "Hicklebee's Book Fair",
-    "date": "2026-03-29",
-    "time": null,
-    "type": "event",
-    "priority": "medium",
-    "description": "HUGE thank you to Michelle Walsh for organizing and running the Hicklebee's book fair! Thank you to all of our wonderful volunteers for helping the week go smoothly!",
-    "location": null,
-    "url": null,
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-7-26_at_3_30___PM.png",
-    "source": "pta_website"
-  },
-  {
-    "name": "PTA Board Positions for 2026-27",
-    "date": null,
-    "time": null,
-    "type": "volunteer",
-    "priority": "medium",
-    "description": "We are looking for members of our Los Alamitos community to join our PTA Executive Board for 2026-27 school year! If you're interested in getting involved, please email us or connect with any of our current board members.",
-    "location": null,
-    "url": "mailto:losalamitospta@gmail.com",
-    "image_url": null,
     "source": "pta_website"
   },
   {
@@ -254,276 +172,207 @@
     "source": "student_calendar"
   },
   {
-    "name": "Elementary schools out 2 hours early",
-    "date": "2026-03-12",
-    "time": null,
-    "type": "event",
-    "priority": "medium",
-    "description": "All elementary schools dismissed 2 hours early",
-    "url": null,
-    "source": "district_calendar"
-  },
-  {
-    "name": "Elementary schools out 2 hours early",
-    "date": "2026-03-13",
-    "time": null,
-    "type": "event",
-    "priority": "medium",
-    "description": "All elementary schools dismissed 2 hours early",
-    "url": null,
-    "source": "district_calendar"
-  },
-  {
-    "name": "Mini French Toast",
-    "date": "2026-03-03",
-    "type": "breakfast_menu",
-    "priority": "low",
-    "description": "Mini French Toast, Cereal & Graham Crackers"
-  },
-  {
     "name": "Cinnamon Roll",
-    "date": "2026-03-05",
+    "date": "2026-04-03",
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Cinnamon Roll, Cereal & Graham Crackers"
   },
   {
     "name": "Concha",
-    "date": "2026-03-06",
+    "date": "2026-04-05",
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Concha, Cereal & Graham Crackers"
   },
   {
     "name": "Croissant with Cheese",
-    "date": "2026-03-09",
+    "date": "2026-04-13",
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Croissant with Cheese, Cereal & Graham Crackers"
   },
   {
     "name": "Mini Strawberry Cream Cheese Bagels",
-    "date": "2026-03-10",
+    "date": "2026-04-14",
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Mini Strawberry Cream Cheese Bagels, Cereal & Graham Crackers"
   },
   {
     "name": "Bagel with Cream Cheese",
-    "date": "2026-03-12",
+    "date": "2026-04-16",
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Bagel with Cream Cheese, Cereal & Graham Crackers"
   },
   {
     "name": "Concha",
-    "date": "2026-03-13",
+    "date": "2026-04-17",
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Concha, Cereal & Graham Crackers"
   },
   {
     "name": "Mini French Toast",
-    "date": "2026-03-17",
+    "date": "2026-04-21",
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Mini French Toast, Cereal & Graham Crackers"
   },
   {
+    "name": "Pancakes with Blueberries",
+    "date": "2026-04-22",
+    "type": "breakfast_menu",
+    "priority": "low",
+    "description": "Pancakes with Blueberries, Cereal & Graham Crackers"
+  },
+  {
     "name": "Cinnamon Roll",
-    "date": "2026-03-19",
+    "date": "2026-04-23",
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Cinnamon Roll, Cereal & Graham Crackers"
   },
   {
     "name": "Concha",
-    "date": "2026-03-20",
+    "date": "2026-04-24",
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Concha, Cereal & Graham Crackers"
   },
   {
     "name": "Croissant with Cheese",
-    "date": "2026-03-23",
+    "date": "2026-04-27",
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Croissant with Cheese, Cereal & Graham Crackers"
-  },
-  {
-    "name": "Mini Strawberry Cream Cheese Bagels",
-    "date": "2026-03-24",
-    "type": "breakfast_menu",
-    "priority": "low",
-    "description": "Mini Strawberry Cream Cheese Bagels, Cereal & Graham Crackers"
-  },
-  {
-    "name": "Bagel with Cream Cheese",
-    "date": "2026-03-26",
-    "type": "breakfast_menu",
-    "priority": "low",
-    "description": "Bagel with Cream Cheese, Cereal & Graham Crackers"
-  },
-  {
-    "name": "Concha",
-    "date": "2026-03-27",
-    "type": "breakfast_menu",
-    "priority": "low",
-    "description": "Concha, Cereal & Graham Crackers"
   },
   {
     "name": "Mini Chicken Maple Pancake Bites",
-    "date": "2026-03-31",
+    "date": "2026-04-28",
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Mini Chicken Maple Pancake Bites, Cereal & Graham Crackers"
   },
   {
-    "name": "French Toast Sticks with Turkey Sausage Link",
-    "date": "2026-03-02",
-    "type": "lunch_menu",
+    "name": "Bagel with Cream Cheese",
+    "date": "2026-04-30",
+    "type": "breakfast_menu",
     "priority": "low",
-    "description": "French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich"
-  },
-  {
-    "name": "Pepperoni Pizza",
-    "date": "2026-03-03",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Pepperoni Pizza, Bean & Cheese Enchirito"
+    "description": "Bagel with Cream Cheese, Cereal & Graham Crackers"
   },
   {
     "name": "Popcorn Chicken Bowl with Mashed Potatoes",
-    "date": "2026-03-05",
+    "date": "2026-04-02",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Popcorn Chicken Bowl with Mashed Potatoes, Italian Dunkers"
   },
   {
     "name": "Turkey Tacos",
-    "date": "2026-03-06",
+    "date": "2026-04-03",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Turkey Tacos, Yogurt, Giant Cinnamon Goldfish & String Cheese"
   },
   {
-    "name": "Hot Dog - Turkey",
-    "date": "2026-03-09",
+    "name": "Hot Dog \u2013 Turkey",
+    "date": "2026-04-06",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Hot Dog - Turkey, Bean & Cheese Burrito, Tuna Sandwich"
+    "description": "Hot Dog \u2013 Turkey, Bean & Cheese Burrito, Popcorn Chicken Salad"
   },
   {
     "name": "Chicken Corndog",
-    "date": "2026-03-10",
+    "date": "2026-04-13",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Chicken Corndog, Macaroni & Cheese"
+    "description": "Chicken Corndog, Grilled Cheese Sandwich"
   },
   {
-    "name": "Breaded Chicken Drumstick served with a Dinner Roll",
-    "date": "2026-03-11",
+    "name": "Chicken Burger",
+    "date": "2026-04-14",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Breaded Chicken Drumstick served with a Dinner Roll, Grilled Cheese Sandwich"
+    "description": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart"
   },
   {
     "name": "Orange Chicken with Rice",
-    "date": "2026-03-12",
+    "date": "2026-04-15",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Orange Chicken with Rice, Italian Dunkers"
+    "description": "Orange Chicken with Rice, Bean & Cheese Burrito"
   },
   {
-    "name": "Nachos - Turkey Taco Meat & Bean Nachos",
-    "date": "2026-03-13",
+    "name": "Breaded Chicken Drumstick served with a Dinner Roll",
+    "date": "2026-04-16",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Nachos - Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Wrap"
+    "description": "Breaded Chicken Drumstick served with a Dinner Roll, Italian Dunkers"
   },
   {
-    "name": "Beefy Macaroni Pasta",
-    "date": "2026-03-16",
+    "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos",
+    "date": "2026-04-17",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Beefy Macaroni Pasta, Grilled Cheese Sandwich"
+    "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Salad"
   },
   {
     "name": "Pepperoni Pizza",
-    "date": "2026-03-17",
+    "date": "2026-04-21",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Pepperoni Pizza, Bean & Cheese Enchirito"
   },
   {
-    "name": "Butter Chicken with Rice",
-    "date": "2026-03-18",
+    "name": "Chicken Tikka Masala with Rice",
+    "date": "2026-04-22",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Butter Chicken with Rice, Italian Cheese & Garlic Pull-Apart"
+    "description": "Chicken Tikka Masala with Rice, Italian Cheese & Garlic Pull Apart"
   },
   {
     "name": "Turkey Tacos",
-    "date": "2026-03-19",
+    "date": "2026-04-23",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Turkey Tacos, Yogurt, Giant Cinnamon Goldfish & String Cheese"
   },
   {
-    "name": "Hot Dog - Turkey",
-    "date": "2026-03-20",
+    "name": "Hot Dog \u2013 Turkey",
+    "date": "2026-04-24",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Hot Dog - Turkey, Bean & Cheese Burrito, Tuna Sandwich"
+    "description": "Hot Dog \u2013 Turkey, Bean & Cheese Burrito, Popcorn Chicken Salad"
   },
   {
-    "name": "Chicken Corndog",
-    "date": "2026-03-23",
+    "name": "Italian Pasta Bake",
+    "date": "2026-04-27",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "Chicken Corndog, Macaroni & Cheese"
+    "description": "Italian Pasta Bake, Chicken Tenders, Spicy Chicken Tenders"
   },
   {
     "name": "Chicken Burger",
-    "date": "2026-03-24",
+    "date": "2026-04-28",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart"
   },
   {
     "name": "Breaded Chicken Drumstick served with Brown Rice",
-    "date": "2026-03-25",
+    "date": "2026-04-29",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Breaded Chicken Drumstick served with Brown Rice, Grilled Cheese Sandwich"
   },
   {
     "name": "Beef Rib B Que Sandwich",
-    "date": "2026-03-26",
+    "date": "2026-04-30",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Beef Rib B Que Sandwich, Italian Dunkers"
-  },
-  {
-    "name": "Nachos - Turkey Taco Meat & Bean Nachos",
-    "date": "2026-03-27",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Nachos - Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Salad"
-  },
-  {
-    "name": "Italian Pasta Bake",
-    "date": "2026-03-30",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Italian Pasta Bake, Chicken Tenders"
-  },
-  {
-    "name": "Pepperoni Pizza",
-    "date": "2026-03-31",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Pepperoni Pizza, Bean & Cheese Enchirito"
   },
   {
     "name": "Spring Recess",
@@ -531,7 +380,7 @@
     "time": null,
     "type": "event",
     "priority": "medium",
-    "description": null,
+    "description": "Spring Recess",
     "location": null,
     "url": null,
     "image_url": null,
@@ -541,30 +390,37 @@
   },
   {
     "name": "Breakfast Pizza Bagel",
-    "date": "2026-03-02",
+    "date": "2026-04-02",
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Breakfast Pizza Bagel, Cereal & Graham Crackers"
   },
   {
     "name": "Breakfast Pizza Bagel",
-    "date": "2026-03-16",
+    "date": "2026-04-20",
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Breakfast Pizza Bagel, Cereal & Graham Crackers"
   },
   {
-    "name": "Breakfast Pizza Bagel",
-    "date": "2026-03-30",
+    "name": "Breakfast in a Bun (Egg & Cheese)",
+    "date": "2026-04-15",
     "type": "breakfast_menu",
     "priority": "low",
-    "description": "Breakfast Pizza Bagel, Cereal & Graham Crackers"
+    "description": "Breakfast in a Bun (Egg & Cheese), Cereal & Graham Crackers"
   },
   {
-    "name": "Breakfast In a Bun (Egg & Cheese)",
-    "date": "2026-03-11",
+    "name": "Breakfast in a Bun (Egg & Cheese)",
+    "date": "2026-04-29",
     "type": "breakfast_menu",
     "priority": "low",
-    "description": "Breakfast In a Bun (Egg & Cheese), Cereal & Graham Crackers"
+    "description": "Breakfast in a Bun (Egg & Cheese), Cereal & Graham Crackers"
+  },
+  {
+    "name": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link",
+    "date": "2026-04-20",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich"
   }
 ]
