@@ -5,20 +5,20 @@
     "time": "5:00 PM",
     "type": "event",
     "priority": "medium",
-    "description": "Open House",
+    "description": null,
     "location": null,
     "url": null,
     "image_url": null,
     "source": "pta_website"
   },
   {
-    "name": "Multi-Cultural Faire",
+    "name": "Multicultural Fair",
     "date": "2026-04-24",
     "type": "event",
     "priority": "high",
     "description": "A beloved tradition at this school, we once again invite you to share your culture with us, whether it's helping with your country's booth (or starting one if it isn't represented yet!), fashion show, or with a group cultural performance. Due to time constraints, solo and duo performances are encouraged to perform at the Los Alamitos Variety Show on March 20th.",
-    "location": "Campus",
-    "url": "https://tinyurl.com/mcf-booth-fs,https://tinyurl.com/mcfperformance,https://tinyurl.com/mcf-writing-illus",
+    "location": null,
+    "url": null,
     "image_url": "https://posts.parentsquare.com/inline_images_e45966655b8940ab_1774040691298-MCF+form+2026.jpg"
   },
   {
@@ -36,7 +36,7 @@
     "date": "2026-05-08",
     "type": "event",
     "priority": "medium",
-    "description": "4th Grade",
+    "description": null,
     "location": null,
     "url": null,
     "image_url": null
@@ -46,27 +46,7 @@
     "date": "2026-05-15",
     "type": "event",
     "priority": "medium",
-    "description": "5th Grade",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Memorial Day",
-    "date": "2026-05-25",
-    "type": "event",
-    "priority": "high",
-    "description": "No School",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Last Day of School",
-    "date": "2026-05-29",
-    "type": "event",
-    "priority": "high",
-    "description": "Minimum Day - Dismissed at 12:06pm, Aloha Wear Day",
+    "description": null,
     "location": null,
     "url": null,
     "image_url": null
@@ -76,7 +56,7 @@
     "date": "2026-04-20",
     "type": "deadline",
     "priority": "high",
-    "description": "3rd - 5th Grade",
+    "description": "Students in grades 3-5 will take the ELA - CAT/PT Testing.",
     "location": null,
     "url": null,
     "image_url": null
@@ -86,19 +66,49 @@
     "date": "2026-04-27",
     "type": "deadline",
     "priority": "high",
-    "description": "3rd - 5th Grade",
+    "description": "Students in grades 3-5 will take the Math CAT/PT Testing.",
     "location": null,
     "url": null,
     "image_url": null
   },
   {
-    "name": "Last Day to Order Yearbook",
-    "date": "2026-04-20",
-    "type": "deadline",
+    "name": "Memorial Day",
+    "date": "2026-05-25",
+    "type": "event",
     "priority": "medium",
-    "description": null,
+    "description": "No School",
     "location": null,
-    "url": "https://www.betteryearbook.com/product/los-alamitos-yearbooks/",
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Last Day of School",
+    "date": "2026-05-29",
+    "type": "event",
+    "priority": "medium",
+    "description": "Minimum Day - Dismissed at 12:06pm. Aloha Wear Day.",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Variety Show",
+    "date": "2026-03-20",
+    "type": "event",
+    "priority": "high",
+    "description": "Come watch your friends sing, dance, act and more!",
+    "location": "The Stage at Los Alamitos",
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Hicklebee's Book Fair",
+    "date": "2026-03-24",
+    "type": "event",
+    "priority": "medium",
+    "description": "The PTA is hosting a book fair to promote summer reading. There will be a Family Night on 3/24 from 5-7pm.",
+    "location": "Library",
+    "url": "https://www.signupgenius.com/go/70A094EAAA62DA4F49-61147967-hicklebee",
     "image_url": null
   },
   {
@@ -107,31 +117,31 @@
     "time": "8:15 AM",
     "type": "event",
     "priority": "medium",
-    "description": "PTA General Meeting",
+    "description": "Join us for our PTA meeting tomorrow in the cafeteria at 8:15 AM following Community Monday!",
     "location": "Cafeteria",
     "url": null,
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-29-26_at_5_08___PM.png",
     "source": "pta_website"
   },
   {
-    "name": "Family Fun Night - The Kebab Shop",
+    "name": "Family Fun Night- The Kebab Shop",
     "date": "2026-04-22",
     "time": "All Day",
     "type": "event",
     "priority": "high",
-    "description": "Family Fun Night at The Kebab Shop - 25% of sales will go to the PTA",
-    "location": "The Kebab Shop - 5110 Cherry Ave Ste 30",
+    "description": "Show this flyer when ordering in store or use code FUNDRAISER for online orders and 25% of sales will go the PTA!",
+    "location": "The Kebab Shop- 5110 Cherry Ave Ste 30",
     "url": null,
-    "image_url": null,
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-29-26_at_5_51___PM.png",
     "source": "pta_website"
   },
   {
     "name": "Reading Lab Volunteers Needed",
     "date": null,
     "time": "12:45 PM - 2:00 PM",
-    "type": "deadline",
+    "type": "volunteer",
     "priority": "medium",
-    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. Volunteers are needed on Tuesdays, Wednesdays, or Thursdays during the school year.",
+    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. We are looking for volunteers who can come in once per week (Tuesday, Wednesday, or Thursday) from 12:45pm - 2:00pm during the school year. Training for new tutors is provided!!",
     "location": null,
     "url": "https://forms.gle/FqpLea77SxjtwJTR9",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
@@ -141,9 +151,9 @@
     "name": "Castillero Athletic Booster Club",
     "date": null,
     "time": null,
-    "type": "deadline",
+    "type": "volunteer",
     "priority": "medium",
-    "description": "Attention 5th grade parents! Looking to get involved at Castillero? Consider joining the Castillero Athletic Booster Club (CABC) Board!",
+    "description": "Attention 5th grade parents! Looking to get involved at Castillero? Consider joining the Castillero Athletic Booster Club (CABC) Board! The time commitment is very manageable and it is a great way to get involved at Castillero!",
     "location": null,
     "url": null,
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-29-26_at_5_58___PM.png",
@@ -153,9 +163,9 @@
     "name": "Castillero Music Booster Club Fundraiser",
     "date": "2026-04-17",
     "time": null,
-    "type": "deadline",
+    "type": "fundraiser",
     "priority": "high",
-    "description": "Support Our CMBC Program \u2013 Sweeten Easter & Mother's Day! Order See's Candies by 4/17/2026 to support the Castillero Music Booster Club program.",
+    "description": "Support Our CMBC Program \u2013 Sweeten Easter & Mother's Day! We've partnered with See's Candies once again to bring you delicious, high-quality chocolates just in time for Easter and Mother's Day. All sales from this storefront will support instruments, sheet music, and performance opportunities for our students\u2014and we'd love your support!",
     "location": null,
     "url": "https://www.yumraising.com/store/2026-late-spring-spring-for-sees-candies-e30d/CMBFun94781",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-29-26_at_6_03___PM.png",
@@ -170,6 +180,26 @@
     "description": "All schools out 2 hours early",
     "url": null,
     "source": "student_calendar"
+  },
+  {
+    "name": "Two-Way Bilingual Immersion Program Orientation/Orientaci\u00f3n del Programa de Inmersi\u00f3n Biling\u00fce",
+    "date": "2026-04-14",
+    "time": "6:00 PM - 7:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "Two-Way Bilingual Immersion Program Orientation",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Two-Way Bilingual Immersion Program Orientation/Orientaci\u00f3n del Programa de Inmersi\u00f3n Biling\u00fce",
+    "date": "2026-04-15",
+    "time": "6:00 PM - 7:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "Two-Way Bilingual Immersion Program Orientation",
+    "url": null,
+    "source": "district_calendar"
   },
   {
     "name": "Cinnamon Roll",
@@ -284,13 +314,6 @@
     "description": "Hot Dog \u2013 Turkey, Bean & Cheese Burrito, Popcorn Chicken Salad"
   },
   {
-    "name": "Chicken Corndog",
-    "date": "2026-04-13",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Chicken Corndog, Grilled Cheese Sandwich"
-  },
-  {
     "name": "Chicken Burger",
     "date": "2026-04-14",
     "type": "lunch_menu",
@@ -299,7 +322,7 @@
   },
   {
     "name": "Orange Chicken with Rice",
-    "date": "2026-04-15",
+    "date": "2026-04-16",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Orange Chicken with Rice, Bean & Cheese Burrito"
@@ -317,13 +340,6 @@
     "type": "lunch_menu",
     "priority": "low",
     "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Salad"
-  },
-  {
-    "name": "Pepperoni Pizza",
-    "date": "2026-04-21",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Pepperoni Pizza, Bean & Cheese Enchirito"
   },
   {
     "name": "Chicken Tikka Masala with Rice",
@@ -347,20 +363,6 @@
     "description": "Hot Dog \u2013 Turkey, Bean & Cheese Burrito, Popcorn Chicken Salad"
   },
   {
-    "name": "Italian Pasta Bake",
-    "date": "2026-04-27",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Italian Pasta Bake, Chicken Tenders, Spicy Chicken Tenders"
-  },
-  {
-    "name": "Chicken Burger",
-    "date": "2026-04-28",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart"
-  },
-  {
     "name": "Breaded Chicken Drumstick served with Brown Rice",
     "date": "2026-04-29",
     "type": "lunch_menu",
@@ -380,7 +382,7 @@
     "time": null,
     "type": "event",
     "priority": "medium",
-    "description": "Spring Recess",
+    "description": null,
     "location": null,
     "url": null,
     "image_url": null,
