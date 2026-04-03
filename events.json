@@ -1,5 +1,47 @@
 [
   {
+    "name": "Variety Show",
+    "date": "2026-03-20",
+    "type": "event",
+    "priority": "high",
+    "description": "Come watch your friends: Sing, Dance, Act and more!! Dress Rehearsal on 3/19 at 4pm, Show on 3/20 at 4pm.",
+    "location": "The Stage at Los Alamitos",
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Hicklebee's Book Fair",
+    "date": "2026-03-24",
+    "type": "event",
+    "priority": "medium",
+    "description": "Family Night on 3/24 from 5pm-7pm. Volunteer sign up at https://www.signupgenius.com/go/70A094EAAA62DA4F49-61147967-hicklebee",
+    "location": "Library",
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Spring Pictures",
+    "date": "2026-03-26",
+    "type": "event",
+    "priority": "low",
+    "description": "Free Dress",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "PTA General Meeting",
+    "date": "2026-03-30",
+    "time": "8:15 AM",
+    "type": "event",
+    "priority": "medium",
+    "description": "Join us for our PTA meeting in the cafeteria at 8:15 AM following Community Monday!",
+    "location": "Cafeteria",
+    "url": null,
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-29-26_at_5_08___PM.png",
+    "source": "pta_website"
+  },
+  {
     "name": "Open House",
     "date": "2026-03-31",
     "time": "5:00 PM",
@@ -12,14 +54,64 @@
     "source": "pta_website"
   },
   {
+    "name": "ELA - CAT/PT Testing",
+    "date": "2026-04-20",
+    "type": "deadline",
+    "priority": "high",
+    "description": "For grades 3-5",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Math CAT/PT Testing",
+    "date": "2026-04-27",
+    "type": "deadline",
+    "priority": "high",
+    "description": "For grades 3-5",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
     "name": "Multicultural Fair",
     "date": "2026-04-24",
     "type": "event",
     "priority": "high",
-    "description": "A beloved tradition at this school, we once again invite you to share your culture with us, whether it's helping with your country's booth (or starting one if it isn't represented yet!), fashion show, or with a group cultural performance. Due to time constraints, solo and duo performances are encouraged to perform at the Los Alamitos Variety Show on March 20th.",
+    "description": "4pm-7pm. Sign up to help with a country booth, fashion show, or cultural performance at https://tinyurl.com/mcf-booth-fs and https://tinyurl.com/mcfperformance",
     "location": null,
     "url": null,
-    "image_url": "https://posts.parentsquare.com/inline_images_e45966655b8940ab_1774040691298-MCF+form+2026.jpg"
+    "image_url": null
+  },
+  {
+    "name": "PTA Last Day to Order Yearbook",
+    "date": "2026-04-20",
+    "type": "deadline",
+    "priority": "medium",
+    "description": "Order your 2025-26 yearbook at https://www.betteryearbook.com/product/los-alamitos-yearbooks/",
+    "location": null,
+    "url": "https://www.betteryearbook.com/product/los-alamitos-yearbooks/",
+    "image_url": null
+  },
+  {
+    "name": "Gold Rush",
+    "date": "2026-05-08",
+    "type": "event",
+    "priority": "medium",
+    "description": "For 4th graders",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Colonial Day",
+    "date": "2026-05-15",
+    "type": "event",
+    "priority": "medium",
+    "description": "For 5th graders",
+    "location": null,
+    "url": null,
+    "image_url": null
   },
   {
     "name": "Art Vista Show",
@@ -32,50 +124,10 @@
     "image_url": null
   },
   {
-    "name": "Gold Rush",
-    "date": "2026-05-08",
-    "type": "event",
-    "priority": "medium",
-    "description": null,
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Colonial Day",
-    "date": "2026-05-15",
-    "type": "event",
-    "priority": "medium",
-    "description": null,
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "ELA - CAT/PT Testing",
-    "date": "2026-04-20",
-    "type": "deadline",
-    "priority": "high",
-    "description": "Students in grades 3-5 will take the ELA - CAT/PT Testing.",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Math CAT/PT Testing",
-    "date": "2026-04-27",
-    "type": "deadline",
-    "priority": "high",
-    "description": "Students in grades 3-5 will take the Math CAT/PT Testing.",
-    "location": null,
-    "url": null,
-    "image_url": null
-  },
-  {
     "name": "Memorial Day",
     "date": "2026-05-25",
     "type": "event",
-    "priority": "medium",
+    "priority": "low",
     "description": "No School",
     "location": null,
     "url": null,
@@ -85,52 +137,62 @@
     "name": "Last Day of School",
     "date": "2026-05-29",
     "type": "event",
-    "priority": "medium",
-    "description": "Minimum Day - Dismissed at 12:06pm. Aloha Wear Day.",
+    "priority": "low",
+    "description": "Aloha Wear Day, Dismissal at 12:06pm",
     "location": null,
     "url": null,
     "image_url": null
   },
   {
-    "name": "Variety Show",
-    "date": "2026-03-20",
+    "name": "K/3 Buddy Egg Hunt",
+    "date": "2026-04-01",
     "type": "event",
-    "priority": "high",
-    "description": "Come watch your friends sing, dance, act and more!",
-    "location": "The Stage at Los Alamitos",
+    "priority": "medium",
+    "description": "PARENTS: Bring 16 plastic eggs filled with non-candy items like stickers, erasers, small toys for the egg hunt",
+    "location": null,
     "url": null,
     "image_url": null
   },
   {
-    "name": "Hicklebee's Book Fair",
-    "date": "2026-03-24",
+    "name": "K-2 Field Trip to Hidden Villa Farms",
+    "date": "2026-03-25",
     "type": "event",
     "priority": "medium",
-    "description": "The PTA is hosting a book fair to promote summer reading. There will be a Family Night on 3/24 from 5-7pm.",
-    "location": "Library",
-    "url": "https://www.signupgenius.com/go/70A094EAAA62DA4F49-61147967-hicklebee",
+    "description": "PARENTS: Send child with disposable bag lunch and water, wear closed-toe shoes and Dandy Day t-shirt",
+    "location": "26870 Moody Rd, Los Altos Hills, CA 94022",
+    "url": null,
     "image_url": null
   },
   {
-    "name": "PTA General Meeting",
-    "date": "2026-03-30",
-    "time": "8:15 AM",
+    "name": "Valentine's Day Celebration",
+    "date": "2026-02-13",
     "type": "event",
     "priority": "medium",
-    "description": "Join us for our PTA meeting tomorrow in the cafeteria at 8:15 AM following Community Monday!",
-    "location": "Cafeteria",
+    "description": "PARENTS: Bring 1 Valentine's card for each of the 22 students in the class, leave 'To' section blank",
+    "location": null,
     "url": null,
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-29-26_at_5_08___PM.png",
+    "image_url": null
+  },
+  {
+    "name": "5th grade baby photos due",
+    "date": "2026-03-31",
+    "time": null,
+    "type": "deadline",
+    "priority": "medium",
+    "description": "5th grade parents - baby photos are due March 31st! Please send them to your classroom parent yearbook rep and include your child's full name with the photo.",
+    "location": null,
+    "url": "https://www.betteryearbook.com",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_10-12-25_at_12_16___PM.jpeg",
     "source": "pta_website"
   },
   {
-    "name": "Family Fun Night- The Kebab Shop",
+    "name": "Family Fun Night - The Kebab Shop",
     "date": "2026-04-22",
     "time": "All Day",
     "type": "event",
     "priority": "high",
     "description": "Show this flyer when ordering in store or use code FUNDRAISER for online orders and 25% of sales will go the PTA!",
-    "location": "The Kebab Shop- 5110 Cherry Ave Ste 30",
+    "location": "The Kebab Shop - 5110 Cherry Ave Ste 30",
     "url": null,
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-29-26_at_5_51___PM.png",
     "source": "pta_website"
@@ -161,7 +223,7 @@
   },
   {
     "name": "Castillero Music Booster Club Fundraiser",
-    "date": "2026-04-17",
+    "date": null,
     "time": null,
     "type": "fundraiser",
     "priority": "high",
@@ -182,7 +244,17 @@
     "source": "student_calendar"
   },
   {
-    "name": "Two-Way Bilingual Immersion Program Orientation/Orientaci\u00f3n del Programa de Inmersi\u00f3n Biling\u00fce",
+    "name": "District English Learner Advisory Committee (DELAC)",
+    "date": "2026-04-13",
+    "time": "6:00 PM - 8:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "District English Learner Advisory Committee (DELAC) meeting at 855 Lenzen Ave, San Jose, CA 95126",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Two-Way Bilingual Immersion Program Orientation",
     "date": "2026-04-14",
     "time": "6:00 PM - 7:00 PM",
     "type": "event",
@@ -192,12 +264,42 @@
     "source": "district_calendar"
   },
   {
-    "name": "Two-Way Bilingual Immersion Program Orientation/Orientaci\u00f3n del Programa de Inmersi\u00f3n Biling\u00fce",
+    "name": "Two-Way Bilingual Immersion Program Orientation",
     "date": "2026-04-15",
     "time": "6:00 PM - 7:00 PM",
     "type": "event",
     "priority": "medium",
     "description": "Two-Way Bilingual Immersion Program Orientation",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Coordinated School Health Collaborative Meetings (CSH)",
+    "date": "2026-04-16",
+    "time": "3:00 PM - 4:30 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "Coordinated School Health Collaborative Meetings (CSH) at 855 Lenzen Ave, San Jose, CA 95126",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Board Meeting",
+    "date": "2026-04-23",
+    "time": "6:00 PM - 8:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "Board Meeting at 855 Lenzen Ave, San Jose, CA 95126",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "Parcel Tax Oversight Committee (PTOC)",
+    "date": "2026-04-27",
+    "time": "6:00 PM - 8:00 PM",
+    "type": "event",
+    "priority": "medium",
+    "description": "Parcel Tax Oversight Committee (PTOC) meeting at 855 Lenzen Ave, San Jose, CA 95126",
     "url": null,
     "source": "district_calendar"
   },
@@ -314,6 +416,13 @@
     "description": "Hot Dog \u2013 Turkey, Bean & Cheese Burrito, Popcorn Chicken Salad"
   },
   {
+    "name": "Chicken Corndog",
+    "date": "2026-04-13",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Chicken Corndog, Grilled Cheese Sandwich"
+  },
+  {
     "name": "Chicken Burger",
     "date": "2026-04-14",
     "type": "lunch_menu",
@@ -322,7 +431,7 @@
   },
   {
     "name": "Orange Chicken with Rice",
-    "date": "2026-04-16",
+    "date": "2026-04-15",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Orange Chicken with Rice, Bean & Cheese Burrito"
@@ -340,6 +449,13 @@
     "type": "lunch_menu",
     "priority": "low",
     "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Salad"
+  },
+  {
+    "name": "Pepperoni Pizza",
+    "date": "2026-04-21",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Pepperoni Pizza, Bean & Cheese Enchirito"
   },
   {
     "name": "Chicken Tikka Masala with Rice",
@@ -361,6 +477,20 @@
     "type": "lunch_menu",
     "priority": "low",
     "description": "Hot Dog \u2013 Turkey, Bean & Cheese Burrito, Popcorn Chicken Salad"
+  },
+  {
+    "name": "Italian Pasta Bake",
+    "date": "2026-04-27",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Italian Pasta Bake, Chicken Tenders, Spicy Chicken Tenders"
+  },
+  {
+    "name": "Chicken Burger",
+    "date": "2026-04-28",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Chicken Burger, Spicy Chicken Burger, Cheesy Southwest Queso Pull Apart"
   },
   {
     "name": "Breaded Chicken Drumstick served with Brown Rice",
