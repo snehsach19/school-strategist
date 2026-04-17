@@ -5,7 +5,7 @@
     "time": null,
     "type": "event",
     "priority": "high",
-    "description": "The PTA is eager and excited to have different cultures from around the world at our Annual Multicultural Faire! We would love to see you there, hosting a Booth or do a Performance showcasing your culture. If you or someone you know, would like to perform for Los Alamitos MCF, please reach out to us. It's a great opportunity for our kids to get involved, learn, and even present what they've prepared.",
+    "description": "The PTA is eager and excited to have different cultures from around the world at our Annual Multicultural Faire!",
     "location": null,
     "url": null,
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-22-26_at_7_37___PM.png",
@@ -16,8 +16,8 @@
     "date": "2026-05-05",
     "type": "event",
     "priority": "medium",
-    "description": "School art show event for families to attend.",
-    "location": "School",
+    "description": null,
+    "location": null,
     "url": null,
     "image_url": null
   },
@@ -25,9 +25,9 @@
     "name": "Gold Rush",
     "date": "2026-05-08",
     "type": "event",
-    "priority": "medium",
-    "description": "4th grade event for families.",
-    "location": "School",
+    "priority": "high",
+    "description": null,
+    "location": null,
     "url": null,
     "image_url": null
   },
@@ -35,18 +35,88 @@
     "name": "Colonial Day",
     "date": "2026-05-15",
     "type": "event",
-    "priority": "medium",
-    "description": "5th grade event for families.",
-    "location": "School",
+    "priority": "high",
+    "description": null,
+    "location": null,
     "url": null,
+    "image_url": null
+  },
+  {
+    "name": "K-2 Literacy Screening",
+    "date": "2026-05-01",
+    "type": "deadline",
+    "priority": "medium",
+    "description": "All students in Kindergarten through 2nd grade will take part in an annual universal screening to identify reading difficulties, including dyslexia. Parents can opt their child out by submitting a written request to the school principal by April 24, 2026.",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Spirit Day: Star Wars Shirt Day",
+    "date": "2026-05-04",
+    "type": "event",
+    "priority": "low",
+    "description": "Wear a Star Wars themed shirt.",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Teacher & Staff Appreciation Week",
+    "date": "2026-05-04",
+    "type": "event",
+    "priority": "medium",
+    "description": null,
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Used Uniform Drive",
+    "date": "2026-08-04",
+    "type": "event",
+    "priority": "low",
+    "description": "Drop off used uniforms from 10:00am - 12:00pm.",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "TK Ice Cream Social",
+    "date": "2026-08-05",
+    "type": "event",
+    "priority": "low",
+    "description": "5:00pm",
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "First Day of School",
+    "date": "2026-08-06",
+    "type": "event",
+    "priority": "high",
+    "description": null,
+    "location": null,
+    "url": null,
+    "image_url": null
+  },
+  {
+    "name": "Last Day to Order Yearbook",
+    "date": "2026-04-20",
+    "type": "deadline",
+    "priority": "low",
+    "description": "Don't wait until the last minute to order your 2025-26 yearbook.",
+    "location": null,
+    "url": "https://www.betteryearbook.com/product/los-alamitos-yearbooks/",
     "image_url": null
   },
   {
     "name": "ELA - CAT/PT Testing",
     "date": "2026-04-20",
     "type": "deadline",
-    "priority": "high",
-    "description": "3rd - 5th grade students will take the ELA standardized tests during this week. Parents can submit a written request to excuse their child from testing.",
+    "priority": "medium",
+    "description": "3rd - 5th grade students will take the ELA Smarter Balanced assessments during this time period.",
     "location": null,
     "url": null,
     "image_url": null
@@ -55,49 +125,19 @@
     "name": "Math CAT/PT Testing",
     "date": "2026-04-27",
     "type": "deadline",
-    "priority": "high",
-    "description": "3rd - 5th grade students will take the Math standardized tests during this week. Parents can submit a written request to excuse their child from testing.",
+    "priority": "medium",
+    "description": "3rd - 5th grade students will take the Math Smarter Balanced assessments during this time period.",
     "location": null,
     "url": null,
     "image_url": null
   },
   {
-    "name": "School Site Council Meeting",
-    "date": "2026-04-13",
+    "name": "K-3 Buddy Egg Hunt",
+    "date": "2026-04-01",
     "type": "event",
-    "priority": "medium",
-    "description": "School governance meeting for parents.",
-    "location": "School",
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "PTA Executive Meeting",
-    "date": "2026-04-16",
-    "type": "event",
-    "priority": "medium",
-    "description": "PTA leadership meeting.",
-    "location": "School",
-    "url": null,
-    "image_url": null
-  },
-  {
-    "name": "PTA Last Day to Order Yearbook",
-    "date": "2026-04-20",
-    "type": "deadline",
     "priority": "low",
-    "description": "Last day to order the 2025-2026 school yearbook.",
+    "description": "PARENTS: Please donate 16 plastic eggs filled with non-candy items such as stickers, erasers, small toys etc. to be used for the egg hunt.",
     "location": null,
-    "url": "https://www.betteryearbook.com/product/los-alamitos-yearbooks/",
-    "image_url": null
-  },
-  {
-    "name": "PTA General Meeting",
-    "date": "2026-04-27",
-    "type": "event",
-    "priority": "medium",
-    "description": "Monthly PTA general meeting for parents.",
-    "location": "School",
     "url": null,
     "image_url": null
   },
@@ -105,39 +145,27 @@
     "name": "Memorial Day",
     "date": "2026-05-25",
     "type": "event",
-    "priority": "high",
-    "description": "No school on this holiday.",
+    "priority": "medium",
+    "description": "No school.",
     "location": null,
     "url": null,
     "image_url": null
   },
   {
-    "name": "Last Day of School",
+    "name": "Last day of regular school year",
     "date": "2026-05-29",
+    "time": null,
     "type": "event",
     "priority": "high",
-    "description": "Aloha Day spirit wear, early dismissal at 12:06pm.",
-    "location": "School",
+    "description": "Last day of regular school year for all students",
     "url": null,
-    "image_url": null
-  },
-  {
-    "name": "Reading Lab Volunteers Needed",
-    "date": null,
-    "time": "12:45 PM - 2:00 PM",
-    "type": "volunteer",
-    "priority": "medium",
-    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. We are looking for volunteers who can come in once per week (Tuesday, Wednesday, or Thursday) from 12:45pm - 2:00pm during the school year. Training for new tutors is provided!! Helping these new & growing readers is super fun and rewarding!",
-    "location": null,
-    "url": "https://forms.gle/FqpLea77Sxjt wJTR9",
-    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
-    "source": "pta_website"
+    "source": "district_calendar"
   },
   {
     "name": "Castillero Athletic Booster Club",
     "date": null,
     "time": null,
-    "type": "volunteer",
+    "type": "event",
     "priority": "medium",
     "description": "Attention 5th grade parents! Looking to get involved at Castillero? Consider joining the Castillero Athletic Booster Club (CABC) Board! The time commitment is very manageable and it is a great way to get involved at Castillero!",
     "location": null,
@@ -147,22 +175,22 @@
   },
   {
     "name": "Castillero Music Booster Club Fundraiser",
-    "date": null,
+    "date": "2026-04-17",
     "time": null,
-    "type": "fundraiser",
-    "priority": "high",
-    "description": "Support Our CMBC Program \u2013 Sweeten Easter & Mother's Day! We've partnered with See's Candies once again to bring you delicious, high-quality chocolates just in time for Easter and Mother's Day. All sales from this storefront will support instruments, sheet music, and performance opportunities for our students\u2014and we'd love your support! Perfect for gifting (or treating yourself!), a sweet addition to Easter baskets, a thoughtful way to celebrate moms, teachers, and the special people in our lives. Every purchase directly supports our young musicians and helps keep our music program strong.",
+    "type": "event",
+    "priority": "medium",
+    "description": "Support Our CMBC Program \u2013 Sweeten Easter & Mother's Day! We've partnered with See's Candies once again to bring you delicious, high-quality chocolates just in time for Easter and Mother's Day. All sales from this storefront will support instruments, sheet music, and performance opportunities for our students\u2014and we'd love your support!",
     "location": null,
-    "url": "https://www.yumraising.com/ store/2026-late-spring-spring- for-sees-candies-e30d/CMBFun94 781",
+    "url": "https://www.yumraising.com/store/2026-late-spring-spring-for-sees-candies-e30d/CMBFun94781",
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-29-26_at_6_03___PM.png",
     "source": "pta_website"
   },
   {
-    "name": "Yearbook Update",
+    "name": "Yearbook Deadline",
     "date": "2026-04-20",
     "time": null,
     "type": "deadline",
-    "priority": "medium",
+    "priority": "high",
     "description": "If you haven't purchased the yearbook, please purchase it before April 20th. No yearbooks will be sold once they are distributed.",
     "location": null,
     "url": "https://www.betteryearbook.com",
@@ -170,15 +198,39 @@
     "source": "pta_website"
   },
   {
-    "name": "Family Fun Night- The Kebab Shop",
+    "name": "Family Fun Night at The Kebab Shop",
     "date": "2026-04-22",
     "time": "All Day",
-    "type": "fundraiser",
+    "type": "event",
     "priority": "high",
     "description": "Show this flyer when ordering in store or use code FUNDRAISER for online orders and 25% of sales will go the PTA!",
     "location": "The Kebab Shop- 5110 Cherry Ave Ste 30",
     "url": null,
     "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_3-29-26_at_5_51___PM.png",
+    "source": "pta_website"
+  },
+  {
+    "name": "Reading Lab Volunteers Needed",
+    "date": null,
+    "time": "12:45 PM - 2:00 PM",
+    "type": "volunteer",
+    "priority": "medium",
+    "description": "The Reading Lab is a tutoring program for students who would benefit from extra help with fundamental reading skills. We are looking for volunteers who can come in once per week (Tuesday, Wednesday, or Thursday) during the school year. Training for new tutors is provided!! Helping these new & growing readers is super fun and rewarding!",
+    "location": null,
+    "url": "https://forms.gle/FqpLea77SxjtwJTR9",
+    "image_url": "https://losalamitospta.membershiptoolkit.com/assets/04062/Image_8-15-24_at_7_00___AM.jpeg",
+    "source": "pta_website"
+  },
+  {
+    "name": "PTA Board Elections",
+    "date": "2026-04-27",
+    "time": null,
+    "type": "event",
+    "priority": "medium",
+    "description": "We are looking for members of our Los Alamitos community to join our PTA Executive Board for 2026-27 school year! The current slate for the 2026-2027 school year will be voted on at our next general meeting on April 27th.",
+    "location": null,
+    "url": "losalamitospta@gmail.com",
+    "image_url": null,
     "source": "pta_website"
   },
   {
@@ -193,31 +245,41 @@
   },
   {
     "name": "Elementary schools out 2 hours early",
-    "date": "2026-04-12",
+    "date": "2026-03-12",
     "time": null,
     "type": "event",
     "priority": "medium",
-    "description": "Early dismissal for elementary schools",
-    "url": null,
-    "source": "district_calendar"
-  },
-  {
-    "name": "All schools out 2 hours early",
-    "date": "2026-04-23",
-    "time": null,
-    "type": "event",
-    "priority": "medium",
-    "description": "Early dismissal for all schools",
+    "description": "Elementary schools dismiss 2 hours early",
     "url": null,
     "source": "district_calendar"
   },
   {
     "name": "Elementary schools out 2 hours early",
+    "date": "2026-03-13",
+    "time": null,
+    "type": "event",
+    "priority": "medium",
+    "description": "Elementary schools dismiss 2 hours early",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "All schools out 2 hours early",
     "date": "2026-05-26",
     "time": null,
     "type": "event",
     "priority": "medium",
-    "description": "Early dismissal for elementary schools",
+    "description": "All schools dismiss 2 hours early",
+    "url": null,
+    "source": "district_calendar"
+  },
+  {
+    "name": "All schools out 2 hours early",
+    "date": "2026-05-27",
+    "time": null,
+    "type": "event",
+    "priority": "medium",
+    "description": "All schools dismiss 2 hours early",
     "url": null,
     "source": "district_calendar"
   },
@@ -356,31 +418,17 @@
   },
   {
     "name": "Breaded Chicken Drumstick served with a Dinner Roll",
-    "date": "2026-04-16",
+    "date": "2026-04-17",
     "type": "lunch_menu",
     "priority": "low",
     "description": "Breaded Chicken Drumstick served with a Dinner Roll, Italian Dunkers"
   },
   {
     "name": "Nachos \u2013 Turkey Taco Meat & Bean Nachos",
-    "date": "2026-04-17",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Salad"
-  },
-  {
-    "name": "French Toast Sticks with Turkey Sausage Link",
     "date": "2026-04-20",
     "type": "lunch_menu",
     "priority": "low",
-    "description": "French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich"
-  },
-  {
-    "name": "Pepperoni Pizza",
-    "date": "2026-04-21",
-    "type": "lunch_menu",
-    "priority": "low",
-    "description": "Pepperoni Pizza, Bean & Cheese Enchirito"
+    "description": "Nachos \u2013 Turkey Taco Meat & Bean Nachos, Nachos: Bean & Cheese, Cheese Pizza, Chicken Caesar Salad"
   },
   {
     "name": "Chicken Tikka Masala with Rice",
@@ -437,7 +485,7 @@
     "time": null,
     "type": "event",
     "priority": "high",
-    "description": "All schools closed for spring recess",
+    "description": "Spring Recess for all schools",
     "url": null,
     "source": "district_calendar",
     "end_date": "2026-04-10",
@@ -470,5 +518,12 @@
     "type": "breakfast_menu",
     "priority": "low",
     "description": "Breakfast in a Bun (Egg & Cheese), Cereal & Graham Crackers"
+  },
+  {
+    "name": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link",
+    "date": "2026-04-21",
+    "type": "lunch_menu",
+    "priority": "low",
+    "description": "Breakfast For Lunch: French Toast Sticks with Turkey Sausage Link, Grilled Cheese Sandwich"
   }
 ]
